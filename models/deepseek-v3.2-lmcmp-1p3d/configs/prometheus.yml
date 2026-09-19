@@ -1,0 +1,38 @@
+# ============================================================
+# Prometheus — single-node 1P3D (all listeners on localhost)
+# Two-node: copy prometheus.two-node.example.yml → prometheus.yml
+# or set PROMETHEUS_CONFIG_FILE in .env for 06_launch_monitoring.sh
+# ============================================================
+
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+  scrape_timeout: 4s
+
+scrape_configs:
+
+  - job_name: "vllm-prefiller"
+    static_configs:
+      - targets: ["localhost:8100"]
+        labels:
+          instance: "prefiller"
+          role: "kv_producer"
+    metrics_path: /metrics
+
+  - job_name: "vllm-decoder"
+    static_configs:
+      - targets: ["localhost:8200", "localhost:8201", "localhost:8202"]
+        labels:
+          role: "kv_consumer"
+    metrics_path: /metrics
+
+  - job_name: "proxy"
+    static_configs:
+      - targets: ["localhost:9000"]
+        labels:
+          instance: "proxy"
+    metrics_path: /metrics
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]

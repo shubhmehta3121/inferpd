@@ -1,0 +1,48 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+  scrape_timeout: 4s
+
+scrape_configs:
+
+  - job_name: "vllm-prefiller-0"
+    static_configs:
+      - targets: ["localhost:8100"]
+        labels:
+          instance: "prefiller-0"
+          role: "kv_producer"
+          gpu: "0"
+
+  - job_name: "vllm-prefiller-1"
+    static_configs:
+      - targets: ["localhost:8101"]
+        labels:
+          instance: "prefiller-1"
+          role: "kv_producer"
+          gpu: "2"
+
+  - job_name: "vllm-decoder-0"
+    static_configs:
+      - targets: ["localhost:8200"]
+        labels:
+          instance: "decoder-0"
+          role: "kv_consumer"
+          gpu: "1"
+
+  - job_name: "vllm-decoder-1"
+    static_configs:
+      - targets: ["localhost:8201"]
+        labels:
+          instance: "decoder-1"
+          role: "kv_consumer"
+          gpu: "3"
+
+  - job_name: "proxy"
+    static_configs:
+      - targets: ["localhost:9000"]
+        labels:
+          instance: "proxy"
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]

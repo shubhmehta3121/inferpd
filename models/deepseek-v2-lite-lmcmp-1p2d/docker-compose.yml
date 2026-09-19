@@ -1,0 +1,149 @@
+# ============================================================
+# docker-compose.yml — STALE (Nixl + old vLLM). Use bare-metal scripts
+# in this repo for LMCache MP 1P2D (07 → 04 → 03×2 → 02).
+# ============================================================
+# docker-compose.yml — Full PD Stack (optional Docker path)
+# Use this ONLY if you prefer Docker over bare-metal scripts.
+# For RunPod bare-metal, use the shell scripts directly.
+#
+# Requires: nvidia-container-toolkit on host
+# ============================================================
+
+version: "3.9"
+
+services:
+
+  # ---- Decoder (GPU 1, kv_both) — MUST start before prefiller (binds NIXL 5560) ----
+  decoder:
+    image: vllm/vllm-openai:latest
+    container_name: ds_decoder
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=1
+      - CUDA_VISIBLE_DEVICES=1
+      - UCX_TLS=cuda_ipc,cuda_copy,tcp
+      - VLLM_NIXL_SIDE_CHANNEL_PORT=5560
+      - VLLM_WORKER_MULTIPROC_METHOD=spawn
+      - HF_TOKEN=${HF_TOKEN}
+    volumes:
+      - /workspace/models:/models:ro
+      - ./configs:/configs:ro
+      - /workspace/logs/decoder:/logs
+    ports:
+      - "8200:8200"
+    command: >
+      --model /models/deepseek-v2-lite
+      --host 0.0.0.0
+      --port 8200
+      --dtype bfloat16
+      --max-model-len 32768
+      --gpu-memory-utilization 0.82
+      --max-num-seqs 64
+      --tensor-parallel-size 1
+      --trust-remote-code
+      --no-enable-prefix-caching
+      --enforce-eager
+      --disable-log-requests
+      --kv-transfer-config '{"kv_connector":"NixlConnector","kv_role":"kv_both","kv_buffer_device":"cuda"}'
+    ipc: host
+    network_mode: host
+    shm_size: 16gb
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+              device_ids: ["1"]
+
+  # ---- Prefiller (GPU 0, kv_both) — connects to decoder's NIXL at startup ----
+  prefiller:
+    image: vllm/vllm-openai:latest
+    container_name: ds_prefiller
+    runtime: nvidia
+    depends_on:
+      - decoder
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0
+      - CUDA_VISIBLE_DEVICES=0
+      - UCX_TLS=cuda_ipc,cuda_copy,tcp
+      - VLLM_NIXL_SIDE_CHANNEL_PORT=5559
+      - VLLM_WORKER_MULTIPROC_METHOD=spawn
+      - HF_TOKEN=${HF_TOKEN}
+    volumes:
+      - /workspace/models:/models:ro
+      - ./configs:/configs:ro
+      - /workspace/logs/prefiller:/logs
+    ports:
+      - "8100:8100"
+    command: >
+      --model /models/deepseek-v2-lite
+      --host 0.0.0.0
+      --port 8100
+      --dtype bfloat16
+      --max-model-len 32768
+      --gpu-memory-utilization 0.82
+      --max-num-seqs 64
+      --tensor-parallel-size 1
+      --trust-remote-code
+      --no-enable-prefix-caching
+      --enforce-eager
+      --disable-log-requests
+      --kv-transfer-config '{"kv_connector":"NixlConnector","kv_role":"kv_both","kv_buffer_device":"cuda"}'
+    ipc: host
+    network_mode: host         # Required for NIXL cuda_ipc across containers
+    shm_size: 16gb
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+              device_ids: ["0"]
+
+  # ---- Proxy ----
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile.proxy
+    container_name: ds_proxy
+    depends_on:
+      - prefiller
+      - decoder
+    network_mode: host
+    environment:
+      - PREFILLER_PORT=8100
+      - DECODER_PORT=8200
+    volumes:
+      - ./proxy:/app
+    restart: on-failure
+
+  # ---- Prometheus ----
+  prometheus:
+    image: prom/prometheus:v2.51.0
+    container_name: ds_prometheus
+    network_mode: host
+    volumes:
+      - ./configs/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    restart: unless-stopped
+
+  # ---- Grafana ----
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: ds_grafana
+    network_mode: host
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+    restart: unless-stopped
+
+volumes:
+  prometheus_data:
+  grafana_data:

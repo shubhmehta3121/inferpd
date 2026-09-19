@@ -1,0 +1,51 @@
+# LMCache config for the PREFILLER node (Node A) in disaggregated prefill.
+#
+# Flow on this node:
+#  1. Request arrives → vLLM checks LMCache CPU store for matching prefix blocks.
+#  2. Cache HIT  → blocks decompressed (CacheGen) from CPU RAM and sent to
+#                  decoder via NIXL.  Zero GPU computation for that prefix.
+#  3. Cache MISS → vLLM computes KV on GPU, stores to LMCache CPU (CacheGen
+#                  compressed), then sends to decoder via NIXL.
+#
+# With 80% prefix cache hit rate, ~80% of requests skip GPU prefill entirely.
+
+chunk_size: 256
+
+# --------------------------------------------------------------------------
+# Local CPU cache on prefiller (hot prefix store)
+# --------------------------------------------------------------------------
+# Enable so that repeated long prefixes (80% of traffic) are served from
+# CPU RAM instead of re-computed on GPU.
+local_cpu: true
+# Adjust to your node's available RAM.  H200 servers typically ship with
+# 512 GB or more.  Reserve ~200 GB for OS + model overhead.
+max_local_cpu_size: 150   # GB
+
+# Not using disk on the prefiller — latency to disk would slow NIXL transfer.
+max_local_disk_size: 0
+
+# --------------------------------------------------------------------------
+# CacheGen compression
+# --------------------------------------------------------------------------
+# Compress KV blocks before storing in CPU RAM.
+# Reduces CPU cache footprint by ~3-5x with negligible decode overhead.
+remote_serde: "cachegen"
+
+# --------------------------------------------------------------------------
+# P/D disaggregation via NIXL (sender role)
+# --------------------------------------------------------------------------
+enable_pd: true
+transfer_channel: "nixl"
+pd_role: "sender"
+
+# LMCache internal proxy for transfer coordination.
+# For a single-prefiller setup this can be localhost.
+# If you scale to multiple prefillers, point all of them at a shared proxy.
+pd_proxy_host: "localhost"   # UPDATE if running a dedicated LMCache proxy
+pd_proxy_port: 7500
+
+# GPU staging buffer for NIXL transfer.
+# 1 GB accommodates a typical batch of long-context KV blocks.
+# Increase to 2 GB if you see transfer stalls under high QPS.
+pd_buffer_size: 1073741824   # 1 GB
+pd_buffer_device: "cuda"

@@ -1,0 +1,205 @@
+{
+  "title": "DeepSeek V2-Lite PD Disaggregation Dashboard",
+  "uid": "deepseek-pd-v1",
+  "version": 1,
+  "schemaVersion": 38,
+  "refresh": "5s",
+  "time": { "from": "now-30m", "to": "now" },
+  "tags": ["vllm", "deepseek", "llm"],
+  "panels": [
+    {
+      "id": 1, "title": "TTFT P50 vs P95 (seconds)",
+      "type": "timeseries", "gridPos": {"x":0,"y":0,"w":12,"h":8},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.50, rate(vllm:time_to_first_token_seconds_bucket{instance='decoder'}[2m]))",
+          "legendFormat": "TTFT P50 (decoder)"
+        },
+        {
+          "expr": "histogram_quantile(0.95, rate(vllm:time_to_first_token_seconds_bucket{instance='decoder'}[2m]))",
+          "legendFormat": "TTFT P95 (decoder)"
+        },
+        {
+          "expr": "histogram_quantile(0.50, rate(proxy_ttft_seconds_bucket[2m]))",
+          "legendFormat": "TTFT P50 (proxy end-to-end)"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s",
+          "thresholds": {
+            "steps": [
+              {"value": 0, "color": "green"},
+              {"value": 2.0, "color": "yellow"},
+              {"value": 3.5, "color": "red"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 2, "title": "E2E Latency P50 / P95 (seconds)",
+      "type": "timeseries", "gridPos": {"x":12,"y":0,"w":12,"h":8},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.50, rate(vllm:e2e_request_latency_seconds_bucket{instance='decoder'}[2m]))",
+          "legendFormat": "E2E P50"
+        },
+        {
+          "expr": "histogram_quantile(0.95, rate(vllm:e2e_request_latency_seconds_bucket{instance='decoder'}[2m]))",
+          "legendFormat": "E2E P95"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "s"}}
+    },
+    {
+      "id": 3, "title": "Throughput (tokens/sec)",
+      "type": "timeseries", "gridPos": {"x":0,"y":8,"w":12,"h":7},
+      "targets": [
+        {
+          "expr": "rate(vllm:generation_tokens_total{instance='decoder'}[1m])",
+          "legendFormat": "Output tokens/s (decoder)"
+        },
+        {
+          "expr": "rate(vllm:prompt_tokens_total{instance='prefiller'}[1m])",
+          "legendFormat": "Prompt tokens/s (prefiller)"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "reqps"}}
+    },
+    {
+      "id": 4, "title": "Active Requests",
+      "type": "timeseries", "gridPos": {"x":12,"y":8,"w":12,"h":7},
+      "targets": [
+        {
+          "expr": "vllm:num_requests_running{instance='prefiller'}",
+          "legendFormat": "Running (prefiller)"
+        },
+        {
+          "expr": "vllm:num_requests_running{instance='decoder'}",
+          "legendFormat": "Running (decoder)"
+        },
+        {
+          "expr": "vllm:num_requests_waiting{instance='decoder'}",
+          "legendFormat": "Queued (decoder)"
+        },
+        {
+          "expr": "proxy_active_requests",
+          "legendFormat": "Active (proxy)"
+        }
+      ]
+    },
+    {
+      "id": 5, "title": "GPU KV Cache Utilization (%)",
+      "type": "gauge", "gridPos": {"x":0,"y":15,"w":6,"h":5},
+      "targets": [
+        {
+          "expr": "vllm:gpu_cache_usage_perc{instance='prefiller'} * 100",
+          "legendFormat": "Prefiller KV Cache"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent", "min": 0, "max": 100,
+          "thresholds": {
+            "steps": [
+              {"value": 0, "color": "green"},
+              {"value": 70, "color": "yellow"},
+              {"value": 90, "color": "red"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 6, "title": "Decoder KV Cache Utilization (%)",
+      "type": "gauge", "gridPos": {"x":6,"y":15,"w":6,"h":5},
+      "targets": [
+        {
+          "expr": "vllm:gpu_cache_usage_perc{instance='decoder'} * 100",
+          "legendFormat": "Decoder KV Cache"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent", "min": 0, "max": 100,
+          "thresholds": {
+            "steps": [
+              {"value": 0, "color": "green"},
+              {"value": 70, "color": "yellow"},
+              {"value": 90, "color": "red"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 7, "title": "Proxy Requests (total, rate)",
+      "type": "timeseries", "gridPos": {"x":12,"y":15,"w":12,"h":5},
+      "targets": [
+        {
+          "expr": "rate(proxy_requests_total{status='received'}[1m]) * 60",
+          "legendFormat": "Requests/min (proxy)"
+        },
+        {
+          "expr": "rate(proxy_requests_total{status='prefill_error'}[1m]) * 60",
+          "legendFormat": "Prefill errors/min"
+        },
+        {
+          "expr": "rate(proxy_requests_total{status='decode_error'}[1m]) * 60",
+          "legendFormat": "Decode errors/min"
+        }
+      ]
+    },
+    {
+      "id": 8, "title": "Prefill Latency Distribution (seconds)",
+      "type": "timeseries", "gridPos": {"x":0,"y":20,"w":12,"h":7},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.50, rate(proxy_prefill_latency_seconds_bucket[2m]))",
+          "legendFormat": "Prefill P50"
+        },
+        {
+          "expr": "histogram_quantile(0.95, rate(proxy_prefill_latency_seconds_bucket[2m]))",
+          "legendFormat": "Prefill P95"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "s"}}
+    },
+    {
+      "id": 9, "title": "Tokens Generated (cumulative)",
+      "type": "stat", "gridPos": {"x":12,"y":20,"w":6,"h":4},
+      "targets": [
+        {
+          "expr": "proxy_tokens_generated_total",
+          "legendFormat": "Total tokens generated"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "short"}}
+    },
+    {
+      "id": 10, "title": "Inter-Token Latency P50 / P95 (ms)",
+      "type": "timeseries", "gridPos": {"x":0,"y":27,"w":12,"h":6},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.50, rate(vllm:time_per_output_token_seconds_bucket{instance='decoder'}[2m])) * 1000",
+          "legendFormat": "ITL P50 (ms)"
+        },
+        {
+          "expr": "histogram_quantile(0.95, rate(vllm:time_per_output_token_seconds_bucket{instance='decoder'}[2m])) * 1000",
+          "legendFormat": "ITL P95 (ms)"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "ms"}}
+    }
+  ],
+  "annotations": {
+    "list": [
+      {
+        "name": "Target: TTFT P50 = 2s",
+        "type": "dashboard",
+        "enable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+# Local secrets — use .env.example as template
+.env
+
+# Runtime logs on GPU boxes
+logs/

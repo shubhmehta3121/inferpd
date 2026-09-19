@@ -1,0 +1,34 @@
+# ============================================================
+# Dockerfile.proxy — Lightweight proxy container
+# ============================================================
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install UV (fast Python package installer)
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+# Install Python packages using UV
+RUN uv pip install --no-cache-dir \
+    fastapi==0.111.0 \
+    uvicorn==0.30.1 \
+    httpx==0.27.0 \
+    aiohttp==3.9.5 \
+    prometheus-client==0.20.0
+
+COPY proxy/disagg_proxy_server.py /app/
+
+ENV PREFILLER_HOST=localhost
+ENV PREFILLER_PORT=8100
+ENV DECODER_HOST=localhost
+ENV DECODER_PORT=8200
+
+CMD ["python", "disagg_proxy_server.py", \
+     "--host", "0.0.0.0", \
+     "--port", "9000", \
+     "--prefiller-host", "localhost", \
+     "--prefiller-port", "8100", \
+     "--decoder-host", "localhost", \
+     "--decoder-port", "8200"]

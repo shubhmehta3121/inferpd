@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inferpd · Disaggregated DeepSeek inference</title>
+  <meta name="description" content="Self-taught R&D: shared L1 KV for prefix-heavy streaming chat. Problem, approaches tried, results, cost, and lessons in one page.">
+  <link rel="canonical" href="https://shubhmehta3121.github.io/inferpd/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="inferpd">
+  <meta property="og:url" content="https://shubhmehta3121.github.io/inferpd/">
+  <meta property="og:title" content="inferpd · Disaggregated DeepSeek inference">
+  <meta property="og:description" content="Self-taught R&D: shared L1 KV for prefix-heavy streaming chat. Problem, approaches tried, results, cost, and lessons in one page.">
+  <meta property="og:image" content="https://shubhmehta3121.github.io/inferpd/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="inferpd · Disaggregated DeepSeek inference">
+  <meta name="twitter:description" content="Self-taught R&D: shared L1 KV for prefix-heavy streaming chat.">
+  <meta name="twitter:image" content="https://shubhmehta3121.github.io/inferpd/og-image.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">infer<span>pd</span></a>
+      <nav>
+        <ul class="nav-links nav-links-minimal">
+          <li><a class="nav-repo" href="https://github.com/shubhmehta3121/inferpd" target="_blank" rel="noopener">Repo &#8599;</a></li>
+          <li><a class="nav-repo" href="https://github.com/shubhmehta3121" target="_blank" rel="noopener">GitHub &#8599;</a></li>
+          <li><a class="nav-repo" href="https://www.linkedin.com/in/shubh-mehta-2bb173221/" target="_blank" rel="noopener">LinkedIn &#8599;</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-compact">
+      <p class="hero-eyebrow">Production inference · Open source</p>
+      <h1>Self-taught from zero to disaggregated DeepSeek deployment</h1>
+      <p class="hero-lead">
+        Contracted R&amp;D for a high-traffic streaming chat product. No prior background in transformers,
+        KV cache, or GPU serving. I learned the stack from scratch, rented GPUs, and open-sourced the runbooks.
+      </p>
+    </section>
+
+    <article class="prose-wide pitch-page">
+
+      <p class="section-label" id="problem">Problem</p>
+      <h2>What had to be solved</h2>
+      <p>
+        Self-hosted DeepSeek-class inference for real chat traffic: long prompts, heavy prefix reuse,
+        streaming API, TTFT matters more than end-to-end latency.
+      </p>
+      <div class="stat-grid">
+        <div class="stat">
+          <span class="stat-value">~80%</span>
+          <span class="stat-label">Prefix cache hits</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">~7.9k</span>
+          <span class="stat-label">Input tokens (P50)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">~60</span>
+          <span class="stat-label">Peak QPS target</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">~2s</span>
+          <span class="stat-label">Prod TTFT P50 ballpark</span>
+        </div>
+      </div>
+
+      <p class="section-label" id="tried">What I tried</p>
+      <h2>Eight setups, in the order I actually ran them</h2>
+      <p>
+        Chat traffic reuses the same system prompt about 80% of the time. The question was how to stop
+        recomputing that prefix on every request. I started on the production-class model, burned money,
+        then dropped to a smaller model and compared three ways of moving the KV cache between GPUs.
+      </p>
+      <p class="text-muted">
+        Shorthand: <strong>1P2D</strong> means 1 GPU does prefill (read the prompt) and 2 GPUs do decode
+        (stream tokens). <strong>LMCache MP</strong> is a shared KV store in host RAM that every GPU talks to,
+        instead of handing cache privately from one GPU to another.
+      </p>
+      <div class="table-wrap">
+        <table class="pitch-tried-table">
+          <thead>
+            <tr>
+              <th>What I tried</th>
+              <th>Model and GPUs</th>
+              <th>How KV moved</th>
+              <th>What happened</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BF16 baseline</td>
+              <td>DeepSeek V3.2 on 8× H200</td>
+              <td>All 8 GPUs used for tensor parallelism. No split between prefill and decode on one node.</td>
+              <td>The model ran, but the cluster was too expensive (~$60/hr class) to iterate on daily.</td>
+            </tr>
+            <tr>
+              <td>Classic LMCache P/D</td>
+              <td>DeepSeek V2-Lite on A100s</td>
+              <td>Prefiller pushed KV to the decoder per request, using LMCache’s built-in P/D connector.</td>
+              <td>Worked in smoke tests. Decoder ran out of memory under real concurrency.</td>
+            </tr>
+            <tr>
+              <td>NIXL P/D</td>
+              <td>V2-Lite on 2× A100<br>1 prefiller + 1 decoder</td>
+              <td>GPU-to-GPU KV handoff over NVLink/UCX. Each request copies cache privately to its decoder.</td>
+              <td>First stable split. Fast for a single request, but later chats could not reuse that prefix.</td>
+            </tr>
+            <tr>
+              <td>NIXL scale-out</td>
+              <td>V2-Lite on A100s<br>2 prefillers + 2 decoders</td>
+              <td>Same GPU-to-GPU handoff, more workers.</td>
+              <td>Throughput went up. Still no shared prefix cache across requests.</td>
+            </tr>
+            <tr>
+              <td>Shared L1</td>
+              <td>V2-Lite on A100s<br>1 prefiller + 1 decoder</td>
+              <td>One central LMCache multiprocess server. Prefiller writes prefix KV once; decoder reads it back.</td>
+              <td>Prefix reuse started working. This is the architecture that matched the 80% hit rate.</td>
+            </tr>
+            <tr class="pitch-tried-win">
+              <td>Best V2-Lite run</td>
+              <td>V2-Lite on 3× A100<br>1 prefiller + 2 decoders</td>
+              <td>Same shared LMCache store, extra decode GPUs so token streaming can scale independently.</td>
+              <td>Asked 10 req/s, delivered 8.5. TTFT P50 0.52s vs ~2s in production. The headline result.</td>
+            </tr>
+            <tr>
+              <td>Production-class model</td>
+              <td>V3.2 NVFP4 on 8× B200<br>1 prefiller + 1 decoder</td>
+              <td>Same shared LMCache store, now on the real model and Blackwell GPUs.</td>
+              <td>The path works end to end. Sub-second TTFT only held to ~2 req/s, not the V2-Lite curve.</td>
+            </tr>
+            <tr>
+              <td>Cross-node scale-out</td>
+              <td>V3.2 NVFP4 on two 8× B200 rentals<br>1 prefiller + 3 decoders</td>
+              <td>Same design, split across two machines so decode can grow past one node.</td>
+              <td>Runbook is done. The provider had no private network between rentals, so the sweep never ran.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="section-label" id="solution">What worked</p>
+      <h2>Shared L1 via LMCache MP + ZMQ</h2>
+      <p>
+        One <strong>central</strong> LMCache Multiprocess server (ZMQ port 6000) as a shared L1 KV layer in host RAM.
+        Every prefiller and decoder uses <code>LMCacheMPConnector</code> against the <em>same</em> store.
+        Prefiller writes prefix KV once; later requests with the same prefix skip full prefill.
+      </p>
+      <figure class="arch-figure">
+        <svg class="arch-svg" viewBox="0 0 720 350" role="img"
+             aria-label="Disaggregated proxy routes to prefiller and decoders; all share one LMCache MP KV store over ZMQ.">
+          <defs>
+            <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" class="arch-arrowhead"/>
+            </marker>
+          </defs>
+          <rect class="arch-box" x="254" y="18" width="256" height="52" rx="8"/>
+          <text class="arch-label" x="382" y="42">Disagg proxy :9000</text>
+          <rect class="arch-box arch-box-prefill" x="24" y="122" width="270" height="74" rx="8"/>
+          <text class="arch-label" x="159" y="150">Prefiller :8100</text>
+          <rect class="arch-box arch-box-decode" x="426" y="122" width="270" height="74" rx="8"/>
+          <text class="arch-label" x="561" y="150">Decoders :8200+</text>
+          <rect class="arch-box arch-box-shared" x="24" y="262" width="672" height="74" rx="8"/>
+          <text class="arch-label arch-label-shared" x="360" y="291">LMCache MP · shared L1 KV · ZMQ :6000</text>
+          <line class="arch-arrow arch-arrow-write" x1="159" y1="202" x2="159" y2="256" marker-end="url(#arrowhead)"/>
+          <line class="arch-arrow arch-arrow-read" x1="561" y1="256" x2="561" y2="202" marker-end="url(#arrowhead)"/>
+        </svg>
+      </figure>
+
+      <p class="section-label" id="results">Results</p>
+      <h2>Asked vs delivered</h2>
+      <p>
+        Best V2-Lite stack: 1 prefiller + 2 decoders on 3× A100, shared LMCache store.
+        Production wanted ~2s time-to-first-token and ~60 req/s. Here is what that stack actually did.
+      </p>
+      <div class="stat-grid">
+        <div class="stat">
+          <span class="stat-value">0.52s</span>
+          <span class="stat-label">TTFT P50 when asked for 10 req/s</span>
+          <span class="stat-vs">vs ~2s production ballpark</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">8.5 / 10</span>
+          <span class="stat-label">Req/s delivered vs asked</span>
+          <span class="stat-vs">Sustained at the headline point</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">~11 / 60</span>
+          <span class="stat-label">Ceiling vs peak target</span>
+          <span class="stat-vs">Saturates well below 60 QPS</span>
+        </div>
+      </div>
+      <p class="scope-note">
+        Measured on <strong>DeepSeek V2-Lite</strong> (3× A100), not a production-class model.
+        On <strong>V3.2 NVFP4</strong> (8× B200) the same architecture held sub-second TTFT only to ~2 req/s.
+        This proves a <em>shared L1 KV layer is the right shape</em> for prefix-heavy chat, not production capacity.
+      </p>
+
+      <div class="chart-grid" id="pitch-chart-wrap">
+        <div class="chart-card">
+          <h3>Could it keep up?</h3>
+          <p class="chart-caption">
+            Gold: load we requested. Blue: load the stack actually served. After 10 they split:
+            served stalls near 11.* That is this box’s ceiling, not 60.
+          </p>
+          <div class="chart-wrap chart-wrap-tall">
+            <canvas id="pitch-chart-qps"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <h3>How long until the first token?</h3>
+          <p class="chart-caption">
+            Wait time in seconds, not speed. Lower is better. Green: typical request (median).
+            Red: slow tail. Dashed lines: production (~2s / ~3.5s). At 10 requested, median is 0.52s.
+          </p>
+          <div class="chart-wrap chart-wrap-tall">
+            <canvas id="pitch-chart-ttft"></canvas>
+          </div>
+        </div>
+      </div>
+      <p class="chart-footnote">
+        * One 1P2D box (3 GPUs). ~11 req/s is that hardware ceiling, not a failed design.
+        More QPS means more replicas at about 1:2 to 1:3 prefill:decode, e.g. 3 prefiller + 6 decoder GPUs.
+      </p>
+
+      <p class="section-label" id="cost">Cost</p>
+      <h2>Total GPU spend</h2>
+      <div class="stat-grid stat-grid-single">
+        <div class="stat stat-featured">
+          <span class="stat-value">~$1,205</span>
+          <span class="stat-label">RunPod + Vast.ai (spot rentals)</span>
+        </div>
+      </div>
+
+      <p class="section-label" id="insights">Insights</p>
+      <h2>What I would do again</h2>
+      <div class="stat-grid insight-rules">
+        <div class="stat">
+          <span class="stat-value">Small first</span>
+          <span class="stat-label">V2-Lite on cheap A100 before V3.2 on B200</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">Move fast</span>
+          <span class="stat-label">Experiments per week beat perfect plans</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">Shrink it</span>
+          <span class="stat-label">One request, one role, one path, then scale up</span>
+        </div>
+      </div>
+
+      <p class="section-label" id="more">Technical depth</p>
+      <h2>Everything else is in the repo</h2>
+      <p class="text-muted">Full write-ups, sweep tables, per-phase runbooks, and the resource bibliography.</p>
+      <ul class="pitch-deep-links">
+        <li><a href="https://github.com/shubhmehta3121/inferpd/blob/main/docs/deep-dives/README.md" target="_blank" rel="noopener">Deep-dive index &#8599;</a></li>
+        <li><a href="https://github.com/shubhmehta3121/inferpd/blob/main/docs/deep-dives/BUILD.md" target="_blank" rel="noopener">Engineering phases &amp; architecture &#8599;</a></li>
+        <li><a href="https://github.com/shubhmehta3121/inferpd/blob/main/docs/deep-dives/RESULTS.md" target="_blank" rel="noopener">Full benchmark tables &#8599;</a></li>
+        <li><a href="https://github.com/shubhmehta3121/inferpd/blob/main/docs/deep-dives/COSTS.md" target="_blank" rel="noopener">Cost breakdown &#8599;</a></li>
+        <li><a href="https://github.com/shubhmehta3121/inferpd/blob/main/docs/deep-dives/INSIGHTS.md" target="_blank" rel="noopener">Extended lessons &#8599;</a></li>
+        <li><a href="https://github.com/shubhmehta3121/inferpd/blob/main/docs/deep-dives/RESOURCES.md" target="_blank" rel="noopener">Learning resources &#8599;</a></li>
+        <li><a href="https://github.com/shubhmehta3121/inferpd" target="_blank" rel="noopener">Repo (runbooks under <code>models/</code>) &#8599;</a></li>
+      </ul>
+
+      <div class="hero-actions">
+        <a href="https://github.com/shubhmehta3121/inferpd" class="btn btn-primary" target="_blank" rel="noopener">Open repo &#8599;</a>
+        <a href="https://www.linkedin.com/in/shubh-mehta-2bb173221/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-meta">
+      <strong>inferpd</strong> · Built by Shubh Mehta ·
+      <a href="https://github.com/shubhmehta3121/inferpd" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/shubh-mehta-2bb173221/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+    <p class="footer-fine">
+      * $600 of total GPU spend was reimbursed by the contracting R&amp;D company.
+      Benchmarks are single-operator measurements on rented GPUs, not vendor-certified results.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/pitch-chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+# Two-node scrape targets (Instance A + B — March 2026 rentals)
+# A = <NODE_A_IP>  |  B = <NODE_B_IP>
+# Copy to prometheus.yml or set PROMETHEUS_CONFIG_FILE to this path.
+
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+  scrape_timeout: 4s
+
+scrape_configs:
+
+  - job_name: "vllm-prefiller"
+    static_configs:
+      - targets: ["<NODE_A_IP>:8100"]
+        labels:
+          instance: "prefiller_instance_a"
+          role: "kv_producer"
+    metrics_path: /metrics
+
+  - job_name: "vllm-decoder"
+    static_configs:
+      - targets:
+          - "<NODE_A_IP>:8200"
+          - "<NODE_B_IP>:8201"
+          - "<NODE_B_IP>:8202"
+        labels:
+          role: "kv_consumer"
+    metrics_path: /metrics
+
+  - job_name: "proxy"
+    static_configs:
+      - targets: ["<NODE_B_IP>:9000"]
+        labels:
+          instance: "proxy_instance_b"
+    metrics_path: /metrics
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]

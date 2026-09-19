@@ -1,0 +1,43 @@
+# LMCache config for the DECODER node (Node B) in disaggregated prefill.
+#
+# Flow on this node:
+#  1. Request arrives with kv_transfer_params from the proxy (after prefill).
+#  2. Decoder connects to the prefiller via NIXL and pulls the KV blocks.
+#  3. Decoder starts autoregressive generation from the transferred state.
+#  4. Tokens are streamed back to the client through the proxy.
+#
+# The decoder does NOT need a local cache — it always receives fresh KV
+# blocks from the prefiller for each request.
+
+chunk_size: 256
+
+# No local cache on the decoder — it receives KV from the prefiller.
+local_cpu: false
+max_local_cpu_size: 0
+max_local_disk_size: 0
+
+# --------------------------------------------------------------------------
+# P/D disaggregation via NIXL (receiver role)
+# --------------------------------------------------------------------------
+enable_pd: true
+transfer_channel: "nixl"
+pd_role: "receiver"
+
+# ← UPDATE: IP address of the prefiller node (Node A).
+# Run `hostname -I | awk '{print $1}'` on Node A to get this.
+pd_peer_host: "REPLACE_WITH_PREFILLER_NODE_IP"
+
+# NIXL connection ports on the prefiller side.
+# These must match what the prefiller is actually listening on.
+# Defaults from LMCache docs:
+pd_peer_init_port: 7300
+pd_peer_alloc_port: 7400
+
+# GPU staging buffer for NIXL receive.
+# 2 GB to accommodate large KV payloads from long-context requests.
+pd_buffer_size: 2147483648   # 2 GB
+pd_buffer_device: "cuda"
+
+# UCX is the transport backend used by NIXL.
+# This handles both intra-node (cuda_ipc) and inter-node (TCP/RDMA) transfers.
+pd_backends: [UCX]

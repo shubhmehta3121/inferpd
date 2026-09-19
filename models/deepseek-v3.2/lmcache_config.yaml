@@ -1,0 +1,45 @@
+# LMCache configuration for single-node 8xH200 DeepSeek-V3 deployment.
+#
+# Three-layer KV cache stack:
+#   1. GPU VRAM  (vLLM APC)     — hot, in-GPU prefix cache (fastest, limited size)
+#   2. CPU RAM   (local_cpu)    — warm spill; H200 nodes have 512 GB–2 TB RAM
+#   3. NVMe disk (local_disk)   — cold spill (only if you have fast NVMe)
+#
+# CacheGen compression is applied when blocks move to CPU/disk.
+
+# ------------------------------------------------------------------
+# Core
+# ------------------------------------------------------------------
+chunk_size: 256
+
+# ------------------------------------------------------------------
+# Local CPU cache
+# ------------------------------------------------------------------
+local_cpu: true
+# Size in GB. Formula: (server RAM GB) - 200 GB overhead.
+# Examples: 512 GB RAM → 312  |  1600 GB RAM → 1400  |  1 TB RAM → 824
+# Check actual RAM on the server: free -g | awk '/^Mem:/ {print $2}'
+max_local_cpu_size: 1400   # ← UPDATE to (your RAM - 200)
+
+# ------------------------------------------------------------------
+# Local disk cache (only enable if you have fast NVMe)
+# ------------------------------------------------------------------
+max_local_disk_size: 0
+# local_disk_path: "/mnt/nvme/lmcache"   # uncomment + set if using disk
+
+# ------------------------------------------------------------------
+# CacheGen compression
+# ------------------------------------------------------------------
+# Compress KV blocks before writing to CPU/disk (~3-5× smaller,
+# negligible decompression overhead).
+remote_serde: "cachegen"
+
+# ------------------------------------------------------------------
+# LMCache controller (needed for compress/decompress API)
+# ------------------------------------------------------------------
+enable_controller: true
+lmcache_instance_id: "deepseek_v3_instance"
+controller_pull_url: "localhost:9001"
+lmcache_worker_ports: 8001
+p2p_host: "localhost"
+p2p_init_ports: 8200

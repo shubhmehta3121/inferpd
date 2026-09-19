@@ -1,0 +1,18 @@
+*.env
+.env
+/deploy/.env
+
+# Per-model outputs (logs, benchmark results)
+models/*/outputs/
+
+repos/
+
+benchmark_results/
+
+logs/
+
+.env.a
+.env.b
+# Vendored upstream clones — never commit these (they carry their own .git and
+# would be recorded as broken gitlinks).
+models/archive/deepseek-v2-lite_lmcache/LMCache/

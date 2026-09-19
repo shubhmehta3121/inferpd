@@ -1,0 +1,78 @@
+# Monitoring stack: Prometheus + Grafana + node-exporter + dcgm-exporter
+#
+# Usage on the server:
+#   cd /workspace/deepseek-v3.2
+#   docker compose up -d
+#
+# Access:
+#   Grafana    http://<server-ip>:3000   (admin / admin — change after first login)
+#   Prometheus http://<server-ip>:9090
+#
+# After Grafana loads:
+#   1. Add Prometheus data source: http://localhost:9090
+#   2. Import dashboard JSON from llm-labs-deepseekv3.2/deepseek grafana.json
+#      (set $model_name variable to deepseek-ai/DeepSeek-V3.2)
+
+services:
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    container_name: prometheus
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=15d
+      - --web.enable-lifecycle
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  grafana:
+    image: grafana/grafana:11.5.2
+    container_name: grafana
+    network_mode: host
+    restart: unless-stopped
+    user: "472"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+
+  node-exporter:
+    image: quay.io/prometheus/node-exporter:v1.9.1
+    container_name: node-exporter
+    network_mode: host
+    pid: host
+    restart: unless-stopped
+    volumes:
+      - /:/host:ro,rslave
+    command:
+      - --path.rootfs=/host
+
+  dcgm-exporter:
+    # If pull fails from nvcr.io, try: nvidia/dcgm-exporter:4.5.2-4.8.1-distroless (Docker Hub)
+    image: nvcr.io/nvidia/k8s/dcgm-exporter:4.5.2-4.8.1-distroless
+    container_name: dcgm-exporter
+    network_mode: host
+    restart: unless-stopped
+    # Requires NVIDIA Container Toolkit:
+    #   sudo apt-get install -y nvidia-container-toolkit
+    #   sudo systemctl restart docker
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      DCGM_EXPORTER_LISTEN: 0.0.0.0
+      DCGM_EXPORTER_PORT: 9400
+
+volumes:
+  prometheus_data:
+  grafana_data:

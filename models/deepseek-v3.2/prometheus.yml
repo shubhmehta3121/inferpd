@@ -1,0 +1,25 @@
+# Prometheus scrape config for the deploy monitoring stack.
+# Compatible with Prometheus 2.x (e.g. v2.55.1). No changes needed when upgrading Prometheus image.
+
+global:
+  scrape_interval: 15s      # How often to scrape each target
+  evaluation_interval: 15s  # How often to evaluate recording/alerting rules (if any)
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['127.0.0.1:9090']   # This Prometheus instance (self-metrics)
+
+  - job_name: vllm
+    metrics_path: /metrics
+    static_configs:
+      # vLLM serves /metrics on --metrics-port (8100 per 00-env.sh). host.docker.internal = host when using network_mode: host
+      - targets: ['host.docker.internal:8100']
+
+  - job_name: node
+    static_configs:
+      - targets: ['127.0.0.1:9100']   # node-exporter: CPU, memory, disk, network
+
+  - job_name: dcgm
+    static_configs:
+      - targets: ['127.0.0.1:9400']   # dcgm-exporter: GPU utilisation, memory, power, temp, NVLink
