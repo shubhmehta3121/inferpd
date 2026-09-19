@@ -1,0 +1,902 @@
+[
+  {
+    "prompt": "Explain social influence in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 85,
+    "ttft": 3.727473341859877,
+    "e2e": 8.021438475698233,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of transformers in NLP in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 259,
+    "ttft": 0.24680988490581512,
+    "e2e": 13.812628025189042,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in financial forecasting? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 345,
+    "ttft": 0.4197148559615016,
+    "e2e": 17.377635621465743,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of memory retention and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 44,
+    "ttft": 0.41013472620397806,
+    "e2e": 2.453979531303048,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain urbanization trends in Europe in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 420,
+    "ttft": 0.4206037363037467,
+    "e2e": 20.604034177027643,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about climate policies in Scandinavia and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 479,
+    "ttft": 0.4235441396012902,
+    "e2e": 22.544331179000437,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of emotional intelligence and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 369,
+    "ttft": 0.419964000582695,
+    "e2e": 18.383198445662856,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of behavioral economics in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 138,
+    "ttft": 0.41553089767694473,
+    "e2e": 7.611601863056421,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in financial forecasting? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 363,
+    "ttft": 0.42332007363438606,
+    "e2e": 18.127777355723083,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement historical trade routes with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 416,
+    "ttft": 0.4024105193093419,
+    "e2e": 20.444818072021008,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of Japanese work culture in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 157,
+    "ttft": 0.4144159937277436,
+    "e2e": 8.634478811174631,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cryptography basics? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 63,
+    "ttft": 0.40555011201649904,
+    "e2e": 3.445281369611621,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain literary symbolism in classic novels in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 476,
+    "ttft": 0.4072126504033804,
+    "e2e": 22.81116396933794,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement market competition dynamics with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 288,
+    "ttft": 0.40716105699539185,
+    "e2e": 15.153598168864846,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in human nutrition? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 495,
+    "ttft": 0.409960993565619,
+    "e2e": 23.045807662419975,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast transformers in NLP with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 123,
+    "ttft": 0.40065838396549225,
+    "e2e": 6.5671792244538665,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of investment strategies in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 217,
+    "ttft": 0.4068196825683117,
+    "e2e": 11.824282390996814,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of cloud infrastructure design and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 371,
+    "ttft": 0.39667831640690565,
+    "e2e": 18.669895201921463,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of inflation trends? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 220,
+    "ttft": 0.4071279112249613,
+    "e2e": 11.87475769314915,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cloud infrastructure design? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 74,
+    "ttft": 0.39784048683941364,
+    "e2e": 4.027733935043216,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about behavioral economics and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 268,
+    "ttft": 0.39827920496463776,
+    "e2e": 14.064243070781231,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of memory retention and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 559,
+    "ttft": 0.4063799390569329,
+    "e2e": 25.152253991924226,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe cybersecurity threats in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 538,
+    "ttft": 0.4028951497748494,
+    "e2e": 24.63374397624284,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast machine learning algorithms with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 116,
+    "ttft": 0.41256645414978266,
+    "e2e": 6.397308226674795,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of gut microbiome in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 197,
+    "ttft": 0.4010627353563905,
+    "e2e": 10.552248538471758,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement social influence with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 364,
+    "ttft": 0.39320735819637775,
+    "e2e": 18.5423925453797,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of behavioral economics and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 258,
+    "ttft": 0.4057909147813916,
+    "e2e": 13.743044356815517,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement reinforcement learning with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 288,
+    "ttft": 0.40128884371370077,
+    "e2e": 15.23505197186023,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain sustainable city planning in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 281,
+    "ttft": 0.39672198984771967,
+    "e2e": 14.965759973973036,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe US electoral system in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 370,
+    "ttft": 0.3934370530769229,
+    "e2e": 18.74419815838337,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cryptography basics? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 63,
+    "ttft": 0.4046652326360345,
+    "e2e": 3.4346426418051124,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about emotional intelligence and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 224,
+    "ttft": 0.40599892009049654,
+    "e2e": 11.969514417462051,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain financial forecasting in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 162,
+    "ttft": 0.40593849681317806,
+    "e2e": 8.837172275409102,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of behavioral economics? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 294,
+    "ttft": 0.4030374400317669,
+    "e2e": 15.231585049070418,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in memory retention? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 393,
+    "ttft": 0.4043566109612584,
+    "e2e": 19.431189506314695,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of transformers in NLP and where it is most effective.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 375,
+    "ttft": 0.4002594267949462,
+    "e2e": 18.902387066744268,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about board game strategies.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 212,
+    "ttft": 0.3915133886039257,
+    "e2e": 11.552441355772316,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe investment strategies in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 506,
+    "ttft": 0.40092080272734165,
+    "e2e": 23.552551425993443,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe cybersecurity threats in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 365,
+    "ttft": 0.3182264333590865,
+    "e2e": 18.32659958396107,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in sports analytics? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 538,
+    "ttft": 0.27514077071100473,
+    "e2e": 24.282271442003548,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of literary symbolism in classic novels? Include a balanced view.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 327,
+    "ttft": 0.24936039373278618,
+    "e2e": 16.46736042201519,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain travel planning for adventure tourism in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 490,
+    "ttft": 0.1531753558665514,
+    "e2e": 23.070220105350018,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about historical trade routes and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 141,
+    "ttft": 0.11812066473066807,
+    "e2e": 7.361556341871619,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain investment strategies in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 305,
+    "ttft": 0.11319607496261597,
+    "e2e": 15.647169722244143,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement cryptocurrency markets with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 369,
+    "ttft": 0.141887241974473,
+    "e2e": 18.760618621483445,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of gut microbiome and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 121,
+    "ttft": 0.12060591951012611,
+    "e2e": 6.261859502643347,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of transformers in NLP and where it is most effective.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 458,
+    "ttft": 0.1606441978365183,
+    "e2e": 21.89944692607969,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain literary symbolism in classic novels in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 356,
+    "ttft": 0.13927679881453514,
+    "e2e": 17.635896927677095,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement financial forecasting with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 302,
+    "ttft": 0.1327071711421013,
+    "e2e": 15.534627988003194,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain parallel computing optimization in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 114,
+    "ttft": 0.1311006946489215,
+    "e2e": 6.244797954335809,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of financial forecasting in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 140,
+    "ttft": 0.1327476454898715,
+    "e2e": 7.65767228603363,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of parallel computing optimization in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 181,
+    "ttft": 0.1299230484291911,
+    "e2e": 9.858013106510043,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of transformers in NLP and where it is most effective.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 469,
+    "ttft": 0.12065313570201397,
+    "e2e": 21.94026578683406,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about risk management and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 286,
+    "ttft": 0.16010984685271978,
+    "e2e": 14.598673230037093,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast cryptography basics with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 134,
+    "ttft": 0.14955629222095013,
+    "e2e": 7.400173855014145,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe risk management in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 286,
+    "ttft": 0.1482288921251893,
+    "e2e": 14.56183158326894,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain culinary techniques in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 300,
+    "ttft": 0.13409970235079527,
+    "e2e": 15.549714291468263,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of travel planning for adventure tourism and where it is most effective.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 291,
+    "ttft": 0.15239863749593496,
+    "e2e": 14.715613502077758,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about inflation trends.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 460,
+    "ttft": 0.15073668211698532,
+    "e2e": 21.422877294011414,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of macroeconomic policy? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 436,
+    "ttft": 0.14406306762248278,
+    "e2e": 20.315763153135777,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in Japanese work culture? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 99,
+    "ttft": 0.1373358117416501,
+    "e2e": 5.559300175867975,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement machine learning algorithms with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 377,
+    "ttft": 0.15377368219196796,
+    "e2e": 18.589982855133712,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast evolutionary adaptations with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 151,
+    "ttft": 0.13480469025671482,
+    "e2e": 7.997686164453626,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast auction strategies with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 101,
+    "ttft": 0.14088586252182722,
+    "e2e": 5.703851749189198,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe financial forecasting in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 534,
+    "ttft": 0.15303353406488895,
+    "e2e": 23.0702234050259,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of fusion cuisine and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 49,
+    "ttft": 0.15926607511937618,
+    "e2e": 2.7937659732997417,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about behavioral economics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 276,
+    "ttft": 0.15601745806634426,
+    "e2e": 14.253423491492867,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of social influence in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 75,
+    "ttft": 0.15264558419585228,
+    "e2e": 4.321690311655402,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of board game strategies and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 351,
+    "ttft": 0.1692138984799385,
+    "e2e": 17.130620021373034,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of music composition techniques and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 243,
+    "ttft": 0.18486979883164167,
+    "e2e": 12.686413250863552,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of historical trade routes and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 494,
+    "ttft": 0.18023849371820688,
+    "e2e": 21.86119371559471,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about Nash equilibrium and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 384,
+    "ttft": 0.1362568149343133,
+    "e2e": 18.327419981360435,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of historical trade routes and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 296,
+    "ttft": 0.1602689092978835,
+    "e2e": 14.76364077348262,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about fermentation process.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 300,
+    "ttft": 0.14640249777585268,
+    "e2e": 14.699644951149821,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of Japanese work culture? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 386,
+    "ttft": 0.15585133526474237,
+    "e2e": 18.43057163991034,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of music composition techniques in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 152,
+    "ttft": 0.1811527470126748,
+    "e2e": 8.44436994753778,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about music composition techniques and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 119,
+    "ttft": 0.19648912828415632,
+    "e2e": 6.661321120336652,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement transformers in NLP with clear instructions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 532,
+    "ttft": 0.19858815893530846,
+    "e2e": 22.424640437588096,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain cloud infrastructure design in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 258,
+    "ttft": 0.16509637236595154,
+    "e2e": 13.323665630072355,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about reinforcement learning and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 305,
+    "ttft": 0.1538496781140566,
+    "e2e": 14.97031445428729,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of investment strategies and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 381,
+    "ttft": 0.153492983430624,
+    "e2e": 17.79258689470589,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about cognitive biases.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 339,
+    "ttft": 0.17237956076860428,
+    "e2e": 16.445171960629523,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of fusion cuisine? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 138,
+    "ttft": 0.1949753649532795,
+    "e2e": 7.744348869659007,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of fusion cuisine and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 119,
+    "ttft": 0.14071156922727823,
+    "e2e": 6.711115969344974,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about board game strategies and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 466,
+    "ttft": 0.16356190759688616,
+    "e2e": 20.322911644354463,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of board game strategies? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 366,
+    "ttft": 0.15735313668847084,
+    "e2e": 17.194029106758535,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement historical trade routes with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 460,
+    "ttft": 0.17568978108465672,
+    "e2e": 20.208958248607814,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in inflation trends? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 287,
+    "ttft": 0.1888074167072773,
+    "e2e": 14.095781723037362,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe investment strategies in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 339,
+    "ttft": 0.14775052201002836,
+    "e2e": 16.169563580304384,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement fermentation process with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 463,
+    "ttft": 0.16818084847182035,
+    "e2e": 19.73257927596569,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of historical trade routes in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 56,
+    "ttft": 0.15489593893289566,
+    "e2e": 3.209673193283379,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe culinary techniques in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 449,
+    "ttft": 0.19893797766417265,
+    "e2e": 19.787612767890096,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of social influence in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 76,
+    "ttft": 0.20073399599641562,
+    "e2e": 4.3637301456183195,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe AI ethics in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 480,
+    "ttft": 0.17299889866262674,
+    "e2e": 20.340323535725474,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in motivation theory? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 94,
+    "ttft": 0.1711206715553999,
+    "e2e": 5.277255483902991,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in US electoral system? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 311,
+    "ttft": 0.1901080571115017,
+    "e2e": 15.083898569457233,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about behavioral economics and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 548,
+    "ttft": 0.21130562387406826,
+    "e2e": 21.499041880480945,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about group dynamics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 241,
+    "ttft": 0.16694492008537054,
+    "e2e": 12.009200109168887,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement macroeconomic policy with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 338,
+    "ttft": 0.15633177012205124,
+    "e2e": 15.647611553780735,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of sports analytics and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 48,
+    "ttft": 0.18353075068444014,
+    "e2e": 2.8002537563443184,
+    "success": true,
+    "error": ""
+  }
+]

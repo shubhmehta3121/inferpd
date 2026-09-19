@@ -1,0 +1,5402 @@
+[
+  {
+    "prompt": "Precisely define macroeconomic policy and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 486,
+    "ttft": 4.702243780717254,
+    "e2e": 54.46948202140629,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of privacy in online communications in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 125,
+    "ttft": 0.7325711082667112,
+    "e2e": 16.49815979693085,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about AI ethics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 553,
+    "ttft": 0.9011860070750117,
+    "e2e": 54.070862093009055,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of privacy concerns in online sexuality? Include a balanced view.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 155,
+    "ttft": 0.728402336128056,
+    "e2e": 22.943253743462265,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how evolution of romance in the internet era has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 460,
+    "ttft": 1.0664947582408786,
+    "e2e": 50.34099005162716,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of Japanese work culture and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 189,
+    "ttft": 0.8937304560095072,
+    "e2e": 28.161113856360316,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about motivation theory and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 447,
+    "ttft": 0.8865669509395957,
+    "e2e": 48.64291546866298,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of reinforcement learning and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 86,
+    "ttft": 0.8940714914351702,
+    "e2e": 11.147974296472967,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about travel planning for adventure tourism.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 357,
+    "ttft": 0.8850409341976047,
+    "e2e": 42.68009049911052,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining motivation theory to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 448,
+    "ttft": 0.8869391959160566,
+    "e2e": 49.08403727412224,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving machine learning algorithms.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 499,
+    "ttft": 0.887271162122488,
+    "e2e": 51.58468950819224,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in evolution of romance in the internet era.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 302,
+    "ttft": 0.8901801966130733,
+    "e2e": 38.86699148733169,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about AI ethics.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 287,
+    "ttft": 0.8918955698609352,
+    "e2e": 36.94835507962853,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to privacy in online communications might have.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 204,
+    "ttft": 0.8836582824587822,
+    "e2e": 29.760138189420104,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of financial forecasting in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 210,
+    "ttft": 0.8851196058094501,
+    "e2e": 30.324045597575605,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in Japanese work culture.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 319,
+    "ttft": 0.8840141287073493,
+    "e2e": 39.95143013168126,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain privacy in online communications in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 479,
+    "ttft": 0.8868842152878642,
+    "e2e": 50.82996801100671,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of reinforcement learning? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 402,
+    "ttft": 0.882590021006763,
+    "e2e": 46.14984310977161,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach human nutrition to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 406,
+    "ttft": 0.8839676948264241,
+    "e2e": 46.17958915326744,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in digital intimacy? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 125,
+    "ttft": 0.8791017094627023,
+    "e2e": 16.66243226453662,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding sex education in the digital age.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 378,
+    "ttft": 0.8816324397921562,
+    "e2e": 44.34509489312768,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to gut microbiome.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 409,
+    "ttft": 0.8803064078092575,
+    "e2e": 45.421384401619434,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining AI in relationship counseling to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 256,
+    "ttft": 0.875791534781456,
+    "e2e": 34.400175540708005,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about sustainable city planning and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 554,
+    "ttft": 0.8822515709325671,
+    "e2e": 53.67474334966391,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving inflation trends.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 281,
+    "ttft": 0.8782154629006982,
+    "e2e": 36.31112964544445,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding sexting and its psychological impact.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 504,
+    "ttft": 0.8752075228840113,
+    "e2e": 52.214795901440084,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving Nash equilibrium.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 411,
+    "ttft": 0.8755105938762426,
+    "e2e": 45.83507086429745,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define culinary techniques and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 363,
+    "ttft": 0.8712067604064941,
+    "e2e": 43.850226108916104,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in cryptocurrency in online dating.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 435,
+    "ttft": 0.87204250972718,
+    "e2e": 48.072648195549846,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in sexual communication.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 290,
+    "ttft": 0.8736587893217802,
+    "e2e": 37.340631877072155,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about parallel computing optimization and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 354,
+    "ttft": 0.8725171303376555,
+    "e2e": 42.34655127953738,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach Nash equilibrium to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 381,
+    "ttft": 0.8739721262827516,
+    "e2e": 44.60807516146451,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of parallel computing optimization and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 76,
+    "ttft": 0.8740701302886009,
+    "e2e": 9.94837652426213,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in fermentation process? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 307,
+    "ttft": 0.8651799149811268,
+    "e2e": 38.42923403996974,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement sustainable city planning with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 278,
+    "ttft": 0.8659260161221027,
+    "e2e": 35.850128970108926,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define culinary techniques and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 402,
+    "ttft": 0.8673090031370521,
+    "e2e": 46.627581547014415,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe fusion cuisine in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 472,
+    "ttft": 0.8721564700827003,
+    "e2e": 50.705201209522784,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to transformers in NLP.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 217,
+    "ttft": 0.8652574103325605,
+    "e2e": 30.582744795829058,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how automated content moderation for explicit materials has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 281,
+    "ttft": 0.8674590494483709,
+    "e2e": 36.47932007070631,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in consent in digital relationships.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 254,
+    "ttft": 0.863008582033217,
+    "e2e": 35.04797027632594,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining cryptocurrency markets to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 314,
+    "ttft": 0.8683445006608963,
+    "e2e": 39.93038336094469,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving cybersecurity threats.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 304,
+    "ttft": 0.8612053794786334,
+    "e2e": 38.17061333172023,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe cultural perspectives on sexting in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 403,
+    "ttft": 0.863642418757081,
+    "e2e": 46.14703310560435,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding automated content moderation for explicit materials.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 103,
+    "ttft": 0.861172953620553,
+    "e2e": 12.910269202664495,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define emoji use in digital romance and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 460,
+    "ttft": 0.8651205776259303,
+    "e2e": 49.97061196435243,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about privacy vs. openness in digital interaction.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 288,
+    "ttft": 0.863690722733736,
+    "e2e": 37.277315895073116,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach social influence to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 357,
+    "ttft": 0.855117523111403,
+    "e2e": 42.72818980552256,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about group dynamics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 86,
+    "ttft": 0.8551263799890876,
+    "e2e": 11.11538608931005,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain impact of online relationships on mental health in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 102,
+    "ttft": 0.8597403122112155,
+    "e2e": 12.831099196337163,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement sexual communication with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 435,
+    "ttft": 0.857149301096797,
+    "e2e": 48.50306143891066,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of fictional scenarios involving digital relationships and where it is most effective.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 354,
+    "ttft": 0.8528138604015112,
+    "e2e": 42.251710034906864,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in strategic disclosure of personal information.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 397,
+    "ttft": 1.0364098129794002,
+    "e2e": 45.94876401685178,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of board game strategies and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 372,
+    "ttft": 0.8543326323851943,
+    "e2e": 43.672394066117704,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding sustainable city planning.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 338,
+    "ttft": 1.0068665696308017,
+    "e2e": 41.36304600536823,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of AI in relationship counseling? Include a balanced view.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 162,
+    "ttft": 0.853853577747941,
+    "e2e": 23.636871893890202,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of cybersecurity threats? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 510,
+    "ttft": 1.0349750174209476,
+    "e2e": 51.85960999876261,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on emoji use in digital romance.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 391,
+    "ttft": 1.0172345684841275,
+    "e2e": 46.21168742701411,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving AI in relationship counseling.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 432,
+    "ttft": 1.0236565535888076,
+    "e2e": 47.65961186401546,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on Japanese work culture.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 313,
+    "ttft": 1.0247501526027918,
+    "e2e": 39.249161197803915,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in impact of online relationships on mental health.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 124,
+    "ttft": 1.013856615871191,
+    "e2e": 17.25373192783445,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to AI ethics.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 292,
+    "ttft": 1.009961455129087,
+    "e2e": 37.53232823498547,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of sports analytics? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 327,
+    "ttft": 1.014946298673749,
+    "e2e": 40.39737473707646,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between digital intimacy and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 368,
+    "ttft": 1.0013983249664307,
+    "e2e": 43.73252941202372,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach memory retention to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 457,
+    "ttft": 1.005307836458087,
+    "e2e": 49.48529305122793,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in risk management? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 537,
+    "ttft": 1.0135631384328008,
+    "e2e": 53.525338247418404,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define financial forecasting and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 449,
+    "ttft": 1.0176660474389791,
+    "e2e": 48.55209877807647,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how Japanese work culture has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 300,
+    "ttft": 1.0215868735685945,
+    "e2e": 38.23457700572908,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining sexual communication to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 457,
+    "ttft": 1.0184929091483355,
+    "e2e": 49.43852025363594,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding fermentation process.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 272,
+    "ttft": 1.0029865317046642,
+    "e2e": 34.72321906872094,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining cultural perspectives on sexting to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 384,
+    "ttft": 1.026150249876082,
+    "e2e": 45.123609540984035,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves secure messaging app protocols in an everyday situation.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 518,
+    "ttft": 0.9952187668532133,
+    "e2e": 53.078142614103854,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving decision-making.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 322,
+    "ttft": 1.0115600042045116,
+    "e2e": 39.66677451506257,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how macroeconomic policy has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 494,
+    "ttft": 1.0213029058650136,
+    "e2e": 51.11048904899508,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how cryptography basics has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 441,
+    "ttft": 1.0219526886940002,
+    "e2e": 48.60863760393113,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach automated content moderation for explicit materials to children or beginners.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 157,
+    "ttft": 1.0179371489211917,
+    "e2e": 23.45139482524246,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach human nutrition to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 451,
+    "ttft": 0.9984796345233917,
+    "e2e": 48.97018903121352,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in Nash equilibrium? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 462,
+    "ttft": 1.0018634013831615,
+    "e2e": 49.029211855493486,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about financial forecasting.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 318,
+    "ttft": 1.005362406373024,
+    "e2e": 39.40056082699448,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to cognitive biases might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 206,
+    "ttft": 1.0201326496899128,
+    "e2e": 29.705953298136592,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on AI in relationship counseling.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 368,
+    "ttft": 1.018754307180643,
+    "e2e": 44.015943308360875,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves impact of digital technology on financial services in an everyday situation.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 504,
+    "ttft": 0.9930062601342797,
+    "e2e": 51.579244072549045,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves privacy concerns in online sexuality in an everyday situation.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 263,
+    "ttft": 0.9900511568412185,
+    "e2e": 35.16849573235959,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define auction strategies and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 519,
+    "ttft": 1.0009661484509706,
+    "e2e": 53.58489196840674,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define travel planning for adventure tourism and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 421,
+    "ttft": 0.9953505182638764,
+    "e2e": 47.24021556042135,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining machine learning algorithms to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 366,
+    "ttft": 1.0017156703397632,
+    "e2e": 43.594905288890004,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of fusion cuisine? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 135,
+    "ttft": 0.9866828517988324,
+    "e2e": 19.551064441911876,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach financial forecasting to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 486,
+    "ttft": 0.9953478910028934,
+    "e2e": 51.36442575510591,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving literary symbolism in classic novels.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 408,
+    "ttft": 0.9948293389752507,
+    "e2e": 46.38607369270176,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of privacy vs. openness in digital interaction in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 28,
+    "output_tokens": 165,
+    "ttft": 0.9864669907838106,
+    "e2e": 25.171362563036382,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between emotional intelligence and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 328,
+    "ttft": 1.0003336621448398,
+    "e2e": 39.31766301393509,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in culinary techniques? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 48,
+    "ttft": 1.0025332318618894,
+    "e2e": 6.624118494801223,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast cloud infrastructure design with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 279,
+    "ttft": 1.011181372217834,
+    "e2e": 36.19265023712069,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about cloud infrastructure design and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 185,
+    "ttft": 0.9796955920755863,
+    "e2e": 28.09123309701681,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in sexting and its psychological impact.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 404,
+    "ttft": 1.0042279614135623,
+    "e2e": 46.44917897321284,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of media portrayal of online intimacy and why it matters.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 80,
+    "ttft": 1.0015133656561375,
+    "e2e": 10.373073070310056,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of cryptography basics and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 100,
+    "ttft": 0.985837365500629,
+    "e2e": 13.162857077084482,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach investment strategies to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 304,
+    "ttft": 1.3819861225783825,
+    "e2e": 38.5405436148867,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of legal aspects of digital sexual content? Include a balanced view.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 355,
+    "ttft": 1.414118924178183,
+    "e2e": 43.00224895682186,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving cryptocurrency markets.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 457,
+    "ttft": 1.4145986130461097,
+    "e2e": 49.244458802975714,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement literary symbolism in classic novels with clear instructions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 333,
+    "ttft": 1.3959374567493796,
+    "e2e": 40.208527320064604,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining Japanese work culture to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 447,
+    "ttft": 1.3908805381506681,
+    "e2e": 49.24283710680902,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of evolution of romance in the internet era and where it is most effective.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 482,
+    "ttft": 1.4218440977856517,
+    "e2e": 51.14404675737023,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach machine learning algorithms to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 444,
+    "ttft": 1.4196830056607723,
+    "e2e": 48.71717635169625,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in market competition dynamics.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 171,
+    "ttft": 1.4113039867952466,
+    "e2e": 27.4695283472538,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding fusion cuisine.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 223,
+    "ttft": 1.3761983960866928,
+    "e2e": 31.311874630860984,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to music composition techniques might have.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 249,
+    "ttft": 1.404258112423122,
+    "e2e": 33.86739880684763,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to inflation trends might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 191,
+    "ttft": 1.3884504791349173,
+    "e2e": 28.466329472139478,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about AI ethics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 224,
+    "ttft": 1.4075693795457482,
+    "e2e": 31.493476210162044,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of human nutrition and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 100,
+    "ttft": 1.39327123016119,
+    "e2e": 12.786915739066899,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of humor in online flirting in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 98,
+    "ttft": 1.430706993676722,
+    "e2e": 12.788274026475847,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about AI ethics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 224,
+    "ttft": 1.3951783059164882,
+    "e2e": 31.491840805858374,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of consent in digital relationships in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 170,
+    "ttft": 1.3930561039596796,
+    "e2e": 26.531654332764447,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in social influence.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 177,
+    "ttft": 1.4160526562482119,
+    "e2e": 27.14825584832579,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about sexual communication.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 155,
+    "ttft": 1.417501475661993,
+    "e2e": 22.86037528794259,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about evolutionary adaptations and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 198,
+    "ttft": 1.3994143595919013,
+    "e2e": 28.273031734861434,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of sports analytics and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 66,
+    "ttft": 1.418290700763464,
+    "e2e": 8.894428629428148,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about privacy in online communications.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 262,
+    "ttft": 1.3843586137518287,
+    "e2e": 34.95865721721202,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how media portrayal of online intimacy has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 367,
+    "ttft": 1.3756035780534148,
+    "e2e": 44.099482459016144,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of evolution of romance in the internet era and where it is most effective.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 435,
+    "ttft": 1.3720652954652905,
+    "e2e": 48.437772208824754,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of legal aspects of digital sexual content? Include a balanced view.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 304,
+    "ttft": 1.394949033856392,
+    "e2e": 38.62560239434242,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about legal aspects of digital sexual content.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 368,
+    "ttft": 1.4040513336658478,
+    "e2e": 44.54693064652383,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about cryptocurrency in online dating.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 251,
+    "ttft": 1.3976285476237535,
+    "e2e": 33.98006887733936,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in sex education in the digital age? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 101,
+    "ttft": 1.384049012325704,
+    "e2e": 12.98528372682631,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how US electoral system has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 283,
+    "ttft": 1.44125852920115,
+    "e2e": 36.98646237421781,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to Japanese work culture.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 461,
+    "ttft": 1.391638996079564,
+    "e2e": 49.520575479604304,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about cultural perspectives on sexting.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 387,
+    "ttft": 1.393910556100309,
+    "e2e": 45.56760649289936,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on memory retention.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 359,
+    "ttft": 1.377518449909985,
+    "e2e": 42.4400521684438,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how sex education in the digital age has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 314,
+    "ttft": 1.4011813383549452,
+    "e2e": 39.63752522226423,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about impact of online relationships on mental health and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 26,
+    "output_tokens": 374,
+    "ttft": 1.410924943163991,
+    "e2e": 43.627237039618194,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on human nutrition.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 294,
+    "ttft": 1.4262850191444159,
+    "e2e": 38.28242755122483,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cybersecurity threats? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 171,
+    "ttft": 1.4123460315167904,
+    "e2e": 26.52671417593956,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of cryptocurrency in online dating and where it is most effective.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 554,
+    "ttft": 1.4295440344139934,
+    "e2e": 54.19310265593231,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving historical trade routes.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 265,
+    "ttft": 1.4213823527097702,
+    "e2e": 35.05628619156778,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of Japanese work culture? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 283,
+    "ttft": 1.4404982635751367,
+    "e2e": 36.445370784029365,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe privacy in online communications in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 420,
+    "ttft": 1.4295497052371502,
+    "e2e": 47.48632562626153,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to cybersecurity threats might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 268,
+    "ttft": 1.4205790320411325,
+    "e2e": 35.78487309627235,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of climate policies in Scandinavia and why it matters.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 317,
+    "ttft": 1.4297803062945604,
+    "e2e": 39.81134314741939,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving sex education in the digital age.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 550,
+    "ttft": 1.418840678408742,
+    "e2e": 53.666910354048014,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about evolution of romance in the internet era and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 26,
+    "output_tokens": 366,
+    "ttft": 1.426199620589614,
+    "e2e": 43.06141568440944,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of digital intimacy in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 147,
+    "ttft": 1.4230021415278316,
+    "e2e": 21.954952501691878,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach cloud infrastructure design to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 523,
+    "ttft": 1.4346494069322944,
+    "e2e": 53.44619289692491,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe public health campaigns on consent in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 360,
+    "ttft": 1.4282064884901047,
+    "e2e": 43.14647122565657,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between age restrictions and online safety and another field or discipline.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 366,
+    "ttft": 1.4365437533706427,
+    "e2e": 43.69145780522376,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of impact of online relationships on mental health and where it is most effective.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 364,
+    "ttft": 1.4315108750015497,
+    "e2e": 43.42957531940192,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about cryptocurrency markets and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 373,
+    "ttft": 1.420974719338119,
+    "e2e": 44.044741842895746,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding cognitive biases.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 114,
+    "ttft": 1.425610606558621,
+    "e2e": 14.924721983261406,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding AI in relationship counseling.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 334,
+    "ttft": 1.4332871697843075,
+    "e2e": 40.7125151893124,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to prisoner's dilemma might have.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 465,
+    "ttft": 1.4352862434461713,
+    "e2e": 50.35725791845471,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about emoji use in digital romance.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 236,
+    "ttft": 1.4103483650833368,
+    "e2e": 34.2045698100701,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how media portrayal of online intimacy has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 388,
+    "ttft": 1.423113246448338,
+    "e2e": 45.55860822368413,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of cryptocurrency in online dating? Include a balanced view.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 325,
+    "ttft": 1.4105219040066004,
+    "e2e": 40.58052265178412,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast reinforcement learning with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 319,
+    "ttft": 1.4268722292035818,
+    "e2e": 39.947725869715214,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about evolution of romance in the internet era and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 26,
+    "output_tokens": 436,
+    "ttft": 1.4329827018082142,
+    "e2e": 47.73740840982646,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about strategic disclosure of personal information and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 274,
+    "ttft": 1.4261176148429513,
+    "e2e": 35.8921855147928,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about memory retention and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 347,
+    "ttft": 1.4096818482503295,
+    "e2e": 41.778380517847836,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in age restrictions and online safety.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 310,
+    "ttft": 1.4216702915728092,
+    "e2e": 39.11507091950625,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves literary symbolism in classic novels in an everyday situation.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 268,
+    "ttft": 1.4233918581157923,
+    "e2e": 35.34299258235842,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe social influence in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 318,
+    "ttft": 1.4300412414595485,
+    "e2e": 40.050204914063215,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves sexting and its psychological impact in an everyday situation.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 127,
+    "ttft": 1.4216473819687963,
+    "e2e": 18.028612446971238,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe sexual communication in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 383,
+    "ttft": 1.4266579756513238,
+    "e2e": 44.598034594208,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining sexual communication to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 351,
+    "ttft": 1.4259860580787063,
+    "e2e": 42.737375006079674,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how cloud infrastructure design has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 560,
+    "ttft": 1.4105557082220912,
+    "e2e": 54.05580137949437,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding inflation trends.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 418,
+    "ttft": 1.4217532947659492,
+    "e2e": 47.14435847196728,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in cybersecurity threats.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 257,
+    "ttft": 1.4114387324079871,
+    "e2e": 34.8578759226948,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in behavioral economics.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 346,
+    "ttft": 1.408595078624785,
+    "e2e": 41.791020886041224,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining sexting and its psychological impact to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 382,
+    "ttft": 1.4029356548562646,
+    "e2e": 45.109128505922854,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about fictional scenarios involving digital relationships.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 222,
+    "ttft": 1.4151279907673597,
+    "e2e": 31.14452799409628,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves strategic disclosure of personal information in an everyday situation.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 270,
+    "ttft": 1.416398930363357,
+    "e2e": 35.88440812565386,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement transformers in NLP with clear instructions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 466,
+    "ttft": 1.4222346525639296,
+    "e2e": 50.180510927923024,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how strategic disclosure of personal information has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 519,
+    "ttft": 1.4022752735763788,
+    "e2e": 52.86163811665028,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about AI in relationship counseling.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 309,
+    "ttft": 1.4196678241714835,
+    "e2e": 39.28170411475003,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding investment strategies.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 108,
+    "ttft": 1.4190758531913161,
+    "e2e": 14.202416569925845,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how auction strategies has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 489,
+    "ttft": 1.4027134655043483,
+    "e2e": 51.6944016199559,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to strategic disclosure of personal information might have.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 209,
+    "ttft": 1.4116623094305396,
+    "e2e": 30.686403672210872,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach consent in digital relationships to children or beginners.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 432,
+    "ttft": 1.421364982612431,
+    "e2e": 48.43448420241475,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of sustainable city planning in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 190,
+    "ttft": 1.4158012857660651,
+    "e2e": 28.34257683251053,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining fictional scenarios involving digital relationships to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 546,
+    "ttft": 1.4053279692307115,
+    "e2e": 54.11148792784661,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in consent in digital relationships? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 107,
+    "ttft": 1.4074049005284905,
+    "e2e": 14.061166341416538,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving reinforcement learning.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 495,
+    "ttft": 1.4062361866235733,
+    "e2e": 51.05777306947857,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves AI in relationship counseling in an everyday situation.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 504,
+    "ttft": 1.3990758238360286,
+    "e2e": 52.339952224865556,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of gut microbiome? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 379,
+    "ttft": 1.4061583625152707,
+    "e2e": 43.60267164558172,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of cybersecurity threats and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 279,
+    "ttft": 1.415333516895771,
+    "e2e": 36.153338893316686,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to prisoner's dilemma.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 520,
+    "ttft": 1.4042752273380756,
+    "e2e": 52.727832849137485,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe climate policies in Scandinavia in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 408,
+    "ttft": 1.4112859023734927,
+    "e2e": 46.410841717384756,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving auction strategies.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 476,
+    "ttft": 1.4039817117154598,
+    "e2e": 51.21572651807219,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining literary symbolism in classic novels to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 269,
+    "ttft": 1.3957538297399879,
+    "e2e": 35.4698995500803,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of humor in online flirting in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 98,
+    "ttft": 1.4148776410147548,
+    "e2e": 12.756791839376092,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast privacy concerns in online sexuality with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 231,
+    "ttft": 1.4070754814893007,
+    "e2e": 32.32169990055263,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of AI in relationship counseling? Include a balanced view.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 161,
+    "ttft": 1.4024889944121242,
+    "e2e": 23.797209164127707,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in privacy concerns in online sexuality? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 61,
+    "ttft": 1.4082193654030561,
+    "e2e": 8.551206403411925,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on humor in online flirting.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 302,
+    "ttft": 1.3902495047077537,
+    "e2e": 38.9999063462019,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of automated content moderation for explicit materials? Include a balanced view.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 331,
+    "ttft": 1.4036334864795208,
+    "e2e": 40.82177768461406,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast transformers in NLP with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 371,
+    "ttft": 1.4103873819112778,
+    "e2e": 44.103503631427884,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in human nutrition.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 218,
+    "ttft": 1.4102079598233104,
+    "e2e": 31.025349610485137,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of AI in relationship counseling and where it is most effective.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 98,
+    "ttft": 1.3915434451773763,
+    "e2e": 12.752729236148298,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves media portrayal of online intimacy in an everyday situation.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 420,
+    "ttft": 1.4055135129019618,
+    "e2e": 47.065796576440334,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement memory retention with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 338,
+    "ttft": 1.4012889117002487,
+    "e2e": 40.65714331716299,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of Japanese work culture and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 287,
+    "ttft": 1.393334767781198,
+    "e2e": 37.105610330589116,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement behavioral economics with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 325,
+    "ttft": 1.4080245373770595,
+    "e2e": 39.78468220215291,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of evolutionary adaptations in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 143,
+    "ttft": 1.3995963782072067,
+    "e2e": 21.123986626043916,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach investment strategies to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 554,
+    "ttft": 1.3863130398094654,
+    "e2e": 53.97939825151116,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define AI in relationship counseling and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 542,
+    "ttft": 1.3873898619785905,
+    "e2e": 53.3045504912734,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe climate policies in Scandinavia in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 420,
+    "ttft": 1.389536328613758,
+    "e2e": 47.18626988586038,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving Japanese work culture.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 344,
+    "ttft": 1.390304235741496,
+    "e2e": 41.69546976685524,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving decision-making.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 211,
+    "ttft": 1.3870638934895396,
+    "e2e": 30.02471295092255,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in consent in digital relationships? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 107,
+    "ttft": 1.3988671824336052,
+    "e2e": 14.049155470915139,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in risk management.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 162,
+    "ttft": 1.3857802841812372,
+    "e2e": 26.334144257940352,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving group dynamics.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 497,
+    "ttft": 1.3986206585541368,
+    "e2e": 51.09792792983353,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to humor in online flirting.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 508,
+    "ttft": 1.3943891348317266,
+    "e2e": 52.37017129082233,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of US electoral system? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 511,
+    "ttft": 1.3998502343893051,
+    "e2e": 52.327492634765804,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of behavioral economics? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 481,
+    "ttft": 1.3893653508275747,
+    "e2e": 50.44019822590053,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast culinary techniques with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 137,
+    "ttft": 1.3850068356841803,
+    "e2e": 19.167869869619608,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about plant growth cycles and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 99,
+    "ttft": 1.399962984956801,
+    "e2e": 12.407615316100419,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of cybersecurity threats and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 535,
+    "ttft": 1.3872748734429479,
+    "e2e": 53.37341459840536,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how privacy concerns in online sexuality has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 355,
+    "ttft": 1.4032202465459704,
+    "e2e": 43.396979773417115,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to emoji use in digital romance.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 460,
+    "ttft": 1.3970029959455132,
+    "e2e": 50.437953853048384,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about risk management.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 273,
+    "ttft": 1.3815779266878963,
+    "e2e": 35.80366293434054,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about financial forecasting.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 138,
+    "ttft": 1.3904886040836573,
+    "e2e": 20.142798364162445,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe public health campaigns on consent in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 464,
+    "ttft": 1.3820636719465256,
+    "e2e": 49.93148565199226,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of impact of digital technology on financial services in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 28,
+    "output_tokens": 176,
+    "ttft": 1.3763596350327134,
+    "e2e": 27.101951480843127,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on evolutionary adaptations.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 488,
+    "ttft": 1.3885977566242218,
+    "e2e": 51.09037681110203,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about cybersecurity threats.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 278,
+    "ttft": 1.3816334502771497,
+    "e2e": 36.78921592794359,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement financial forecasting with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 471,
+    "ttft": 1.3963060257956386,
+    "e2e": 49.987850204110146,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in privacy concerns in online sexuality.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 295,
+    "ttft": 1.3822561036795378,
+    "e2e": 38.4537565279752,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding group dynamics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 94,
+    "ttft": 1.3823055531829596,
+    "e2e": 12.065476451069117,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between AI ethics and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 434,
+    "ttft": 1.3738525854423642,
+    "e2e": 47.743344706483185,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of sustainable city planning and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 415,
+    "ttft": 1.372156037017703,
+    "e2e": 46.7755068866536,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to market competition dynamics.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 380,
+    "ttft": 1.3923235721886158,
+    "e2e": 44.77018424216658,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about AI ethics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 224,
+    "ttft": 1.3790322504937649,
+    "e2e": 31.438775343820453,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of cryptocurrency in online dating in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 140,
+    "ttft": 1.3779917219653726,
+    "e2e": 20.709633716382086,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding evolutionary adaptations.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 489,
+    "ttft": 1.3826875695958734,
+    "e2e": 51.611343229189515,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement sexual communication with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 287,
+    "ttft": 1.3792420830577612,
+    "e2e": 37.22592301573604,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach privacy in online communications to children or beginners.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 298,
+    "ttft": 1.3904262036085129,
+    "e2e": 38.28076232690364,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to sports analytics.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 296,
+    "ttft": 1.3847565576434135,
+    "e2e": 38.03059811796993,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding cryptography basics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 296,
+    "ttft": 1.2000149926170707,
+    "e2e": 38.173109168186784,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain motivation theory in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 463,
+    "ttft": 1.1827576346695423,
+    "e2e": 49.62055157311261,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in AI in relationship counseling? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 65,
+    "ttft": 1.181979101151228,
+    "e2e": 8.572177856229246,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe AI in relationship counseling in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 447,
+    "ttft": 1.179580888710916,
+    "e2e": 48.52650315593928,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about privacy concerns in online sexuality and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 319,
+    "ttft": 1.1922769024968147,
+    "e2e": 39.71230691950768,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining US electoral system to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 530,
+    "ttft": 1.1949194287881255,
+    "e2e": 53.24370531924069,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to strategic disclosure of personal information.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 284,
+    "ttft": 1.1892604874446988,
+    "e2e": 36.672271609306335,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about sports analytics.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 326,
+    "ttft": 1.1871553510427475,
+    "e2e": 40.468642784282565,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in sexual health risks of digital intimacy? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 412,
+    "ttft": 1.1779736606404185,
+    "e2e": 46.23916516453028,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in cryptocurrency in online dating.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 545,
+    "ttft": 1.1730058118700981,
+    "e2e": 53.35094413347542,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement behavioral economics with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 430,
+    "ttft": 1.17361197527498,
+    "e2e": 47.10214397031814,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in US electoral system.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 242,
+    "ttft": 1.179649518802762,
+    "e2e": 33.08433547895402,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of music composition techniques in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 186,
+    "ttft": 1.1601588344201446,
+    "e2e": 27.914348628371954,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving machine learning algorithms.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 438,
+    "ttft": 1.1660650949925184,
+    "e2e": 47.93572934996337,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to US electoral system.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 465,
+    "ttft": 1.1709724441170692,
+    "e2e": 49.993163015693426,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of evolutionary adaptations and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 75,
+    "ttft": 1.16132109798491,
+    "e2e": 9.622215534560382,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining strategic disclosure of personal information to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 346,
+    "ttft": 1.1692887283861637,
+    "e2e": 42.27470153197646,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how inflation trends has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 562,
+    "ttft": 1.1667206473648548,
+    "e2e": 53.98909814748913,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on auction strategies.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 401,
+    "ttft": 1.1566437324509025,
+    "e2e": 46.488319056108594,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves market competition dynamics in an everyday situation.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 432,
+    "ttft": 1.1271556802093983,
+    "e2e": 47.83818617090583,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how public health campaigns on consent has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 311,
+    "ttft": 1.1409141272306442,
+    "e2e": 38.62012144271284,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain impact of online relationships on mental health in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 99,
+    "ttft": 1.1322350474074483,
+    "e2e": 12.485431805253029,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in Nash equilibrium.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 519,
+    "ttft": 1.1242272667586803,
+    "e2e": 51.99312571436167,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving investment strategies.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 373,
+    "ttft": 1.1258424324914813,
+    "e2e": 42.958996136672795,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of urbanization trends in Europe and where it is most effective.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 337,
+    "ttft": 1.077426914125681,
+    "e2e": 40.65434104204178,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how fermentation process has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 510,
+    "ttft": 1.076763897202909,
+    "e2e": 51.4998376397416,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how impact of digital technology on financial services has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 364,
+    "ttft": 1.0775290364399552,
+    "e2e": 43.3286176584661,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining fictional scenarios involving digital relationships to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 300,
+    "ttft": 1.0616782223805785,
+    "e2e": 38.70121573936194,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast impact of online relationships on mental health with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 321,
+    "ttft": 1.0595341017469764,
+    "e2e": 39.76581707410514,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving cognitive biases.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 550,
+    "ttft": 1.0120919784530997,
+    "e2e": 53.05519347824156,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast prisoner's dilemma with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 237,
+    "ttft": 1.0083486894145608,
+    "e2e": 32.68099302239716,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of US electoral system and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 222,
+    "ttft": 0.970050660893321,
+    "e2e": 31.012695539742708,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in privacy vs. openness in digital interaction.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 343,
+    "ttft": 0.9699510848149657,
+    "e2e": 41.64895433280617,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to climate policies in Scandinavia might have.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 318,
+    "ttft": 0.9640506329014897,
+    "e2e": 39.43402835074812,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to reinforcement learning might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 257,
+    "ttft": 0.9607596676796675,
+    "e2e": 33.71325573511422,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves legal aspects of digital sexual content in an everyday situation.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 168,
+    "ttft": 0.9440099243074656,
+    "e2e": 25.492815311066806,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on cryptocurrency markets.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 537,
+    "ttft": 0.9297674689441919,
+    "e2e": 53.08452418260276,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how sexting and its psychological impact has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 532,
+    "ttft": 0.9082652786746621,
+    "e2e": 52.99151837173849,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast sports analytics with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 149,
+    "ttft": 0.8942810390144587,
+    "e2e": 21.784538208507,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how evolutionary adaptations has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 259,
+    "ttft": 0.8782124174758792,
+    "e2e": 34.27106015291065,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of cloud infrastructure design and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 89,
+    "ttft": 0.8509292807430029,
+    "e2e": 11.050760560669005,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how market competition dynamics has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 343,
+    "ttft": 0.8461394561454654,
+    "e2e": 41.47263363935053,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about machine learning algorithms.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 320,
+    "ttft": 0.8290657745674253,
+    "e2e": 39.459530122578144,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of motivation theory? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 418,
+    "ttft": 0.8077775929123163,
+    "e2e": 46.05071667023003,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about cybersecurity threats and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 247,
+    "ttft": 0.7888242686167359,
+    "e2e": 32.893249223940074,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between consent in digital relationships and another field or discipline.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 434,
+    "ttft": 0.7820490105077624,
+    "e2e": 47.40357581153512,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to urbanization trends in Europe might have.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 261,
+    "ttft": 0.7621835712343454,
+    "e2e": 33.78901422675699,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define cryptocurrency in online dating and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 343,
+    "ttft": 0.7458926290273666,
+    "e2e": 41.37340832222253,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in sexual health risks of digital intimacy.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 325,
+    "ttft": 0.7280825367197394,
+    "e2e": 39.84034024365246,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between impact of online relationships on mental health and another field or discipline.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 418,
+    "ttft": 0.7034922577440739,
+    "e2e": 46.19493846595287,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about corporate finance.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 360,
+    "ttft": 0.6901092426851392,
+    "e2e": 42.28589533735067,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define cognitive biases and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 294,
+    "ttft": 0.680229539051652,
+    "e2e": 36.59838466066867,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach privacy concerns in online sexuality to children or beginners.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 324,
+    "ttft": 0.7303563924506307,
+    "e2e": 39.775669935159385,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach Japanese work culture to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 266,
+    "ttft": 0.7188247237354517,
+    "e2e": 34.855840967036784,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about impact of digital technology on financial services.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 123,
+    "ttft": 0.6959022991359234,
+    "e2e": 16.445779324509203,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in music composition techniques.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 171,
+    "ttft": 0.6829429287463427,
+    "e2e": 26.74805087596178,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to memory retention might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 180,
+    "ttft": 0.6634006453678012,
+    "e2e": 27.031736308708787,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving cybersecurity threats.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 450,
+    "ttft": 0.6462396439164877,
+    "e2e": 48.07667960692197,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in sustainable city planning? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 41,
+    "ttft": 0.6322501106187701,
+    "e2e": 4.970481864176691,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of cultural perspectives on sexting? Include a balanced view.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 485,
+    "ttft": 0.6102735018357635,
+    "e2e": 50.284459742717445,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how literary symbolism in classic novels has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 337,
+    "ttft": 0.5989526389166713,
+    "e2e": 40.52409764472395,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving strategic disclosure of personal information.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 332,
+    "ttft": 0.7212251592427492,
+    "e2e": 40.34719366300851,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach climate policies in Scandinavia to children or beginners.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 452,
+    "ttft": 0.7017069132998586,
+    "e2e": 47.85710844770074,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining travel planning for adventure tourism to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 344,
+    "ttft": 0.6603559423238039,
+    "e2e": 41.47130565531552,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about humor in online flirting.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 315,
+    "ttft": 0.6574536571279168,
+    "e2e": 39.56111200340092,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to financial forecasting might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 219,
+    "ttft": 0.6545002469792962,
+    "e2e": 30.34323003515601,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on legal aspects of digital sexual content.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 548,
+    "ttft": 0.6407128488644958,
+    "e2e": 53.24150722846389,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to AI in relationship counseling might have.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 235,
+    "ttft": 0.6166024301201105,
+    "e2e": 31.78042623400688,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach cybersecurity threats to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 282,
+    "ttft": 0.5999557608738542,
+    "e2e": 35.68931191973388,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define privacy in online communications and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 334,
+    "ttft": 0.589309711009264,
+    "e2e": 40.1322533050552,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach music composition techniques to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 335,
+    "ttft": 0.5752831976860762,
+    "e2e": 40.19714510347694,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between cloud infrastructure design and another field or discipline.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 286,
+    "ttft": 0.552748559974134,
+    "e2e": 35.54988129902631,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement climate policies in Scandinavia with clear instructions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 294,
+    "ttft": 0.535205234773457,
+    "e2e": 36.96360177733004,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of prisoner's dilemma and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 219,
+    "ttft": 0.5263817822560668,
+    "e2e": 30.210253602825105,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about automated content moderation for explicit materials.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 138,
+    "ttft": 0.5098935114219785,
+    "e2e": 19.229754963889718,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain strategic disclosure of personal information in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 122,
+    "ttft": 0.48727197386324406,
+    "e2e": 16.29492405243218,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving sexting and its psychological impact.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 506,
+    "ttft": 0.47274020593613386,
+    "e2e": 50.86832020711154,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of risk management? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 127,
+    "ttft": 0.4582713143900037,
+    "e2e": 16.63930096756667,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about sexual health risks of digital intimacy.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 298,
+    "ttft": 0.4359344383701682,
+    "e2e": 37.451268079690635,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in risk management.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 162,
+    "ttft": 0.4257890246808529,
+    "e2e": 25.540342506952584,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in reinforcement learning.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 366,
+    "ttft": 0.399000889621675,
+    "e2e": 42.28510699234903,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of urbanization trends in Europe and why it matters.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 103,
+    "ttft": 0.3846869608387351,
+    "e2e": 12.539990160614252,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about evolutionary adaptations.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 313,
+    "ttft": 0.3697036253288388,
+    "e2e": 38.21438994910568,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving cultural perspectives on sexting.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 438,
+    "ttft": 0.35453750751912594,
+    "e2e": 46.70474770013243,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about social influence.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 164,
+    "ttft": 0.3402034770697355,
+    "e2e": 23.911980513483286,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of urbanization trends in Europe and where it is most effective.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 315,
+    "ttft": 0.4139249240979552,
+    "e2e": 38.084408515132964,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding emotional intelligence.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 143,
+    "ttft": 0.39709001407027245,
+    "e2e": 20.409633740782738,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach fermentation process to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 566,
+    "ttft": 0.4605881739407778,
+    "e2e": 52.855761259794235,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between cognitive biases and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 517,
+    "ttft": 0.46173708513379097,
+    "e2e": 50.78145479410887,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to auction strategies.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 438,
+    "ttft": 0.458698901347816,
+    "e2e": 47.47801323328167,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach sexual health risks of digital intimacy to children or beginners.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 417,
+    "ttft": 0.4221706222742796,
+    "e2e": 45.44785437732935,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about cryptography basics.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 255,
+    "ttft": 0.4247392946854234,
+    "e2e": 33.665445644408464,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on evolution of romance in the internet era.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 360,
+    "ttft": 0.4173914650455117,
+    "e2e": 42.40196321066469,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining AI ethics to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 456,
+    "ttft": 0.3832091670483351,
+    "e2e": 48.204760283231735,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between AI ethics and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 142,
+    "ttft": 0.385781436227262,
+    "e2e": 19.897793259471655,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement US electoral system with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 281,
+    "ttft": 0.33953222911804914,
+    "e2e": 35.57423530891538,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between motivation theory and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 261,
+    "ttft": 0.34177320171147585,
+    "e2e": 33.31515539251268,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding human nutrition.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 368,
+    "ttft": 0.32921876665204763,
+    "e2e": 41.76124558970332,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how impact of online relationships on mental health has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 403,
+    "ttft": 0.31552878115326166,
+    "e2e": 45.151619794778526,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on cryptocurrency markets.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 364,
+    "ttft": 0.3834420144557953,
+    "e2e": 42.08108507003635,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to investment strategies might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 224,
+    "ttft": 0.3760338369756937,
+    "e2e": 30.48631003126502,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining cryptography basics to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 371,
+    "ttft": 0.4615515470504761,
+    "e2e": 43.60480781830847,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of safe sexting practices in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 241,
+    "ttft": 0.45506774447858334,
+    "e2e": 32.4801687002182,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in fictional scenarios involving digital relationships.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 123,
+    "ttft": 0.42980326525866985,
+    "e2e": 16.5514356456697,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how motivation theory has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 322,
+    "ttft": 0.4199540037661791,
+    "e2e": 38.41368816699833,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of Japanese work culture and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 255,
+    "ttft": 0.42301522195339203,
+    "e2e": 33.35568108316511,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of cultural perspectives on sexting? Include a balanced view.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 504,
+    "ttft": 0.3743238365277648,
+    "e2e": 50.78395815752447,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe memory retention in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 234,
+    "ttft": 0.3765562502667308,
+    "e2e": 31.288652290590107,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement fermentation process with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 350,
+    "ttft": 0.32898601796478033,
+    "e2e": 40.558878203853965,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain reinforcement learning in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 175,
+    "ttft": 0.3351937737315893,
+    "e2e": 26.031966483220458,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to privacy vs. openness in digital interaction might have.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 293,
+    "ttft": 0.3362527061253786,
+    "e2e": 36.492499044165015,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain fermentation process in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 122,
+    "ttft": 0.32514233887195587,
+    "e2e": 16.306702635250986,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement urbanization trends in Europe with clear instructions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 380,
+    "ttft": 0.39521977584809065,
+    "e2e": 42.616398399695754,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement sexting and its psychological impact with clear instructions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 94,
+    "ttft": 0.3838494708761573,
+    "e2e": 11.80548798572272,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between emotional intelligence and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 560,
+    "ttft": 0.4672300172969699,
+    "e2e": 52.010585486888885,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on evolution of romance in the internet era.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 429,
+    "ttft": 0.4749875199049711,
+    "e2e": 46.87106783781201,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about gut microbiome and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 300,
+    "ttft": 0.43396210856735706,
+    "e2e": 36.28688321541995,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about sexual communication.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 164,
+    "ttft": 0.4368972582742572,
+    "e2e": 24.343624748289585,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach behavioral economics to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 276,
+    "ttft": 0.42296529561281204,
+    "e2e": 34.94882772676647,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach motivation theory to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 480,
+    "ttft": 0.37138523533940315,
+    "e2e": 49.137824503704906,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about machine learning algorithms.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 258,
+    "ttft": 0.3601612728089094,
+    "e2e": 33.804814600385725,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of risk management in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 117,
+    "ttft": 0.36305292323231697,
+    "e2e": 15.694808528758585,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about investment strategies.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 177,
+    "ttft": 0.34659428521990776,
+    "e2e": 26.012851756997406,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between macroeconomic policy and another field or discipline.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 421,
+    "ttft": 0.34654614608734846,
+    "e2e": 45.3900151476264,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in reinforcement learning.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 386,
+    "ttft": 0.33258122857660055,
+    "e2e": 43.17597298882902,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to secure messaging app protocols might have.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 270,
+    "ttft": 0.39615706354379654,
+    "e2e": 34.832803091965616,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach fusion cuisine to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 433,
+    "ttft": 0.37465888634324074,
+    "e2e": 46.80999339465052,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe macroeconomic policy in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 459,
+    "ttft": 0.421881889924407,
+    "e2e": 48.21624715253711,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach financial forecasting to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 467,
+    "ttft": 0.42040278762578964,
+    "e2e": 48.54463825467974,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast privacy concerns in online sexuality with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 296,
+    "ttft": 0.42456845194101334,
+    "e2e": 36.73591453488916,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in motivation theory.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 322,
+    "ttft": 0.4331681579351425,
+    "e2e": 38.056058631278574,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast fermentation process with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 503,
+    "ttft": 0.4343752656131983,
+    "e2e": 48.210674659349024,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding machine learning algorithms.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 169,
+    "ttft": 0.38372549694031477,
+    "e2e": 25.053167588077486,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of cybersecurity threats and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 421,
+    "ttft": 0.3877175394445658,
+    "e2e": 45.733895043842494,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in auction strategies? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 321,
+    "ttft": 0.32327622547745705,
+    "e2e": 38.8522831229493,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how inflation trends has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 491,
+    "ttft": 0.33137618750333786,
+    "e2e": 49.62416884396225,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in behavioral economics.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 182,
+    "ttft": 0.3338624658063054,
+    "e2e": 26.267254814505577,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to cryptography basics.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 299,
+    "ttft": 0.33131298795342445,
+    "e2e": 36.88624108675867,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about fusion cuisine.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 299,
+    "ttft": 0.3915252638980746,
+    "e2e": 36.69899248611182,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of travel planning for adventure tourism and why it matters.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 53,
+    "ttft": 0.3828861014917493,
+    "e2e": 6.362005814909935,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define human nutrition and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 388,
+    "ttft": 0.4625452272593975,
+    "e2e": 42.92367665283382,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of urbanization trends in Europe in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 26,
+    "output_tokens": 124,
+    "ttft": 0.4782904777675867,
+    "e2e": 17.161422832868993,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between privacy concerns in online sexuality and another field or discipline.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 308,
+    "ttft": 0.43277264665812254,
+    "e2e": 37.67815533000976,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about culinary techniques.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 240,
+    "ttft": 0.4227943532168865,
+    "e2e": 31.59885833505541,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define sustainable city planning and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 542,
+    "ttft": 0.42947589233517647,
+    "e2e": 51.017549404874444,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in risk management.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 162,
+    "ttft": 0.37799051217734814,
+    "e2e": 25.426285554654896,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about impact of digital technology on financial services.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 304,
+    "ttft": 0.38161460869014263,
+    "e2e": 36.97541869059205,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on music composition techniques.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 410,
+    "ttft": 0.34954462479799986,
+    "e2e": 45.08512626308948,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define automated content moderation for explicit materials and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 426,
+    "ttft": 0.341249605640769,
+    "e2e": 46.05001342203468,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining cryptography basics to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 352,
+    "ttft": 0.3306016456335783,
+    "e2e": 42.06941659655422,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach age restrictions and online safety to children or beginners.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 423,
+    "ttft": 0.3429013779386878,
+    "e2e": 45.84538472164422,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to US electoral system might have.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 335,
+    "ttft": 0.45926029048860073,
+    "e2e": 40.19110258948058,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on automated content moderation for explicit materials.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 290,
+    "ttft": 0.44288575556129217,
+    "e2e": 36.38211115077138,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain cybersecurity threats in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 72,
+    "ttft": 0.49982328061014414,
+    "e2e": 8.695623950101435,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of privacy in online communications and why it matters.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 49,
+    "ttft": 0.49844686407595873,
+    "e2e": 6.107051447033882,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to cybersecurity threats might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 269,
+    "ttft": 0.4491101326420903,
+    "e2e": 34.65066811814904,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach cultural perspectives on sexting to children or beginners.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 514,
+    "ttft": 0.4488917151466012,
+    "e2e": 50.594157424755394,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in fermentation process.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 298,
+    "ttft": 0.44887487310916185,
+    "e2e": 41.11108766216785,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain motivation theory in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 356,
+    "ttft": 0.41135619580745697,
+    "e2e": 41.28057662118226,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between privacy vs. openness in digital interaction and another field or discipline.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 234,
+    "ttft": 0.4099919917061925,
+    "e2e": 31.15938359964639,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe media portrayal of online intimacy in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 175,
+    "ttft": 0.3570435279980302,
+    "e2e": 25.545427390374243,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of plant growth cycles and where it is most effective.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 391,
+    "ttft": 0.3569695772603154,
+    "e2e": 42.46293083578348,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement human nutrition with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 308,
+    "ttft": 0.35576176177710295,
+    "e2e": 37.366764401085675,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement privacy in online communications with clear instructions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 326,
+    "ttft": 0.35237215738743544,
+    "e2e": 39.12513862363994,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving decision-making.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 384,
+    "ttft": 0.3362384932115674,
+    "e2e": 42.90206355787814,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves cryptocurrency in online dating in an everyday situation.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 350,
+    "ttft": 0.4134403010830283,
+    "e2e": 41.1875295965001,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of cloud infrastructure design and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 106,
+    "ttft": 0.4863572372123599,
+    "e2e": 14.36863874644041,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on public health campaigns on consent.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 560,
+    "ttft": 0.4179572816938162,
+    "e2e": 51.919856551103294,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between emoji use in digital romance and another field or discipline.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 306,
+    "ttft": 0.41602233424782753,
+    "e2e": 38.11847454216331,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach cloud infrastructure design to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 291,
+    "ttft": 0.5105141066014767,
+    "e2e": 36.3238812899217,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in legal aspects of digital sexual content.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 167,
+    "ttft": 0.5116744851693511,
+    "e2e": 26.355486059561372,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define media portrayal of online intimacy and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 508,
+    "ttft": 0.49962443206459284,
+    "e2e": 50.10830749478191,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to emotional intelligence might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 192,
+    "ttft": 0.5567935155704618,
+    "e2e": 27.326239563524723,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of Nash equilibrium and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 69,
+    "ttft": 0.5569284465163946,
+    "e2e": 8.472234128043056,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about impact of online relationships on mental health.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 100,
+    "ttft": 0.5151955178007483,
+    "e2e": 13.211490393616259,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in cybersecurity threats.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 122,
+    "ttft": 0.4881799388676882,
+    "e2e": 17.688240490853786,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast fusion cuisine with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 541,
+    "ttft": 0.4873353838920593,
+    "e2e": 51.35877951607108,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between humor in online flirting and another field or discipline.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 231,
+    "ttft": 0.48385677114129066,
+    "e2e": 30.836941074579954,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves gut microbiome in an everyday situation.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 336,
+    "ttft": 0.4844533475115895,
+    "e2e": 39.958255662582815,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about humor in online flirting.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 205,
+    "ttft": 0.48396136052906513,
+    "e2e": 29.539931969717145,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain plant growth cycles in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 487,
+    "ttft": 0.5290117915719748,
+    "e2e": 48.80101820733398,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in sustainable city planning.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 222,
+    "ttft": 0.5272085182368755,
+    "e2e": 30.33284099213779,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement market competition dynamics with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 279,
+    "ttft": 0.5263436511158943,
+    "e2e": 35.02638208307326,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement parallel computing optimization with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 473,
+    "ttft": 0.5859828973188996,
+    "e2e": 48.88195649534464,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cryptocurrency in online dating? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 410,
+    "ttft": 0.5839306833222508,
+    "e2e": 44.75443008635193,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain inflation trends in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 90,
+    "ttft": 0.6976336594671011,
+    "e2e": 11.940071571618319,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on cryptography basics.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 547,
+    "ttft": 0.7025028178468347,
+    "e2e": 51.62944975588471,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach online payment security to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 281,
+    "ttft": 0.6426763301715255,
+    "e2e": 35.49973248038441,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of reinforcement learning and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 435,
+    "ttft": 0.6393035054206848,
+    "e2e": 46.31814497709274,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on age restrictions and online safety.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 510,
+    "ttft": 0.6395363565534353,
+    "e2e": 50.24961192160845,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement literary symbolism in classic novels with clear instructions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 289,
+    "ttft": 0.6365039460361004,
+    "e2e": 36.161914149299264,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining prisoner's dilemma to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 408,
+    "ttft": 0.5753040369600058,
+    "e2e": 44.898690710775554,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cryptocurrency in online dating? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 376,
+    "ttft": 0.5754243666306138,
+    "e2e": 42.48285724502057,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast parallel computing optimization with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 417,
+    "ttft": 0.5745859742164612,
+    "e2e": 45.17549497913569,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to impact of digital technology on financial services.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 272,
+    "ttft": 0.5438690977171063,
+    "e2e": 34.62339091487229,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast decision-making with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 94,
+    "ttft": 0.5377889843657613,
+    "e2e": 12.548387697897851,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in cryptography basics.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 264,
+    "ttft": 0.5126385306939483,
+    "e2e": 33.97002035006881,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of privacy in online communications? Include a balanced view.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 397,
+    "ttft": 0.5157775180414319,
+    "e2e": 44.072885680012405,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about memory retention and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 296,
+    "ttft": 0.44660213124006987,
+    "e2e": 36.22203019820154,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving Nash equilibrium.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 302,
+    "ttft": 0.44504497665911913,
+    "e2e": 36.799171418882906,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in investment strategies.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 138,
+    "ttft": 0.45462608616799116,
+    "e2e": 20.76995236799121,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define media portrayal of online intimacy and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 493,
+    "ttft": 0.449423560872674,
+    "e2e": 49.30392459593713,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in decision-making? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 55,
+    "ttft": 0.4357573091983795,
+    "e2e": 6.834235548041761,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in prisoner's dilemma.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 439,
+    "ttft": 0.5227862447500229,
+    "e2e": 45.45226106978953,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between age restrictions and online safety and another field or discipline.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 344,
+    "ttft": 0.7058514067903161,
+    "e2e": 40.17588737886399,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to human nutrition might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 333,
+    "ttft": 0.6512987297028303,
+    "e2e": 39.3914993815124,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe memory retention in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 242,
+    "ttft": 0.6487885387614369,
+    "e2e": 32.17742321174592,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement age restrictions and online safety with clear instructions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 481,
+    "ttft": 0.6466255784034729,
+    "e2e": 48.84338246099651,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in sexual communication? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 351,
+    "ttft": 0.652371371164918,
+    "e2e": 40.601254189386964,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding media portrayal of online intimacy.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 120,
+    "ttft": 0.5814085667952895,
+    "e2e": 17.73344762902707,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of memory retention and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 44,
+    "ttft": 0.579783147200942,
+    "e2e": 5.737354546785355,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of risk management? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 122,
+    "ttft": 0.5785389617085457,
+    "e2e": 17.730695432052016,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in auction strategies.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 304,
+    "ttft": 0.5773317394778132,
+    "e2e": 37.18656773772091,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of cybersecurity threats and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 509,
+    "ttft": 0.5173126654699445,
+    "e2e": 49.821084247902036,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in emoji use in digital romance? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 325,
+    "ttft": 0.5241407938301563,
+    "e2e": 39.26189438533038,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach urbanization trends in Europe to children or beginners.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 289,
+    "ttft": 0.5121949631720781,
+    "e2e": 35.56804042123258,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining AI ethics to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 484,
+    "ttft": 0.4524385593831539,
+    "e2e": 48.65094471536577,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach music composition techniques to children or beginners.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 307,
+    "ttft": 0.4528200840577483,
+    "e2e": 37.21565787587315,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding historical trade routes.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 164,
+    "ttft": 0.456164020113647,
+    "e2e": 24.7807897888124,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to auction strategies might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 203,
+    "ttft": 0.44622475653886795,
+    "e2e": 28.485466397367418,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in Japanese work culture.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 392,
+    "ttft": 0.4463176019489765,
+    "e2e": 43.11277422402054,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast fictional scenarios involving digital relationships with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 186,
+    "ttft": 0.4332030415534973,
+    "e2e": 26.5518318740651,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining social influence to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 271,
+    "ttft": 0.4140898324549198,
+    "e2e": 34.54565777722746,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining sex education in the digital age to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 381,
+    "ttft": 0.39873057324439287,
+    "e2e": 42.53635158855468,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach transformers in NLP to children or beginners.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 480,
+    "ttft": 0.7683422332629561,
+    "e2e": 48.44869593717158,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define reinforcement learning and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 476,
+    "ttft": 0.7709922222420573,
+    "e2e": 48.44874076452106,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement sexting and its psychological impact with clear instructions.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 94,
+    "ttft": 0.7725210851058364,
+    "e2e": 13.974781251512468,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe cloud infrastructure design in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 511,
+    "ttft": 0.6465361276641488,
+    "e2e": 50.04713040217757,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe humor in online flirting in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 335,
+    "ttft": 0.6312012420967221,
+    "e2e": 39.531310820020735,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of financial forecasting and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 72,
+    "ttft": 0.6452696658670902,
+    "e2e": 9.059896321035922,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of public health campaigns on consent in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 26,
+    "output_tokens": 245,
+    "ttft": 0.6416078396141529,
+    "e2e": 32.185183349996805,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to legal aspects of digital sexual content might have.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 395,
+    "ttft": 0.6269725700840354,
+    "e2e": 43.75709457229823,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast group dynamics with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 295,
+    "ttft": 0.6308451518416405,
+    "e2e": 36.559414555318654,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about prisoner's dilemma.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 367,
+    "ttft": 0.630368578247726,
+    "e2e": 41.86132112890482,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in prisoner's dilemma.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 411,
+    "ttft": 0.6335455607622862,
+    "e2e": 44.67756657209247,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in sustainable city planning.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 132,
+    "ttft": 0.8662947239354253,
+    "e2e": 21.096521882340312,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of parallel computing optimization and why it matters.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 74,
+    "ttft": 0.869425917044282,
+    "e2e": 9.907162255607545,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement machine learning algorithms with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 432,
+    "ttft": 0.8713939897716045,
+    "e2e": 45.52556761633605,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about macroeconomic policy.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 211,
+    "ttft": 0.865496426820755,
+    "e2e": 29.26844520960003,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving AI ethics.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 431,
+    "ttft": 0.8646007794886827,
+    "e2e": 45.35021260008216,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define risk management and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 306,
+    "ttft": 0.8652343573048711,
+    "e2e": 37.103486808016896,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement corporate finance with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 542,
+    "ttft": 0.8663572669029236,
+    "e2e": 50.54517709091306,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of social influence and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 87,
+    "ttft": 1.0161354839801788,
+    "e2e": 12.705481494776905,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe market competition dynamics in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 398,
+    "ttft": 1.0156428534537554,
+    "e2e": 44.024962566792965,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining fictional scenarios involving digital relationships to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 379,
+    "ttft": 1.1325393375009298,
+    "e2e": 43.01957577560097,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast climate policies in Scandinavia with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 232,
+    "ttft": 1.1255038492381573,
+    "e2e": 31.40227643214166,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in cultural perspectives on sexting? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 81,
+    "ttft": 1.1262736935168505,
+    "e2e": 12.034894924610853,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in auction strategies.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 180,
+    "ttft": 1.129622763954103,
+    "e2e": 27.717195724137127,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in impact of online relationships on mental health.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 278,
+    "ttft": 1.1283629219979048,
+    "e2e": 35.499610180966556,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement travel planning for adventure tourism with clear instructions.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 545,
+    "ttft": 1.1266871523112059,
+    "e2e": 50.80596925597638,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving board game strategies.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 324,
+    "ttft": 1.1566987205296755,
+    "e2e": 39.1373756211251,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to sexting and its psychological impact might have.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 271,
+    "ttft": 1.1544668842107058,
+    "e2e": 35.177098140120506,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining behavioral economics to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 411,
+    "ttft": 1.1587163135409355,
+    "e2e": 44.84334213659167,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about privacy vs. openness in digital interaction.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 297,
+    "ttft": 1.1607813760638237,
+    "e2e": 37.279309034347534,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining secure messaging app protocols to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 316,
+    "ttft": 1.1568921646103263,
+    "e2e": 38.6953401369974,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of digital intimacy in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 179,
+    "ttft": 1.112216661684215,
+    "e2e": 26.640235261060297,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about emotional intelligence.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 286,
+    "ttft": 1.2332662492990494,
+    "e2e": 36.21812600269914,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach automated content moderation for explicit materials to children or beginners.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 155,
+    "ttft": 1.236532243900001,
+    "e2e": 24.40031462535262,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in behavioral economics.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 182,
+    "ttft": 1.2334291534498334,
+    "e2e": 26.727691237814724,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach impact of digital technology on financial services to children or beginners.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 448,
+    "ttft": 1.2129405159503222,
+    "e2e": 46.66434729564935,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between music composition techniques and another field or discipline.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 414,
+    "ttft": 1.2168790204450488,
+    "e2e": 44.35704182088375,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define climate policies in Scandinavia and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 321,
+    "ttft": 1.2161919502541423,
+    "e2e": 38.58451348543167,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement online payment security with clear instructions.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 520,
+    "ttft": 1.2202691435813904,
+    "e2e": 49.906182928942144,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in US electoral system.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 298,
+    "ttft": 1.2082989197224379,
+    "e2e": 37.16583495773375,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define media portrayal of online intimacy and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 475,
+    "ttft": 1.2229155488312244,
+    "e2e": 47.87760361470282,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of legal aspects of digital sexual content and why it matters.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 358,
+    "ttft": 1.2168168211355805,
+    "e2e": 41.68019623775035,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to public health campaigns on consent.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 436,
+    "ttft": 1.277347202412784,
+    "e2e": 46.29556373413652,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain privacy vs. openness in digital interaction in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 118,
+    "ttft": 1.2818138794973493,
+    "e2e": 19.816720348782837,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how privacy concerns in online sexuality has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 432,
+    "ttft": 1.2745600258931518,
+    "e2e": 46.29264515545219,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe evolutionary adaptations in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 390,
+    "ttft": 1.2803094675764441,
+    "e2e": 43.01376033388078,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about board game strategies.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 290,
+    "ttft": 1.3167542852461338,
+    "e2e": 36.711643904447556,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast impact of online relationships on mental health with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 337,
+    "ttft": 1.321353462524712,
+    "e2e": 39.91936816740781,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach humor in online flirting to children or beginners.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 428,
+    "ttft": 1.3211540505290031,
+    "e2e": 45.65615072939545,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about sustainable city planning and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 327,
+    "ttft": 1.3251679502427578,
+    "e2e": 38.80467770528048,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of strategic disclosure of personal information and why it matters.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 354,
+    "ttft": 1.3288571443408728,
+    "e2e": 40.87087690923363,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement privacy vs. openness in digital interaction with clear instructions.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 374,
+    "ttft": 1.359129915945232,
+    "e2e": 41.94556534383446,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in impact of online relationships on mental health? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 26,
+    "output_tokens": 329,
+    "ttft": 1.3606751877814531,
+    "e2e": 38.88669783528894,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves cognitive biases in an everyday situation.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 149,
+    "ttft": 1.3584026228636503,
+    "e2e": 24.14734506420791,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how evolution of romance in the internet era has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 289,
+    "ttft": 1.3567417841404676,
+    "e2e": 36.50816901214421,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to public health campaigns on consent might have.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 252,
+    "ttft": 1.356024137698114,
+    "e2e": 33.38889228273183,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about cryptocurrency in online dating and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 304,
+    "ttft": 1.3564249398186803,
+    "e2e": 37.459738958626986,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves culinary techniques in an everyday situation.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 190,
+    "ttft": 1.3556446442380548,
+    "e2e": 27.65370320249349,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining board game strategies to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 529,
+    "ttft": 1.3547212556004524,
+    "e2e": 49.845039133913815,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define climate policies in Scandinavia and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 524,
+    "ttft": 1.3531643571332097,
+    "e2e": 49.659429635852575,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach memory retention to children or beginners.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 275,
+    "ttft": 1.3513490008190274,
+    "e2e": 34.881356975995004,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of automated content moderation for explicit materials and where it is most effective.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 420,
+    "ttft": 1.350437629967928,
+    "e2e": 45.43771094828844,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving investment strategies.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 328,
+    "ttft": 1.4325214717537165,
+    "e2e": 38.69996190909296,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast climate policies in Scandinavia with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 197,
+    "ttft": 1.4310032203793526,
+    "e2e": 28.380887312814593,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in media portrayal of online intimacy.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 182,
+    "ttft": 1.429618775844574,
+    "e2e": 27.05813607852906,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in motivation theory? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 344,
+    "ttft": 1.461684389039874,
+    "e2e": 39.45662499405444,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define cloud infrastructure design and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 330,
+    "ttft": 1.4600102314725518,
+    "e2e": 39.79607878252864,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in financial forecasting.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 286,
+    "ttft": 1.4594719326123595,
+    "e2e": 36.14245151542127,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast humor in online flirting with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 161,
+    "ttft": 1.4581141974776983,
+    "e2e": 25.51906333491206,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of humor in online flirting in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 113,
+    "ttft": 1.45679631549865,
+    "e2e": 19.030700718984008,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about digital intimacy.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 283,
+    "ttft": 1.4193219058215618,
+    "e2e": 35.0675035296008,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about macroeconomic policy.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 127,
+    "ttft": 1.4166618036106229,
+    "e2e": 21.88467401266098,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to inflation trends might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 208,
+    "ttft": 1.4169630743563175,
+    "e2e": 29.092173702083528,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define risk management and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 373,
+    "ttft": 1.4126456314697862,
+    "e2e": 42.212947816587985,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between Nash equilibrium and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 166,
+    "ttft": 1.4104936672374606,
+    "e2e": 25.323290545493364,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves automated content moderation for explicit materials in an everyday situation.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 390,
+    "ttft": 1.4090191088616848,
+    "e2e": 43.734409119933844,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about age restrictions and online safety.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 259,
+    "ttft": 1.4076665099710226,
+    "e2e": 33.65064144693315,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between cybersecurity threats and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 167,
+    "ttft": 1.4063031170517206,
+    "e2e": 25.31932916212827,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to humor in online flirting might have.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 280,
+    "ttft": 1.4101679772138596,
+    "e2e": 35.70114228501916,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of sexual health risks of digital intimacy? Include a balanced view.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 347,
+    "ttft": 1.4072259282693267,
+    "e2e": 40.545629505999386,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe the practical use cases of sports analytics and where it is most effective.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 406,
+    "ttft": 1.4075596509501338,
+    "e2e": 44.49543482251465,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on portfolio diversification.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 498,
+    "ttft": 1.4065959071740508,
+    "e2e": 48.5034219706431,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of privacy in online communications and why it matters.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 49,
+    "ttft": 1.5148820523172617,
+    "e2e": 7.455079296603799,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach urbanization trends in Europe to children or beginners.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 448,
+    "ttft": 1.5157753573730588,
+    "e2e": 46.15098356921226,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain travel planning for adventure tourism in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 482,
+    "ttft": 1.5147968456149101,
+    "e2e": 48.109062847681344,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement cognitive biases with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 489,
+    "ttft": 1.5121437394991517,
+    "e2e": 47.85966919269413,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast auction strategies with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 131,
+    "ttft": 1.5108278589323163,
+    "e2e": 22.241662312299013,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in media portrayal of online intimacy.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 155,
+    "ttft": 1.5091071650385857,
+    "e2e": 24.251830079592764,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of historical trade routes? Include a balanced view.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 397,
+    "ttft": 1.5080729965120554,
+    "e2e": 43.176292271353304,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving age restrictions and online safety.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 438,
+    "ttft": 1.5065476838499308,
+    "e2e": 46.143258390016854,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to evolutionary adaptations.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 539,
+    "ttft": 1.4443314680829644,
+    "e2e": 49.18760422896594,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving evolution of romance in the internet era.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 465,
+    "ttft": 1.4411770682781935,
+    "e2e": 47.22980005852878,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding sustainable city planning.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 128,
+    "ttft": 1.441457741893828,
+    "e2e": 21.640947450883687,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain cryptocurrency in online dating in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 118,
+    "ttft": 1.4401103649288416,
+    "e2e": 20.463808054104447,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in cloud infrastructure design.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 437,
+    "ttft": 1.4388076746836305,
+    "e2e": 45.88274130318314,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in sexual health risks of digital intimacy.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 309,
+    "ttft": 1.4364275000989437,
+    "e2e": 37.420564755797386,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about public health campaigns on consent.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 168,
+    "ttft": 1.4455993855372071,
+    "e2e": 25.530749370343983,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the key ideas about strategic disclosure of personal information and explain their practical implications in everyday life.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 285,
+    "ttft": 1.4352983981370926,
+    "e2e": 35.28167276550084,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on legal aspects of digital sexual content.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 484,
+    "ttft": 1.4437612127512693,
+    "e2e": 48.484866715967655,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in fermentation process.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 310,
+    "ttft": 1.4324886482208967,
+    "e2e": 38.699219460599124,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding risk management.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 278,
+    "ttft": 1.431004198268056,
+    "e2e": 35.196548683568835,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between group dynamics and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 306,
+    "ttft": 1.4300653785467148,
+    "e2e": 37.33828792255372,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of travel planning for adventure tourism? Include a balanced view.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 135,
+    "ttft": 1.4290396496653557,
+    "e2e": 22.303601425141096,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in evolutionary adaptations.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 328,
+    "ttft": 1.434772502630949,
+    "e2e": 38.091696550138295,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in climate policies in Scandinavia? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 410,
+    "ttft": 1.425666255876422,
+    "e2e": 43.518661338835955,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the main challenges and opportunities in literary symbolism in classic novels? Provide a few strategies or solutions.\n### Response:\n",
+    "input_tokens": 24,
+    "output_tokens": 295,
+    "ttft": 1.4321482796221972,
+    "e2e": 36.508410782553256,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to decision-making might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 200,
+    "ttft": 1.4234737865626812,
+    "e2e": 28.432017204351723,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Present a fictional debate between two people with opposing views on corporate finance.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 390,
+    "ttft": 1.4294715244323015,
+    "e2e": 43.153251530602574,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about risk management.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 227,
+    "ttft": 1.4281828058883548,
+    "e2e": 30.260061159729958,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of legal aspects of digital sexual content and why it matters.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 296,
+    "ttft": 1.4266988271847367,
+    "e2e": 37.05278248805553,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a step-by-step guide to understand or implement human nutrition with clear instructions.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 333,
+    "ttft": 1.4526755819097161,
+    "e2e": 38.86871791630983,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining safe sexting practices to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 474,
+    "ttft": 1.456641181372106,
+    "e2e": 47.43977372534573,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define sexting and its psychological impact and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 294,
+    "ttft": 1.4561313269659877,
+    "e2e": 36.7777948603034,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain cryptography basics in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 244,
+    "ttft": 1.455145774409175,
+    "e2e": 32.88745954539627,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a persuasive argument advocating for the importance of understanding strategic disclosure of personal information.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 483,
+    "ttft": 1.4541705772280693,
+    "e2e": 47.728366581723094,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define media portrayal of online intimacy and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 21,
+    "output_tokens": 405,
+    "ttft": 1.4544621044769883,
+    "e2e": 43.90574864950031,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain potential future trends or innovations involving group dynamics.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 269,
+    "ttft": 1.4497984107583761,
+    "e2e": 34.12957314867526,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining sexual communication to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 461,
+    "ttft": 1.4480904191732407,
+    "e2e": 46.922708383761346,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about prisoner's dilemma.\n### Response:\n",
+    "input_tokens": 17,
+    "output_tokens": 280,
+    "ttft": 1.2380973435938358,
+    "e2e": 35.048272144049406,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about digital intimacy.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 264,
+    "ttft": 1.2280231108888984,
+    "e2e": 33.503482048399746,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "List and briefly explain five fascinating facts about sex education in the digital age.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 244,
+    "ttft": 1.2256630100309849,
+    "e2e": 32.06473041605204,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Suggest creative ways to teach sex education in the digital age to children or beginners.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 132,
+    "ttft": 1.2325744647532701,
+    "e2e": 21.772521637380123,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to cryptocurrency markets might have.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 368,
+    "ttft": 1.2312146434560418,
+    "e2e": 41.652647719718516,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a set of interview questions for an expert in auction strategies.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 310,
+    "ttft": 1.2304413188248873,
+    "e2e": 37.87951988168061,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain the concept of behavioral economics in simple terms. Give an example or scenario that illustrates it.\n### Response:\n",
+    "input_tokens": 23,
+    "output_tokens": 159,
+    "ttft": 1.2277747737243772,
+    "e2e": 24.591364334337413,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Explain social influence in layman's terms for someone completely new to the subject.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 102,
+    "ttft": 1.2251943480223417,
+    "e2e": 17.091150229796767,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Compare and contrast plant growth cycles with a related concept, highlighting their differences and similarities.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 114,
+    "ttft": 1.2238217694684863,
+    "e2e": 18.378457164391875,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Create a fictional news article reporting on a recent development related to US electoral system.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 268,
+    "ttft": 1.2242923378944397,
+    "e2e": 33.98618054110557,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "What are the pros and cons of cybersecurity threats? Include a balanced view.\n### Response:\n",
+    "input_tokens": 18,
+    "output_tokens": 424,
+    "ttft": 1.221277516335249,
+    "e2e": 44.24191430117935,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Write a short story or anecdote that involves public health campaigns on consent in an everyday situation.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 302,
+    "ttft": 1.2199448132887483,
+    "e2e": 36.85735989268869,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Summarize the latest research or advancements in online payment security.\n### Response:\n",
+    "input_tokens": 16,
+    "output_tokens": 192,
+    "ttft": 1.2186089893803,
+    "e2e": 27.531116550788283,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe impact of digital technology on financial services in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 25,
+    "output_tokens": 331,
+    "ttft": 1.2369059873744845,
+    "e2e": 38.50649901293218,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Provide a concise summary of fermentation process and why it matters.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 69,
+    "ttft": 1.2309426050633192,
+    "e2e": 9.561492506414652,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draft a letter explaining cloud infrastructure design to a friend who is unfamiliar with it.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 268,
+    "ttft": 1.2346592796966434,
+    "e2e": 34.3430643286556,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Draw connections between corporate finance and another field or discipline.\n### Response:\n",
+    "input_tokens": 14,
+    "output_tokens": 406,
+    "ttft": 1.2218530643731356,
+    "e2e": 43.200464837253094,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Generate a short dialogue or discussion between two experts about cultural perspectives on sexting.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 485,
+    "ttft": 1.2293844260275364,
+    "e2e": 47.80088963359594,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Precisely define secure messaging app protocols and break it down into its component parts.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 328,
+    "ttft": 1.224331721663475,
+    "e2e": 38.29678148962557,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to secure messaging app protocols might have.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 286,
+    "ttft": 1.2171777384355664,
+    "e2e": 35.70095591340214,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how decision-making has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 15,
+    "output_tokens": 485,
+    "ttft": 1.221678932197392,
+    "e2e": 47.36100324895233,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Ask and answer three common questions that people new to prisoner's dilemma might have.\n### Response:\n",
+    "input_tokens": 19,
+    "output_tokens": 255,
+    "ttft": 1.0992065090686083,
+    "e2e": 32.82170785497874,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe how evolution of romance in the internet era has evolved over time or throughout history.\n### Response:\n",
+    "input_tokens": 20,
+    "output_tokens": 290,
+    "ttft": 1.1016637096181512,
+    "e2e": 35.897887755185366,
+    "success": true,
+    "error": ""
+  },
+  {
+    "prompt": "Describe consent in digital relationships in detail and include a short case study or example for better understanding.\n### Response:\n",
+    "input_tokens": 22,
+    "output_tokens": 259,
+    "ttft": 1.105233977548778,
+    "e2e": 33.401698995381594,
+    "success": true,
+    "error": ""
+  }
+]

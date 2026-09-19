@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inferpd — PD Disagg Benchmark</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090f;--card:#0f1018;--border:#1a1d2e;--text:#c9d1e8;--muted:#404865;--green:#5eead4;--blue:#60a5fa;--amber:#fbbf24}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;max-width:960px;margin:0 auto;padding:40px 20px 64px}
+header{margin-bottom:28px}
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+h1{font-size:22px;font-weight:600;color:#e2e8f8;letter-spacing:-.02em;margin-bottom:4px}
+.meta{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);line-height:2}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+.card h2{font-size:11px;font-weight:600;color:var(--text);margin-bottom:2px}
+.card p{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);margin-bottom:12px;line-height:1.6}
+.chart-wrap{position:relative;height:196px}
+.leg{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
+.leg span{display:flex;align-items:center;gap:5px;font-family:'DM Mono',monospace;font-size:9px;color:var(--muted)}
+.dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.profiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.profile{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+.profile h3{font-size:11px;font-weight:600;color:var(--text);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.row{display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:10px;padding:5px 0;border-bottom:1px solid #12141f;color:var(--muted);gap:12px}
+.row:last-child{border-bottom:none}
+.row span{color:var(--text);text-align:right}
+.footnote{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-top:16px;padding:12px 14px;border:1px solid var(--border);border-radius:8px;background:#0a0a12;line-height:1.5}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">inferpd · DeepSeek-V2-Lite · LMCache MP · March 2026</p>
+  <h1>PD Disaggregated Prefill — LMCache MP Results</h1>
+  <p class="meta">
+    vLLM 0.18.0 · LMCacheMPConnector · ZMQ · LMCache 0.4.2 · 2× A100 SXM 80GB · BF16<br>
+    Disagg proxy + LMCache multiprocess server · Prefiller / Decoder (see runbook for CLI)
+  </p>
+</header>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>Time to First Token — TTFT P50</h2>
+    <p>seconds · lower is better · dashed = 2.0s production target</p>
+    <div class="chart-wrap"><canvas id="c1"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic (7,869 tok in)</span>
+      <span><div class="dot" style="background:var(--amber)"></div>P95 — Long-context stress (15,839 tok in)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>End-to-End Latency — E2E P50</h2>
+    <p>seconds · lower is better · dashed = 11.0s production target</p>
+    <div class="chart-wrap"><canvas id="c2"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic</span>
+      <span><div class="dot" style="background:var(--amber)"></div>P95 — Long-context stress</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Time per Output Token — TPOT P50</h2>
+    <p>milliseconds · stable line = decoder is not the bottleneck</p>
+    <div class="chart-wrap"><canvas id="c3"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic</span>
+      <span><div class="dot" style="background:var(--amber)"></div>P95 — Long-context stress</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Max concurrent requests</h2>
+    <p>peak in-flight requests per run (from benchmark JSON)</p>
+    <div class="chart-wrap"><canvas id="c4"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic</span>
+      <span><div class="dot" style="background:var(--amber)"></div>P95 — Long-context stress</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="profiles">
+  <div class="profile">
+    <h3 style="color:var(--blue)">P50 — Typical traffic</h3>
+    <div class="row">Result folder<span>p50_sweep_20260324_131138</span></div>
+    <div class="row">Input tokens (avg)<span>7,869</span></div>
+    <div class="row">Output tokens (avg)<span>252</span></div>
+    <div class="row">Shared prefix<span>6,000 tok (shared prefix)</span></div>
+    <div class="row">Prompts per step<span>600 per step</span></div>
+    <div class="row">QPS sweep<span>1, 2, 5, 10, 20, 30, 50, 60 req/s</span></div>
+    <div class="row">Best TTFT P50<span style="color:var(--green)">0.480s</span></div>
+    <div class="row" style="flex-direction:column;align-items:stretch"><span style="color:var(--muted);font-size:9px;line-height:1.5">~76% of input tokens are shared prefix — LMCache prefix cache hit path active.</span></div>
+  </div>
+  <div class="profile">
+    <h3 style="color:var(--amber)">P95 — Long-context stress</h3>
+    <div class="row">Result folder<span>p95_stress_20260324_135401</span></div>
+    <div class="row">Input tokens (avg)<span>15,839</span></div>
+    <div class="row">Output tokens (avg)<span>561</span></div>
+    <div class="row">Shared prefix<span>12,000 tok (shared prefix)</span></div>
+    <div class="row">Prompts per step<span>600 per step</span></div>
+    <div class="row">QPS sweep<span>1, 2, 5, 10, 20, 30, 50, 60 req/s</span></div>
+    <div class="row">Best TTFT P50<span style="color:var(--green)">1.019s</span></div>
+    <div class="row" style="flex-direction:column;align-items:stretch"><span style="color:var(--muted);font-size:9px;line-height:1.5">~76% of input tokens are shared prefix — LMCache prefix cache hit path active.</span></div>
+  </div>
+</div>
+
+<p class="footnote">Next step for higher sustained QPS: scale to 2P2D (add prefill / decode replicas) or widen the decode pool.</p>
+
+<script>
+Chart.defaults.color='#404865';
+Chart.defaults.borderColor='#151825';
+Chart.defaults.font.family="'DM Mono',monospace";
+Chart.defaults.font.size=10;
+
+const BLUE='#60a5fa', AMBER='#fbbf24';
+
+const toXY = pts => pts.map(([x,y]) => ({x,y}));
+
+const line = (pts, color) => ({
+  type:'scatter', data:toXY(pts),
+  borderColor:color, backgroundColor:color+'18',
+  borderWidth:2, pointRadius:4.5, pointHoverRadius:6,
+  showLine:true, tension:0.1, fill:false,
+});
+
+const ref = (xMin, xMax, y, color) => ({
+  type:'scatter', data:[{x:xMin,y},{x:xMax,y}],
+  borderColor:color+'55', borderDash:[4,4], borderWidth:1,
+  pointRadius:0, showLine:true, fill:false,
+});
+
+const axes = (yLabel, yMin, yMax, xMax) => ({
+  responsive:true, maintainAspectRatio:false,
+  plugins:{legend:{display:false},tooltip:{backgroundColor:'#0f1018',borderColor:'#1a1d2e',borderWidth:1}},
+  scales:{
+    x:{type:'linear',grid:{color:'#12141f'},min:0,max:xMax,
+       title:{display:true,text:'configured req/s',color:'#404865',font:{size:9}}},
+    y:{grid:{color:'#12141f'},beginAtZero:yMin===undefined,
+       ...(yMin!==undefined?{min:yMin,max:yMax}:{}),
+       title:{display:true,text:yLabel,color:'#404865',font:{size:9}}},
+  },
+});
+
+const p50_ttft  = [[1.0, 0.48], [2.0, 0.387], [5.0, 0.488], [10.0, 14.251], [20.0, 27.633], [30.0, 32.14], [50.0, 36.986], [60.0, 37.628]];
+const p95_ttft  = [[1.0, 1.019], [2.0, 60.915], [5.0, 121.999], [10.0, 149.117], [20.0, 197.691], [30.0, 191.177], [50.0, 200.238], [60.0, 202.186]];
+const p50_e2e   = [[1.0, 10.983], [2.0, 10.818], [5.0, 12.773], [10.0, 29.742], [20.0, 42.539], [30.0, 46.504], [50.0, 51.815], [60.0, 51.633]];
+const p95_e2e   = [[1.0, 31.948], [2.0, 104.833], [5.0, 160.974], [10.0, 187.24], [20.0, 239.458], [30.0, 231.573], [50.0, 239.395], [60.0, 241.696]];
+const p50_tpot  = [[1.0, 41.76], [2.0, 41.5], [5.0, 48.94], [10.0, 60.8], [20.0, 58.56], [30.0, 57.74], [50.0, 58.54], [60.0, 57.4]];
+const p95_tpot  = [[1.0, 55.1], [2.0, 84.52], [5.0, 78.82], [10.0, 75.81], [20.0, 75.36], [30.0, 78.7], [50.0, 75.66], [60.0, 72.74]];
+const p50_conc  = [[1.0, 23], [2.0, 38], [5.0, 91], [10.0, 315], [20.0, 500], [30.0, 547], [50.0, 600], [60.0, 600]];
+const p95_conc  = [[1.0, 49], [2.0, 228], [5.0, 451], [10.0, 526], [20.0, 598], [30.0, 598], [50.0, 598], [60.0, 599]];
+const xMax      = 61.0;
+const concMax   = 648.0;
+const tpotMin   = 38.5;
+const tpotMax   = 87.5;
+
+new Chart('c1',{type:'scatter',
+  data:{datasets:[line(p50_ttft,BLUE),line(p95_ttft,AMBER),ref(0,xMax,2.0,AMBER)]},
+  options:axes('seconds',undefined,undefined,xMax),
+});
+
+new Chart('c2',{type:'scatter',
+  data:{datasets:[line(p50_e2e,BLUE),line(p95_e2e,AMBER),ref(0,xMax,11.0,AMBER)]},
+  options:axes('seconds',undefined,undefined,xMax),
+});
+
+new Chart('c3',{type:'scatter',
+  data:{datasets:[line(p50_tpot,BLUE),line(p95_tpot,AMBER)]},
+  options:axes('milliseconds',tpotMin,tpotMax,xMax),
+});
+
+new Chart('c4',{type:'scatter',
+  data:{datasets:[line(p50_conc,BLUE),line(p95_conc,AMBER)]},
+  options:axes('concurrent requests',0,concMax,xMax),
+});
+</script>
+</body>
+</html>

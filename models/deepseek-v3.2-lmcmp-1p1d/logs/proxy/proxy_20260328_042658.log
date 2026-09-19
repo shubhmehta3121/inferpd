@@ -1,0 +1,10 @@
+[32;20m[2026-03-28 04:26:59,433] LMCache INFO:[0m Telemetry server started on 0.0.0.0:5768 [3m(disagg_proxy_server.py:533:__main__)[0m
+INFO:     Started server process [6291]
+INFO:     Waiting for application startup.
+INFO:     Started server process [6291]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5768 (Press CTRL+C to quit)
+[32;20m[2026-03-28 04:26:59,595] LMCache INFO:[0m Disagg proxy backends: 1 prefiller(s) ['http://localhost:8100'], 1 decoder(s) ['http://localhost:8200'] (round-robin per request with shared index). [3m(disagg_proxy_server.py:102:__main__)[0m
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9000 (Press CTRL+C to quit)

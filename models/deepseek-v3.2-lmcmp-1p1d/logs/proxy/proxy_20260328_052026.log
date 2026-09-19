@@ -1,0 +1,52 @@
+[32;20m[2026-03-28 05:20:27,258] LMCache INFO:[0m Telemetry server started on 0.0.0.0:5768 [3m(disagg_proxy_server.py:533:__main__)[0m
+INFO:     Started server process [12716]
+INFO:     Waiting for application startup.
+INFO:     Started server process [12716]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5768 (Press CTRL+C to quit)
+[32;20m[2026-03-28 05:20:27,326] LMCache INFO:[0m Disagg proxy backends: 1 prefiller(s) ['http://localhost:8100'], 1 decoder(s) ['http://localhost:8200'] (round-robin per request with shared index). [3m(disagg_proxy_server.py:102:__main__)[0m
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:33896 - "GET /health HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:28:02,915] LMCache INFO:[0m Received /v1/completions request with generated ID: 0a1dcefc-c665-43 [3m(disagg_proxy_server.py:306:__main__)[0m
+[32;20m[2026-03-28 05:28:05,809] LMCache INFO:[0m Request 0a1dcefc-c665-43: prefill request duration = 2.8946s [3m(disagg_proxy_server.py:333:__main__)[0m
+[32;20m[2026-03-28 05:28:05,829] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0a1dcefc-c665-43-0-af77bccb [3m(disagg_proxy_server.py:485:__main__)[0m
+[32;20m[2026-03-28 05:28:05,829] LMCache INFO:[0m Notified request: cmpl-0a1dcefc-c665-43-0-af77bccb [3m(disagg_proxy_server.py:493:__main__)[0m
+INFO:     127.0.0.1:36034 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:28:05,830] LMCache INFO:[0m Request 0a1dcefc-c665-43: finished saving KV caches after prefill response = 20.26ms [3m(disagg_proxy_server.py:367:__main__)[0m
+[32;20m[2026-03-28 05:28:05,831] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0a1dcefc-c665-43-0-af77bccb [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:36046 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:28:05,832] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0a1dcefc-c665-43-0-af77bccb [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:36052 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:28:05,844] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0a1dcefc-c665-43-0-af77bccb [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:36060 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33910 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54946 - "GET /health HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:18,970] LMCache INFO:[0m Received /v1/completions request with generated ID: e4bb93a7-fd49-4d [3m(disagg_proxy_server.py:306:__main__)[0m
+[32;20m[2026-03-28 05:29:19,149] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-e4bb93a7-fd49-4d-0-81426154 [3m(disagg_proxy_server.py:485:__main__)[0m
+[32;20m[2026-03-28 05:29:19,149] LMCache INFO:[0m Notified request: cmpl-e4bb93a7-fd49-4d-0-81426154 [3m(disagg_proxy_server.py:493:__main__)[0m
+INFO:     127.0.0.1:35430 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:19,150] LMCache INFO:[0m Request e4bb93a7-fd49-4d: prefill request duration = 0.1797s [3m(disagg_proxy_server.py:333:__main__)[0m
+[32;20m[2026-03-28 05:29:19,150] LMCache INFO:[0m Request e4bb93a7-fd49-4d: finished saving KV caches after prefill response = 0.12ms [3m(disagg_proxy_server.py:367:__main__)[0m
+[32;20m[2026-03-28 05:29:19,151] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-e4bb93a7-fd49-4d-0-81426154 [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:35438 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:19,151] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-e4bb93a7-fd49-4d-0-81426154 [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:35444 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:19,152] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-e4bb93a7-fd49-4d-0-81426154 [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:35446 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54958 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59618 - "GET /health HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:47,901] LMCache INFO:[0m Received /v1/completions request with generated ID: 5043a354-b606-45 [3m(disagg_proxy_server.py:306:__main__)[0m
+[32;20m[2026-03-28 05:29:48,093] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5043a354-b606-45-0-bfcd4793 [3m(disagg_proxy_server.py:485:__main__)[0m
+[32;20m[2026-03-28 05:29:48,093] LMCache INFO:[0m Notified request: cmpl-5043a354-b606-45-0-bfcd4793 [3m(disagg_proxy_server.py:493:__main__)[0m
+INFO:     127.0.0.1:51370 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:48,093] LMCache INFO:[0m Request 5043a354-b606-45: prefill request duration = 0.1927s [3m(disagg_proxy_server.py:333:__main__)[0m
+[32;20m[2026-03-28 05:29:48,093] LMCache INFO:[0m Request 5043a354-b606-45: finished saving KV caches after prefill response = 0.10ms [3m(disagg_proxy_server.py:367:__main__)[0m
+[32;20m[2026-03-28 05:29:48,094] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5043a354-b606-45-0-bfcd4793 [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:51382 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:48,094] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5043a354-b606-45-0-bfcd4793 [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:51394 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-28 05:29:48,095] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5043a354-b606-45-0-bfcd4793 [3m(disagg_proxy_server.py:485:__main__)[0m
+INFO:     127.0.0.1:51404 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59634 - "POST /v1/completions HTTP/1.1" 200 OK

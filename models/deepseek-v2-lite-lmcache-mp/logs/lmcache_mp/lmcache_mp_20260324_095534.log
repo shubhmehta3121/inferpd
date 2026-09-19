@@ -1,0 +1,755 @@
+[32;20m[2026-03-24 09:55:40,396] LMCache INFO:[0m Prometheus metrics available at http://0.0.0.0:9090/metrics [3m(server.py:781:__main__)[0m
+[32;20m[2026-03-24 09:55:46,200] LMCache INFO:[0m Starting EvictionController... [3m(eviction_controller.py:54:lmcache.v1.distributed.storage_controllers.eviction_controller)[0m
+[32;20m[2026-03-24 09:55:46,214] LMCache INFO:[0m Starting StoreController... [3m(store_controller.py:203:lmcache.v1.distributed.storage_controllers.store_controller)[0m
+[32;20m[2026-03-24 09:55:46,217] LMCache INFO:[0m Starting PrefetchController... [3m(prefetch_controller.py:331:lmcache.v1.distributed.storage_controllers.prefetch_controller)[0m
+[32;20m[2026-03-24 09:55:46,217] LMCache INFO:[0m Using blake3 hash function [3m(token_hasher.py:79:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-03-24 09:55:46,479] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 21504 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:46,760] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 22528 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:47,156] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 23552 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:47,456] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 24576 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:47,732] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 25600 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:48,006] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 26624 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:48,282] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 27648 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:48,559] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 28672 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:48,851] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 29696 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:49,145] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 30720 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:49,432] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 31744 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:49,733] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 32768 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:50,018] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 33792 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:50,294] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 34816 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:50,572] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 35840 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:50,855] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 36864 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:51,136] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 37888 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:51,437] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 38912 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:51,715] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 39936 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:52,143] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 40960 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:52,426] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 41984 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:52,712] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 43008 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:53,035] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 44032 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:53,368] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 45056 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:53,655] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 46080 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:53,928] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 47104 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:54,212] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 48128 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:54,484] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 49152 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:54,759] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 50176 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:55,059] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 51200 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:55,333] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 52224 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:55,621] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 53248 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:55,912] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 54272 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:56,185] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 55296 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:56,457] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 56320 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:56,732] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 57344 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:57,019] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 58368 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:57,292] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 59392 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:57,583] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 60416 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:57,864] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 61440 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:58,135] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 62464 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:58,420] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 63488 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:58,698] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 64512 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:58,975] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 65536 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:59,268] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 66560 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:59,712] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 67584 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:55:59,988] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 68608 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:00,273] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 69632 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:00,692] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 70656 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:00,999] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 71680 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:01,289] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 72704 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:01,593] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 73728 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:01,874] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 74752 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:02,149] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 75776 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:02,432] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 76800 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:02,718] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 77824 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:03,202] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 78848 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:03,507] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 79872 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:03,782] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 80896 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:04,062] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 81920 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:56:04,123] LMCache INFO:[0m Initialized NONE_HASH=b'\x17RT (W\xab#\xc0\xd5\xf6\x013p$\x18\xd3D\xbfQ\x9ab\x03vf\xe1\x01\xf9\x84W\xbdg' from vLLM [3m(token_hasher.py:164:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-03-24 09:56:04,123] LMCache INFO:[0m TokenHasher initialized: chunk_size=256, hash_algorithm=blake3 [3m(token_hasher.py:67:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-03-24 09:56:04,125] LMCache INFO:[0m LMCache ZMQ cache server is running on tcp://localhost:6000 [3m(server.py:819:__main__)[0m
+[32;20m[2026-03-24 09:56:04,125] LMCache INFO:[0m Starting PrometheusController (interval=10.0s)... [3m(prometheus_controller.py:50:lmcache.v1.mp_observability.prometheus_controller)[0m
+[32;20m[2026-03-24 09:56:04,125] LMCache INFO:[0m Registered PrometheusLogger: ['L1ManagerStatsLogger', 'StorageManagerStatsLogger']. [3m(prometheus_controller.py:56:lmcache.v1.mp_observability.prometheus_controller)[0m
+[32;20m[2026-03-24 09:56:04,125] LMCache INFO:[0m LMCache cache server is running... [3m(server.py:833:__main__)[0m
+[32;20m[2026-03-24 09:57:19,671] LMCache INFO:[0m list_depth: 1, tensor_dim: 3 [3m(utils.py:147:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:57:19,671] LMCache INFO:[0m GPU KV Cache Dimensions: [27][18818, 64, 576] [3m(utils.py:158:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:57:19,671] LMCache INFO:[0m GPU KV Format: List[num_layers] of [num_blocks, block_size, head_size] [3m(utils.py:90:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:57:19,671] LMCache INFO:[0m Currently used by:
+  - vLLM MLA [3m(utils.py:93:lmcache.v1.gpu_connector.utils)[0m
+/workspace/.venv/lib/python3.12/site-packages/lmcache/v1/multiprocess/server.py:200: DeprecationWarning: ExternalStream is deprecated. Use Stream.from_external() instead to interoperate with external streams that implement the CUDA stream protocol.
+  gpu_context = GPUCacheContext(kv_caches, self.chunk_size)
+[32;20m[2026-03-24 09:57:19,701] LMCache INFO:[0m Registered KV cache for GPU ID 11803 with 27 layers [3m(server.py:203:__main__)[0m
+[32;20m[2026-03-24 09:57:19,701] LMCache INFO:[0m Initialized cuda stream on device cuda:1 [3m(gpu_context.py:107:lmcache.v1.multiprocess.gpu_context)[0m
+[32;20m[2026-03-24 09:58:33,004] LMCache INFO:[0m list_depth: 1, tensor_dim: 3 [3m(utils.py:147:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:58:33,004] LMCache INFO:[0m GPU KV Cache Dimensions: [27][18818, 64, 576] [3m(utils.py:158:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:58:33,004] LMCache INFO:[0m GPU KV Format: List[num_layers] of [num_blocks, block_size, head_size] [3m(utils.py:90:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:58:33,004] LMCache INFO:[0m Currently used by:
+  - vLLM MLA [3m(utils.py:93:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-03-24 09:58:33,019] LMCache INFO:[0m Registered KV cache for GPU ID 12440 with 27 layers [3m(server.py:203:__main__)[0m
+[32;20m[2026-03-24 09:58:33,019] LMCache INFO:[0m Initialized cuda stream on device cuda:0 [3m(gpu_context.py:107:lmcache.v1.multiprocess.gpu_context)[0m
+[32;20m[2026-03-24 09:59:27,339] LMCache INFO:[0m Stored 13824 tokens in 0.699 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:27,413] LMCache INFO:[0m Stored 7936 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:27,414] LMCache INFO:[0m Stored 7936 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:28,664] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,666] LMCache INFO:[0m Stored 4096 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:28,666] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,669] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,671] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,673] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,676] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,678] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,698] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,699] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,700] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,701] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,708] LMCache INFO:[0m Retrieved 5888 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,708] LMCache INFO:[0m Retrieved 5888 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,709] LMCache INFO:[0m Retrieved 5888 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:28,873] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:28,887] LMCache INFO:[0m Retrieved 13824 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:29,062] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:29,067] LMCache INFO:[0m Retrieved 5888 tokens in 0.003 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:29,076] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:29,080] LMCache INFO:[0m Retrieved 5888 tokens in 0.002 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:29,171] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:29,172] LMCache INFO:[0m Stored 2048 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:29,526] LMCache INFO:[0m Retrieved 5888 tokens in 0.002 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:29,583] LMCache INFO:[0m Stored 2048 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:29,583] LMCache INFO:[0m Stored 2048 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:29,587] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,260] LMCache INFO:[0m Retrieved 5888 tokens in 0.002 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:30,303] LMCache INFO:[0m Stored 2048 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:30,762] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:30,765] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:30,765] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.8 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,766] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:30,767] LMCache INFO:[0m Stored 2048 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:30,768] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,771] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,773] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,775] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,778] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,810] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,813] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,815] LMCache INFO:[0m Prefetch request completed (L1+L2): 39/54 prefix hits (39 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,817] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,837] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:30,839] LMCache INFO:[0m Retrieved 9984 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:30,842] LMCache INFO:[0m Retrieved 13824 tokens in 0.020 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:30,843] LMCache INFO:[0m Retrieved 13824 tokens in 0.022 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:30,908] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,911] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:30,921] LMCache INFO:[0m Retrieved 7936 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:30,921] LMCache INFO:[0m Retrieved 7936 tokens in 0.007 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:31,725] LMCache INFO:[0m Stored 3840 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:31,726] LMCache INFO:[0m Stored 5888 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:32,140] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,141] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,144] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,144] LMCache INFO:[0m Retrieved 5888 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,150] LMCache INFO:[0m Retrieved 5888 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,150] LMCache INFO:[0m Retrieved 5888 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,187] LMCache INFO:[0m Stored 1536 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:32,188] LMCache INFO:[0m Stored 2048 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:32,194] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,196] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,199] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,202] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,204] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,207] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,207] LMCache INFO:[0m Stored 5888 tokens in 0.017 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:32,208] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:32,262] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,268] LMCache INFO:[0m Retrieved 7936 tokens in 0.003 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,888] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,890] LMCache INFO:[0m Retrieved 5888 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,891] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,892] LMCache INFO:[0m Retrieved 5888 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,897] LMCache INFO:[0m Retrieved 5888 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,898] LMCache INFO:[0m Retrieved 5888 tokens in 0.007 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Stored 2048 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:32,929] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,932] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,934] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,936] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:32,951] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,952] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,952] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:32,952] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,071] LMCache INFO:[0m Stored 5888 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:33,206] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,208] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,210] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,213] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,232] LMCache INFO:[0m Retrieved 7936 tokens in 0.017 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,233] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,233] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,234] LMCache INFO:[0m Retrieved 7936 tokens in 0.017 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,347] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,349] LMCache INFO:[0m Prefetch request completed (L1+L2): 29/54 prefix hits (29 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,359] LMCache INFO:[0m Retrieved 7424 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,359] LMCache INFO:[0m Retrieved 7936 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:33,451] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:33,452] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:33,452] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:33,453] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 1.0 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,453] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:33,455] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,457] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,460] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,632] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:33,647] LMCache INFO:[0m Retrieved 7936 tokens in 0.003 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:34,832] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:34,835] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:34,835] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:34,836] LMCache INFO:[0m Retrieved 5888 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:34,872] LMCache INFO:[0m Stored 5888 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:34,888] LMCache INFO:[0m Stored 2048 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:34,891] LMCache INFO:[0m Stored 1536 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:34,895] LMCache INFO:[0m Stored 5888 tokens in 0.031 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:34,895] LMCache INFO:[0m Stored 5888 tokens in 0.033 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:34,896] LMCache INFO:[0m Stored 5888 tokens in 0.031 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,578] LMCache INFO:[0m Stored 5888 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,579] LMCache INFO:[0m Stored 6400 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,669] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,671] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,671] LMCache INFO:[0m Stored 2048 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,672] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,798] LMCache INFO:[0m Stored 5888 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:35,955] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:35,958] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:35,960] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:35,962] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:35,987] LMCache INFO:[0m Retrieved 7936 tokens in 0.021 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:35,988] LMCache INFO:[0m Retrieved 7936 tokens in 0.023 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:35,988] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:35,989] LMCache INFO:[0m Retrieved 7936 tokens in 0.022 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:37,153] LMCache INFO:[0m Stored 5888 tokens in 0.024 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,153] LMCache INFO:[0m Stored 5888 tokens in 0.025 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,155] LMCache INFO:[0m Stored 5888 tokens in 0.024 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,157] LMCache INFO:[0m Stored 5888 tokens in 0.026 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,161] LMCache INFO:[0m Stored 1536 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,162] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,162] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,163] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:37,364] LMCache INFO:[0m Prefetch request completed (L1+L2): 29/54 prefix hits (29 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:37,367] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:37,376] LMCache INFO:[0m Retrieved 7424 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:37,376] LMCache INFO:[0m Retrieved 7936 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:38,040] LMCache INFO:[0m Stored 5888 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:38,041] LMCache INFO:[0m Stored 6400 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:38,638] LMCache INFO:[0m Stored 2048 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:38,638] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:38,640] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:38,641] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 1.3 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,641] LMCache INFO:[0m Stored 3328 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:38,644] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,646] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,648] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,651] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,653] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,656] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,658] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,660] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,663] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,666] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,668] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,671] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,674] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 1.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,677] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,679] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,681] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,684] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,686] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,688] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,691] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,693] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,701] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,704] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,706] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,709] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,711] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,714] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,716] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,719] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,906] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,908] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,910] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,913] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:38,930] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:38,931] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:38,931] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:38,932] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,050] LMCache INFO:[0m Retrieved 5888 tokens in 0.030 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,051] LMCache INFO:[0m Retrieved 5888 tokens in 0.032 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,053] LMCache INFO:[0m Retrieved 5888 tokens in 0.035 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,054] LMCache INFO:[0m Retrieved 5888 tokens in 0.035 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,062] LMCache INFO:[0m Retrieved 5888 tokens in 0.010 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,063] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,064] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,066] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,076] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,077] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,078] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,080] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,090] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,091] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,093] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,094] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,102] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,103] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,104] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,105] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,113] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,114] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,115] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,116] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,124] LMCache INFO:[0m Retrieved 5888 tokens in 0.010 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,125] LMCache INFO:[0m Retrieved 5888 tokens in 0.010 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,126] LMCache INFO:[0m Retrieved 5888 tokens in 0.010 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,128] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,132] LMCache INFO:[0m Stored 2048 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,135] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 1.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,139] LMCache INFO:[0m Stored 4864 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,141] LMCache INFO:[0m Retrieved 5888 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,142] LMCache INFO:[0m Retrieved 5888 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,152] LMCache INFO:[0m Stored 5888 tokens in 0.018 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,154] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.8 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,156] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,158] LMCache INFO:[0m Stored 5888 tokens in 0.018 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,161] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,162] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,167] LMCache INFO:[0m Retrieved 5888 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,167] LMCache INFO:[0m Retrieved 5888 tokens in 0.007 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,168] LMCache INFO:[0m Retrieved 5888 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,368] LMCache INFO:[0m Prefetch request completed (L1+L2): 29/54 prefix hits (29 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,370] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,372] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,374] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,389] LMCache INFO:[0m Retrieved 7424 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,390] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,391] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,391] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,768] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,771] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:40,778] LMCache INFO:[0m Retrieved 5888 tokens in 0.005 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,779] LMCache INFO:[0m Retrieved 5888 tokens in 0.005 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:40,914] LMCache INFO:[0m Stored 2048 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,914] LMCache INFO:[0m Stored 2048 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,914] LMCache INFO:[0m Stored 2048 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:40,915] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:41,065] LMCache INFO:[0m Stored 6400 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:41,071] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:41,073] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:41,075] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:41,077] LMCache INFO:[0m Prefetch request completed (L1+L2): 36/54 prefix hits (36 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:41,079] LMCache INFO:[0m Prefetch request completed (L1+L2): 42/54 prefix hits (42 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:41,081] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:41,103] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:41,104] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:41,105] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:41,106] LMCache INFO:[0m Retrieved 9216 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:41,111] LMCache INFO:[0m Retrieved 7936 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:41,112] LMCache INFO:[0m Retrieved 10752 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:41,731] LMCache INFO:[0m Stored 5888 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:41,731] LMCache INFO:[0m Stored 5888 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:41,732] LMCache INFO:[0m Stored 5888 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:42,544] LMCache INFO:[0m Stored 1536 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:42,545] LMCache INFO:[0m Stored 2048 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:42,545] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:42,546] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:43,349] LMCache INFO:[0m Stored 4608 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:43,351] LMCache INFO:[0m Stored 5888 tokens in 0.015 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:43,352] LMCache INFO:[0m Stored 5888 tokens in 0.017 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:43,354] LMCache INFO:[0m Stored 5888 tokens in 0.015 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:43,355] LMCache INFO:[0m Stored 3072 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:43,357] LMCache INFO:[0m Stored 5888 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:44,033] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:44,035] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:44,035] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:44,037] LMCache INFO:[0m Stored 3328 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:44,311] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:44,314] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:44,316] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:44,318] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:44,337] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:44,338] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:44,339] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:44,339] LMCache INFO:[0m Retrieved 7936 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:45,529] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,532] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,533] LMCache INFO:[0m Stored 2048 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,534] LMCache INFO:[0m Stored 4864 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,762] LMCache INFO:[0m Stored 5888 tokens in 0.015 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,762] LMCache INFO:[0m Stored 5888 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,763] LMCache INFO:[0m Stored 5888 tokens in 0.015 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,769] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:45,895] LMCache INFO:[0m Prefetch request completed (L1+L2): 29/54 prefix hits (29 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:45,897] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:45,900] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:45,902] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:45,920] LMCache INFO:[0m Retrieved 7424 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:45,921] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:45,921] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:45,921] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:47,103] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,104] LMCache INFO:[0m Stored 2048 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,105] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,107] LMCache INFO:[0m Stored 6656 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,368] LMCache INFO:[0m Stored 5888 tokens in 0.014 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,369] LMCache INFO:[0m Stored 5888 tokens in 0.014 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,370] LMCache INFO:[0m Stored 5888 tokens in 0.016 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,370] LMCache INFO:[0m Stored 6400 tokens in 0.018 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:47,503] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:47,506] LMCache INFO:[0m Prefetch request completed (L1+L2): 36/54 prefix hits (36 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:47,509] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:47,511] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:47,530] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:47,531] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:47,532] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:47,532] LMCache INFO:[0m Retrieved 9216 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:48,610] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,611] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,612] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,614] LMCache INFO:[0m Stored 7936 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,973] LMCache INFO:[0m Stored 4608 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,974] LMCache INFO:[0m Stored 5888 tokens in 0.015 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,975] LMCache INFO:[0m Stored 5888 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:48,976] LMCache INFO:[0m Stored 5888 tokens in 0.014 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:49,102] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:49,104] LMCache INFO:[0m Prefetch request completed (L1+L2): 42/54 prefix hits (42 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:49,106] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:49,109] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:49,127] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:49,128] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:49,128] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:49,129] LMCache INFO:[0m Retrieved 10752 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:50,130] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:50,132] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:50,132] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:50,134] LMCache INFO:[0m Stored 7936 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,229] LMCache INFO:[0m Prefetch request completed (L1+L2): 49/54 prefix hits (49 L1, 0 L2) in 0.9 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,231] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,233] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,236] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,241] LMCache INFO:[0m Stored 5888 tokens in 0.018 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,242] LMCache INFO:[0m Stored 5888 tokens in 0.017 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,243] LMCache INFO:[0m Stored 5888 tokens in 0.021 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,257] LMCache INFO:[0m Retrieved 7936 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:51,257] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:51,258] LMCache INFO:[0m Retrieved 7936 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:51,260] LMCache INFO:[0m Retrieved 12544 tokens in 0.020 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:51,360] LMCache INFO:[0m Stored 3072 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,704] LMCache INFO:[0m Stored 768 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,708] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,710] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,710] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.8 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,710] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,713] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,715] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,716] LMCache INFO:[0m Stored 7936 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:51,717] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,719] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,722] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,724] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,726] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,728] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,730] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,732] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,734] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,736] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,738] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,740] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,742] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,744] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,746] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,748] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,750] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,753] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,755] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,757] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,759] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,761] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,763] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,765] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,767] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,769] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:51,771] LMCache INFO:[0m Prefetch request completed (L1+L2): 23/54 prefix hits (23 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:52,535] LMCache INFO:[0m Stored 1280 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:52,540] LMCache INFO:[0m Stored 5888 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:52,541] LMCache INFO:[0m Stored 5888 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:52,541] LMCache INFO:[0m Stored 5888 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:52,655] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:52,658] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:52,660] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:52,662] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:52,685] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:52,686] LMCache INFO:[0m Retrieved 7936 tokens in 0.021 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:52,686] LMCache INFO:[0m Retrieved 7936 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:52,688] LMCache INFO:[0m Retrieved 13824 tokens in 0.022 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,130] LMCache INFO:[0m Retrieved 5888 tokens in 0.028 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,132] LMCache INFO:[0m Retrieved 5888 tokens in 0.031 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,133] LMCache INFO:[0m Retrieved 5888 tokens in 0.030 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,134] LMCache INFO:[0m Retrieved 5888 tokens in 0.030 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,142] LMCache INFO:[0m Retrieved 5888 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,144] LMCache INFO:[0m Retrieved 5888 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,146] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,148] LMCache INFO:[0m Retrieved 5888 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,151] LMCache INFO:[0m Retrieved 5888 tokens in 0.004 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,157] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,159] LMCache INFO:[0m Retrieved 5888 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,164] LMCache INFO:[0m Retrieved 5888 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,165] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,170] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,174] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,179] LMCache INFO:[0m Retrieved 5888 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,181] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,185] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,187] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,192] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,194] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,198] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,200] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,207] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,212] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,213] LMCache INFO:[0m Retrieved 5888 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,218] LMCache INFO:[0m Stored 2048 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:53,220] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,222] LMCache INFO:[0m Retrieved 5888 tokens in 0.014 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,224] LMCache INFO:[0m Stored 2048 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:53,225] LMCache INFO:[0m Retrieved 5888 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:53,227] LMCache INFO:[0m Stored 7168 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,098] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 1.1 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,102] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.8 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,104] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,107] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,109] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,112] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,114] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,115] LMCache INFO:[0m Stored 5888 tokens in 0.021 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,117] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,119] LMCache INFO:[0m Stored 5888 tokens in 0.024 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,119] LMCache INFO:[0m Stored 5888 tokens in 0.026 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,143] LMCache INFO:[0m Retrieved 7936 tokens in 0.021 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,143] LMCache INFO:[0m Retrieved 7936 tokens in 0.019 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,146] LMCache INFO:[0m Retrieved 7936 tokens in 0.021 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,155] LMCache INFO:[0m Retrieved 13824 tokens in 0.026 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,160] LMCache INFO:[0m Retrieved 7936 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,161] LMCache INFO:[0m Retrieved 7936 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,161] LMCache INFO:[0m Retrieved 7936 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,164] LMCache INFO:[0m Retrieved 13824 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,216] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,217] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,217] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,218] LMCache INFO:[0m Stored 2048 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:54,271] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,273] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,284] LMCache INFO:[0m Retrieved 7936 tokens in 0.006 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,284] LMCache INFO:[0m Retrieved 7936 tokens in 0.008 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:54,401] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:54,408] LMCache INFO:[0m Retrieved 13824 tokens in 0.004 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:55,462] LMCache INFO:[0m Stored 5888 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:55,463] LMCache INFO:[0m Stored 5888 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:55,463] LMCache INFO:[0m Stored 5888 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:55,815] LMCache INFO:[0m Stored 1536 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:55,818] LMCache INFO:[0m Stored 2048 tokens in 0.014 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:55,819] LMCache INFO:[0m Stored 2048 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:55,819] LMCache INFO:[0m Stored 2048 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:56,824] LMCache INFO:[0m Stored 5888 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:56,825] LMCache INFO:[0m Stored 5888 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:56,825] LMCache INFO:[0m Stored 5888 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,305] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,306] LMCache INFO:[0m Stored 2048 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,306] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,307] LMCache INFO:[0m Stored 3328 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,713] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:57,716] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:57,718] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:57,721] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.4 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:57,722] LMCache INFO:[0m Stored 5888 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,722] LMCache INFO:[0m Stored 5888 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:57,738] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:57,739] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:57,739] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:57,739] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:58,801] LMCache INFO:[0m Stored 2048 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:58,801] LMCache INFO:[0m Stored 2048 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:58,802] LMCache INFO:[0m Stored 2048 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:58,809] LMCache INFO:[0m Stored 4864 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:59,204] LMCache INFO:[0m Stored 5888 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:59,204] LMCache INFO:[0m Stored 5888 tokens in 0.013 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:59,204] LMCache INFO:[0m Stored 5888 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:59,205] LMCache INFO:[0m Stored 5888 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 09:59:59,341] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:59,344] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:59,346] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:59,348] LMCache INFO:[0m Prefetch request completed (L1+L2): 29/54 prefix hits (29 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 09:59:59,371] LMCache INFO:[0m Retrieved 7424 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:59,372] LMCache INFO:[0m Retrieved 7936 tokens in 0.020 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:59,372] LMCache INFO:[0m Retrieved 7936 tokens in 0.018 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 09:59:59,373] LMCache INFO:[0m Retrieved 7936 tokens in 0.020 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:00,309] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,310] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,311] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,312] LMCache INFO:[0m Stored 6656 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,845] LMCache INFO:[0m Stored 5888 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,845] LMCache INFO:[0m Stored 5888 tokens in 0.014 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,846] LMCache INFO:[0m Stored 5888 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,846] LMCache INFO:[0m Stored 6400 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:00,986] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:00,988] LMCache INFO:[0m Prefetch request completed (L1+L2): 36/54 prefix hits (36 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:00,991] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:00,993] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:01,010] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:01,010] LMCache INFO:[0m Retrieved 7936 tokens in 0.011 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:01,010] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:01,011] LMCache INFO:[0m Retrieved 9216 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:01,824] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:01,826] LMCache INFO:[0m Stored 2048 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:01,827] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:01,829] LMCache INFO:[0m Stored 7936 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:02,403] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:02,406] LMCache INFO:[0m Prefetch request completed (L1+L2): 42/54 prefix hits (42 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:02,408] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:02,410] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:02,416] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:02,417] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:02,418] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:02,429] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:02,431] LMCache INFO:[0m Retrieved 7936 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:02,431] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:02,432] LMCache INFO:[0m Retrieved 10752 tokens in 0.015 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:02,628] LMCache INFO:[0m Stored 4608 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,406] LMCache INFO:[0m Stored 2048 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,406] LMCache INFO:[0m Stored 2048 tokens in 0.009 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,408] LMCache INFO:[0m Stored 2048 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,410] LMCache INFO:[0m Stored 7936 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,883] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.8 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:03,896] LMCache INFO:[0m Stored 5888 tokens in 0.017 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,896] LMCache INFO:[0m Stored 5888 tokens in 0.019 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:03,897] LMCache INFO:[0m Stored 5888 tokens in 0.017 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:04,034] LMCache INFO:[0m Stored 3072 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:04,843] LMCache INFO:[0m Stored 2048 tokens in 0.005 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:04,845] LMCache INFO:[0m Stored 7936 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,089] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,496] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,496] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,496] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,497] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,561] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,561] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:05,895] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,507] LMCache INFO:[0m Stored 256 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,508] LMCache INFO:[0m Stored 256 tokens in 0.010 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,508] LMCache INFO:[0m Stored 256 tokens in 0.011 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,508] LMCache INFO:[0m Stored 256 tokens in 0.012 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,632] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,632] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:06,698] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,302] LMCache INFO:[0m Stored 256 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,302] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,302] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,303] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,767] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,767] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:07,984] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.6 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:08,049] LMCache INFO:[0m Retrieved 7936 tokens in 0.003 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:08,914] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:08,917] LMCache INFO:[0m Prefetch request completed (L1+L2): 49/54 prefix hits (49 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:08,919] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:08,921] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:08,924] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:08,984] LMCache INFO:[0m Retrieved 7936 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:08,993] LMCache INFO:[0m Retrieved 7936 tokens in 0.025 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:08,994] LMCache INFO:[0m Retrieved 7936 tokens in 0.023 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:08,998] LMCache INFO:[0m Retrieved 12544 tokens in 0.028 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:09,001] LMCache INFO:[0m Retrieved 13824 tokens in 0.016 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:09,053] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:09,055] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:09,058] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:09,070] LMCache INFO:[0m Retrieved 7936 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:09,071] LMCache INFO:[0m Retrieved 7936 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:09,071] LMCache INFO:[0m Retrieved 7936 tokens in 0.009 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:10,897] LMCache INFO:[0m Stored 1280 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:10,901] LMCache INFO:[0m Stored 5888 tokens in 0.008 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:10,901] LMCache INFO:[0m Stored 5888 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:11,455] LMCache INFO:[0m Prefetch request completed (L1+L2): 31/54 prefix hits (31 L1, 0 L2) in 0.7 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:11,457] LMCache INFO:[0m Prefetch request completed (L1+L2): 54/54 prefix hits (54 L1, 0 L2) in 0.5 ms (request_id=-1) [3m(storage_manager.py:356:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-03-24 10:00:11,528] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:11,529] LMCache INFO:[0m Retrieved 7936 tokens in 0.012 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:11,531] LMCache INFO:[0m Retrieved 13824 tokens in 0.013 seconds [3m(server.py:481:__main__)[0m
+[32;20m[2026-03-24 10:00:11,727] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:11,727] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:11,728] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:11,728] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:12,341] LMCache INFO:[0m Stored 5888 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:12,343] LMCache INFO:[0m Stored 5888 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,156] LMCache INFO:[0m Stored 5888 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,569] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,628] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,629] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,629] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,800] LMCache INFO:[0m Stored 256 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,800] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,801] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,802] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,802] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:13,802] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,351] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,352] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,352] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,353] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,902] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,903] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,903] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:15,904] LMCache INFO:[0m Stored 256 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,440] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,441] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,441] LMCache INFO:[0m Stored 256 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,441] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,972] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,972] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:16,972] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,023] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,348] LMCache INFO:[0m Stored 256 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,348] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,349] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,349] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,827] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,827] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,828] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:17,877] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,301] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,301] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,301] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,407] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,408] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,408] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,409] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,465] LMCache INFO:[0m Stored 256 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,465] LMCache INFO:[0m Stored 256 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,466] LMCache INFO:[0m Stored 256 tokens in 0.007 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,466] LMCache INFO:[0m Stored 256 tokens in 0.006 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,891] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,891] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,891] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:18,892] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:19,850] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:19,850] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:19,851] LMCache INFO:[0m Stored 256 tokens in 0.004 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:19,851] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,191] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,192] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,192] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,233] LMCache INFO:[0m Stored 256 tokens in 0.000 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,405] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,405] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:20,405] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:22,210] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,444] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,445] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,445] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,446] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,813] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,814] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,938] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m
+[32;20m[2026-03-24 10:00:23,938] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(server.py:338:__main__)[0m

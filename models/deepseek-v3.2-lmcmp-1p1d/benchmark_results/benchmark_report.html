@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inferpd — PD Disagg Benchmark</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090f;--card:#0f1018;--border:#1a1d2e;--text:#c9d1e8;--muted:#404865;--green:#5eead4;--blue:#60a5fa;--amber:#fbbf24}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:18px}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.45;max-width:1100px;margin:0 auto;padding:36px 24px 72px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+header{margin-bottom:32px}
+.eyebrow{font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+h1{font-size:1.55rem;font-weight:600;color:#e2e8f8;letter-spacing:-.02em;margin-bottom:8px;line-height:1.2}
+.meta{font-family:'DM Mono',monospace;font-size:0.78rem;color:#a8b0d0;line-height:1.85}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.card h2{font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:4px;line-height:1.3}
+.card p{font-family:'DM Mono',monospace;font-size:0.72rem;color:#94a0c8;margin-bottom:14px;line-height:1.55}
+.chart-wrap{position:relative;height:260px}
+.leg{display:flex;gap:16px;margin-top:12px;flex-wrap:wrap}
+.leg span{display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:0.72rem;color:#94a0c8}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.profiles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.profile{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.profile h3{font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.row{display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:0.78rem;padding:7px 0;border-bottom:1px solid #12141f;color:#94a0c8;gap:14px}
+.row:last-child{border-bottom:none}
+.row span{color:var(--text);text-align:right}
+.cache-note{color:#94a0c8;margin-top:6px;font-size:0.72rem;line-height:1.55}
+.note-p95{margin:20px 0 24px;padding:14px 18px;border:1px solid #3d3420;border-radius:10px;background:#120f0a;font-family:'DM Mono',monospace;font-size:0.74rem;color:#c4b89a;line-height:1.6}
+.note-p95 strong{color:#fbbf24;font-weight:600;display:block;margin-bottom:8px;font-size:0.78rem;font-family:'DM Sans',sans-serif}
+@media print{body{padding:16px} .chart-wrap{height:220px}}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">inferpd · DeepSeek-V3.2 (NVIDIA) · 8× B200 · LMCache MP · March 2026</p>
+  <h1>PD Disaggregated Prefill — LMCache MP Results</h1>
+  <p class="meta">
+    NVIDIA DeepSeek-V3.2 · FP4 weights · vLLM 0.18.0 · LMCacheMPConnector · ZMQ · LMCache 0.4.2<br>
+    8× NVIDIA B200 GPUs · 180 GB VRAM · 1 prefiller (4 GPUs) + 1 decoder (4 GPUs), 1P1D · tensor_parallel_size = 4 (prefill and decode) · disagg proxy + LMCache multiprocess server
+  </p>
+</header>
+
+<div class="note-p95">
+  <strong>P95 stress — why OOM at high QPS</strong>
+  P95 is not plotted here. Under heavy QPS, many long-context sequences ran together; GPU KV filled (max_num_seqs, max_num_batched_tokens, gpu_memory_utilization) and a forward still needed extra workspace → CUDA OOM, engine death, timeouts on the client.
+  <br><br>
+  Fix at a high level: limit concurrency, tighten those vLLM caps, optionally free a little VRAM headroom (slightly lower gpu_memory_utilization), scale decoders for more sustained rps.
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>Time to First Token — TTFT P50</h2>
+    <p>seconds · lower is better · dashed = 2.0s production target</p>
+    <div class="chart-wrap"><canvas id="c1"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic (7,870 tok in)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>End-to-End Latency — E2E P50</h2>
+    <p>seconds · lower is better · dashed = 11.0s production target</p>
+    <div class="chart-wrap"><canvas id="c2"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Time per Output Token — TPOT P50</h2>
+    <p>milliseconds · stable line = decoder is not the bottleneck</p>
+    <div class="chart-wrap"><canvas id="c3"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Max concurrent requests</h2>
+    <p>peak in-flight requests per run (from benchmark JSON)</p>
+    <div class="chart-wrap"><canvas id="c4"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 — Typical traffic</span>
+    </div>
+  </div>
+
+  <div class="card" style="grid-column:1/-1">
+    <h2>Request throughput — achieved vs configured</h2>
+    <p>req/s · Y = achieved (request_throughput) · X = configured request_rate · dashed = ideal (Y = X)</p>
+    <div class="chart-wrap"><canvas id="c5"></canvas></div>
+    <div class="leg">
+      <span><div class="dot" style="background:var(--blue)"></div>P50 profile — typical traffic</span>
+      <span style="color:var(--muted)">· ideal</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="profiles" style="grid-template-columns:1fr">
+  <div class="profile">
+    <h3 style="color:var(--blue)">P50 — Typical traffic</h3>
+    <div class="row">Result folder<span>p50_sweep_20260328_061945</span></div>
+    <div class="row">Input tokens (avg)<span>7,870</span></div>
+    <div class="row">Output tokens (avg)<span>252</span></div>
+    <div class="row">Shared prefix<span>6,000 tok (shared prefix)</span></div>
+    <div class="row">Prompts per step<span>600 per step</span></div>
+    <div class="row">QPS sweep<span>1, 2, 5, 10, 20, 30, 50, 60 req/s</span></div>
+    <div class="row">Best TTFT P50<span style="color:var(--green)">0.443s</span></div>
+    <div class="row" style="flex-direction:column;align-items:stretch"><span class="cache-note">~76% of input tokens are shared prefix — LMCache prefix cache hit path active.</span></div>
+  </div>
+</div>
+
+<script>
+Chart.defaults.color='#8b9acf';
+Chart.defaults.borderColor='#151825';
+Chart.defaults.font.family="'DM Mono',monospace";
+Chart.defaults.font.size=13;
+
+const BLUE='#60a5fa', TARGET='#94a3b8';
+
+const toXY = pts => pts.map(([x,y]) => ({x,y}));
+
+const line = (pts, color) => ({
+  type:'scatter', data:toXY(pts),
+  borderColor:color, backgroundColor:color+'18',
+  borderWidth:2.5, pointRadius:5.5, pointHoverRadius:7,
+  showLine:true, tension:0.1, fill:false,
+});
+
+const ref = (xMin, xMax, y, color) => ({
+  type:'scatter', data:[{x:xMin,y},{x:xMax,y}],
+  borderColor:color+'55', borderDash:[4,4], borderWidth:1,
+  pointRadius:0, showLine:true, fill:false,
+});
+
+const diag = (m) => ({
+  type:'scatter', data:[{x:0,y:0},{x:m,y:m}],
+  borderColor:'#6b7aad', borderDash:[5,5], borderWidth:1.5,
+  pointRadius:0, showLine:true, fill:false,
+});
+
+const AX_TITLE = {color:'#a8b4e8',font:{size:13,family:"'DM Mono',monospace"}};
+const AX_TICKS = {color:'#8b9acf',font:{size:12,family:"'DM Mono',monospace"}};
+const axes = (yLabel, yMin, yMax, xMax) => ({
+  responsive:true, maintainAspectRatio:false,
+  plugins:{legend:{display:false},tooltip:{backgroundColor:'#0f1018',borderColor:'#1a1d2e',borderWidth:1,titleFont:{size:13},bodyFont:{size:12}}},
+  scales:{
+    x:{type:'linear',grid:{color:'#12141f'},min:0,max:xMax,
+       ticks:AX_TICKS,
+       title:{display:true,text:'configured req/s',...AX_TITLE}},
+    y:{grid:{color:'#12141f'},beginAtZero:yMin===undefined,
+       ...(yMin!==undefined?{min:yMin,max:yMax}:{}),
+       ticks:AX_TICKS,
+       title:{display:true,text:yLabel,...AX_TITLE}},
+  },
+});
+
+const p50_ttft  = [[1.0, 0.443], [2.0, 0.395], [5.0, 10.577], [10.0, 43.533], [20.0, 16.215], [30.0, 34.631], [50.0, 113.565], [60.0, 94.553]];
+const p50_e2e   = [[1.0, 4.68], [2.0, 4.82], [5.0, 24.609], [10.0, 52.955], [20.0, 34.262], [30.0, 83.434], [50.0, 127.264], [60.0, 106.874]];
+const p50_tpot  = [[1.0, 16.75], [2.0, 17.25], [5.0, 33.15], [10.0, 47.96], [20.0, 42.17], [30.0, 53.44], [50.0, 117.09], [60.0, 123.19]];
+const p50_conc  = [[1.0, 18], [2.0, 22], [5.0, 281], [10.0, 533], [20.0, 401], [30.0, 500], [50.0, 600], [60.0, 600]];
+const p50_req_tput = [[1.0, 0.993], [2.0, 1.974], [5.0, 4.687], [10.0, 3.805], [20.0, 4.218], [30.0, 4.055], [50.0, 2.922], [60.0, 2.466]];
+const xMax      = 61.0;
+const reqTputMax = 67.20;
+const concMax   = 648.0;
+const tpotMin   = 13.8;
+const tpotMax   = 126.2;
+
+new Chart('c1',{type:'scatter',
+  data:{datasets:[line(p50_ttft,BLUE),ref(0,xMax,2.0,TARGET)]},
+  options:axes('seconds',undefined,undefined,xMax),
+});
+
+new Chart('c2',{type:'scatter',
+  data:{datasets:[line(p50_e2e,BLUE),ref(0,xMax,11.0,TARGET)]},
+  options:axes('seconds',undefined,undefined,xMax),
+});
+
+new Chart('c3',{type:'scatter',
+  data:{datasets:[line(p50_tpot,BLUE)]},
+  options:axes('milliseconds',tpotMin,tpotMax,xMax),
+});
+
+new Chart('c4',{type:'scatter',
+  data:{datasets:[line(p50_conc,BLUE)]},
+  options:axes('concurrent requests',0,concMax,xMax),
+});
+
+new Chart('c5',{type:'scatter',
+  data:{datasets:[line(p50_req_tput,BLUE),diag(reqTputMax)]},
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{backgroundColor:'#0f1018',borderColor:'#1a1d2e',borderWidth:1,titleFont:{size:13},bodyFont:{size:12}}},
+    scales:{
+      x:{type:'linear',grid:{color:'#12141f'},min:0,max:reqTputMax,
+         ticks:AX_TICKS,
+         title:{display:true,text:'configured req/s',...AX_TITLE}},
+      y:{grid:{color:'#12141f'},min:0,max:reqTputMax,beginAtZero:true,
+         ticks:AX_TICKS,
+         title:{display:true,text:'achieved req/s',...AX_TITLE}},
+    },
+  },
+});
+</script>
+</body>
+</html>

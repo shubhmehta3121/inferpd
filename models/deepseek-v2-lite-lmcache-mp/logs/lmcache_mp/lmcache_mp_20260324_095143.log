@@ -1,0 +1,71 @@
+[32;20m[2026-03-24 09:51:49,686] LMCache INFO:[0m Prometheus metrics available at http://0.0.0.0:9090/metrics [3m(server.py:781:__main__)[0m
+[32;20m[2026-03-24 09:51:55,667] LMCache INFO:[0m Starting EvictionController... [3m(eviction_controller.py:54:lmcache.v1.distributed.storage_controllers.eviction_controller)[0m
+[32;20m[2026-03-24 09:51:55,685] LMCache INFO:[0m Starting StoreController... [3m(store_controller.py:203:lmcache.v1.distributed.storage_controllers.store_controller)[0m
+[32;20m[2026-03-24 09:51:55,688] LMCache INFO:[0m Starting PrefetchController... [3m(prefetch_controller.py:331:lmcache.v1.distributed.storage_controllers.prefetch_controller)[0m
+[32;20m[2026-03-24 09:51:55,689] LMCache INFO:[0m Using blake3 hash function [3m(token_hasher.py:79:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-03-24 09:51:55,971] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 21504 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:56,264] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 22528 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:56,649] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 23552 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:56,945] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 24576 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:57,223] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 25600 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:57,498] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 26624 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:57,777] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 27648 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:58,055] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 28672 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:58,334] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 29696 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:58,631] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 30720 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:58,912] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 31744 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:59,183] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 32768 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:59,491] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 33792 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:51:59,782] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 34816 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:00,075] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 35840 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:00,356] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 36864 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:00,627] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 37888 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:00,901] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 38912 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:01,178] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 39936 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:02,623] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 40960 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:04,115] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 41984 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:06,049] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 43008 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:06,950] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 44032 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:07,244] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 45056 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:07,550] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 46080 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:07,856] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 47104 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:08,165] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 48128 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:08,461] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 49152 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:08,903] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 50176 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:09,184] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 51200 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:09,487] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 52224 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:09,940] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 53248 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:10,236] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 54272 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:10,519] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 55296 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:10,814] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 56320 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:11,095] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 57344 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:11,386] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 58368 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:11,670] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 59392 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:11,952] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 60416 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:12,254] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 61440 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:12,814] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 62464 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:13,093] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 63488 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:13,377] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 64512 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:13,450] LMCache INFO:[0m Initialized NONE_HASH=b'A\xe4\xe9\x81\x95\x8c\xc55$\xcc\xb7\x1a\x8f\xc1rR\xbc\xa2\x02\xae\xc8\xcd8\x04\xd2y\x8cJ_c\xee.' from vLLM [3m(token_hasher.py:164:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-03-24 09:52:13,451] LMCache INFO:[0m TokenHasher initialized: chunk_size=256, hash_algorithm=blake3 [3m(token_hasher.py:67:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-03-24 09:52:13,467] LMCache INFO:[0m LMCache ZMQ cache server is running on tcp://localhost:6000 [3m(server.py:819:__main__)[0m
+[32;20m[2026-03-24 09:52:13,468] LMCache INFO:[0m Starting PrometheusController (interval=10.0s)... [3m(prometheus_controller.py:50:lmcache.v1.mp_observability.prometheus_controller)[0m
+[32;20m[2026-03-24 09:52:13,468] LMCache INFO:[0m Registered PrometheusLogger: ['L1ManagerStatsLogger', 'StorageManagerStatsLogger']. [3m(prometheus_controller.py:56:lmcache.v1.mp_observability.prometheus_controller)[0m
+[32;20m[2026-03-24 09:52:13,468] LMCache INFO:[0m LMCache cache server is running... [3m(server.py:833:__main__)[0m
+[32;20m[2026-03-24 09:52:13,655] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 65536 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:13,947] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 66560 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:14,231] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 67584 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:14,513] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 68608 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:14,797] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 69632 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:15,069] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 70656 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:15,354] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 71680 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:15,633] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 72704 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:15,912] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 73728 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:16,196] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 74752 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:16,467] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 75776 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:16,748] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 76800 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:17,028] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 77824 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:17,314] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 78848 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:17,634] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 79872 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:18,139] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 80896 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m
+[32;20m[2026-03-24 09:52:18,419] LMCache INFO:[0m LazyMemoryAllocator: Expanded 1024 MB pinned memory, now total is 81920 MB [3m(lazy_memory_allocator.py:249:lmcache.v1.lazy_memory_allocator)[0m

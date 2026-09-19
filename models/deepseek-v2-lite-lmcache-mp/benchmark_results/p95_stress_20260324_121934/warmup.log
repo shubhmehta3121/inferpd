@@ -1,0 +1,66 @@
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x7689267e2980>, trust_remote_code=False, seed=1132, num_prompts=50, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=15840, random_output_len=561, random_range_ratio=0.0, random_prefix_len=12000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='/workspace/models/deepseek-v2-lite', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=1.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=True, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p95_stress_20260324_121934', result_filename='warmup_discard.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-bc4dfab4-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=True, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-24 12:19:55 [datasets.py:631] Sampling input_len from [15839, 15839] and output_len from [561, 561]
+Token indices sequence length is longer than the specified maximum sequence length for this model (28557 > 16384). Running this sequence through the model will result in indexing errors
+Starting initial single prompt test run...
+Skipping endpoint ready check.
+Starting main benchmark run...
+Traffic request rate: 1.0
+Burstiness factor: 1.0 (Poisson process)
+Maximum request concurrency: None
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:02<02:02,  2.50s/it]  4%|▍         | 2/50 [00:02<00:53,  1.11s/it]  6%|▌         | 3/50 [00:02<00:31,  1.47it/s]  8%|▊         | 4/50 [00:03<00:23,  1.94it/s] 10%|█         | 5/50 [00:04<00:35,  1.26it/s] 12%|█▏        | 6/50 [00:04<00:25,  1.72it/s] 14%|█▍        | 7/50 [00:06<00:43,  1.02s/it] 16%|█▌        | 8/50 [00:08<00:57,  1.37s/it] 18%|█▊        | 9/50 [00:08<00:40,  1.01it/s] 20%|██        | 10/50 [00:10<00:53,  1.33s/it] 22%|██▏       | 11/50 [00:11<00:38,  1.00it/s] 24%|██▍       | 12/50 [00:14<01:05,  1.72s/it] 26%|██▌       | 13/50 [00:16<01:12,  1.95s/it] 28%|██▊       | 14/50 [00:18<01:04,  1.79s/it] 30%|███       | 15/50 [00:19<00:58,  1.66s/it] 32%|███▏      | 16/50 [00:19<00:41,  1.23s/it] 34%|███▍      | 17/50 [00:20<00:29,  1.11it/s] 36%|███▌      | 18/50 [00:21<00:33,  1.05s/it] 38%|███▊      | 19/50 [00:22<00:34,  1.13s/it] 40%|████      | 20/50 [00:23<00:31,  1.03s/it] 44%|████▍     | 22/50 [00:25<00:30,  1.08s/it] 46%|████▌     | 23/50 [00:25<00:22,  1.18it/s] 48%|████▊     | 24/50 [00:26<00:18,  1.39it/s] 50%|█████     | 25/50 [00:28<00:26,  1.06s/it] 52%|█████▏    | 26/50 [00:29<00:24,  1.01s/it] 54%|█████▍    | 27/50 [00:29<00:21,  1.09it/s] 56%|█████▌    | 28/50 [00:30<00:16,  1.30it/s] 58%|█████▊    | 29/50 [00:31<00:20,  1.02it/s] 60%|██████    | 30/50 [00:35<00:34,  1.74s/it] 62%|██████▏   | 31/50 [00:35<00:24,  1.31s/it] 64%|██████▍   | 32/50 [00:36<00:23,  1.32s/it] 66%|██████▌   | 33/50 [00:39<00:27,  1.59s/it] 70%|███████   | 35/50 [00:39<00:15,  1.03s/it] 72%|███████▏  | 36/50 [00:40<00:13,  1.05it/s] 74%|███████▍  | 37/50 [00:41<00:13,  1.05s/it] 76%|███████▌  | 38/50 [00:42<00:09,  1.23it/s] 78%|███████▊  | 39/50 [00:42<00:06,  1.60it/s] 80%|████████  | 40/50 [00:42<00:05,  1.87it/s] 82%|████████▏ | 41/50 [00:43<00:06,  1.39it/s] 84%|████████▍ | 42/50 [00:44<00:04,  1.74it/s] 86%|████████▌ | 43/50 [00:45<00:05,  1.26it/s] 88%|████████▊ | 44/50 [00:45<00:03,  1.67it/s] 90%|█████████ | 45/50 [00:46<00:03,  1.29it/s] 92%|█████████▏| 46/50 [00:46<00:02,  1.69it/s] 94%|█████████▍| 47/50 [00:48<00:02,  1.22it/s] 96%|█████████▌| 48/50 [00:48<00:01,  1.27it/s] 98%|█████████▊| 49/50 [00:49<00:00,  1.41it/s]100%|██████████| 50/50 [00:50<00:00,  1.38it/s]100%|██████████| 50/50 [00:50<00:00,  1.00s/it]
+/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/serve.py:902: UserWarning: All requests failed. This is likely due to a misconfiguration on the benchmark arguments.
+  metrics, actual_output_lens = calculate_metrics(
+Failed requests during benchmark run detected (capping to 10):
+Error 0: Internal Server Error
+Error 1: Internal Server Error
+Error 2: Internal Server Error
+Error 3: Internal Server Error
+Error 4: Internal Server Error
+Error 5: Internal Server Error
+Error 6: Internal Server Error
+Error 7: Internal Server Error
+Error 8: Internal Server Error
+Error 9: Internal Server Error
+============ Serving Benchmark Result ============
+Successful requests:                     0         
+Failed requests:                         50        
+Request rate configured (RPS):           1.00      
+Benchmark duration (s):                  50.16     
+Total input tokens:                      0         
+Total generated tokens:                  0         
+Request throughput (req/s):              0.00      
+Output token throughput (tok/s):         0.00      
+Peak output token throughput (tok/s):    0.00      
+Peak concurrent requests:                0.00      
+Total token throughput (tok/s):          0.00      
+---------------Time to First Token----------------
+Mean TTFT (ms):                          0.00      
+Median TTFT (ms):                        0.00      
+P50 TTFT (ms):                           0.00      
+P90 TTFT (ms):                           0.00      
+P95 TTFT (ms):                           0.00      
+P99 TTFT (ms):                           0.00      
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          0.00      
+Median TPOT (ms):                        0.00      
+P50 TPOT (ms):                           0.00      
+P90 TPOT (ms):                           0.00      
+P95 TPOT (ms):                           0.00      
+P99 TPOT (ms):                           0.00      
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           0.00      
+Median ITL (ms):                         0.00      
+P50 ITL (ms):                            0.00      
+P90 ITL (ms):                            0.00      
+P95 ITL (ms):                            0.00      
+P99 ITL (ms):                            0.00      
+----------------End-to-end Latency----------------
+Mean E2EL (ms):                          0.00      
+Median E2EL (ms):                        0.00      
+P50 E2EL (ms):                           0.00      
+P90 E2EL (ms):                           0.00      
+P95 E2EL (ms):                           0.00      
+P99 E2EL (ms):                           0.00      
+==================================================
+/usr/lib/python3.12/asyncio/events.py:88: UserWarning: Failed to generate timeline plot: Please install vllm[bench] for bench support
+  self._context.run(self._callback, *self._args)

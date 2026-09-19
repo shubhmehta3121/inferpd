@@ -1,0 +1,525 @@
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x736a817f2980>, trust_remote_code=False, seed=7, num_prompts=500, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=7870, random_output_len=252, random_range_ratio=0.0, random_prefix_len=6000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='/workspace/models/deepseek-v2-lite', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=5.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=False, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p50_sweep_20260324_094935', result_filename='qps5_20260324_094935.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-18afa8c9-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=False, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-24 09:51:04 [datasets.py:631] Sampling input_len from [7869, 7869] and output_len from [252, 252]
+Starting initial single prompt test run...
+Skipping endpoint ready check.
+Starting main benchmark run...
+Traffic request rate: 5.0
+Burstiness factor: 1.0 (Poisson process)
+Maximum request concurrency: None
+  0%|          | 0/500 [00:00<?, ?it/s]  0%|          | 2/500 [00:00<01:19,  6.23it/s]  1%|          | 3/500 [00:00<01:10,  7.09it/s]  1%|          | 4/500 [00:00<01:31,  5.45it/s]  1%|          | 5/500 [00:01<03:09,  2.61it/s]  1%|          | 6/500 [00:01<02:31,  3.26it/s]  1%|▏         | 7/500 [00:01<02:04,  3.96it/s]  2%|▏         | 10/500 [00:01<01:12,  6.77it/s]  2%|▏         | 11/500 [00:02<01:20,  6.07it/s]  2%|▏         | 12/500 [00:02<01:38,  4.95it/s]  3%|▎         | 14/500 [00:02<01:09,  7.04it/s]  3%|▎         | 16/500 [00:03<01:31,  5.27it/s]  4%|▎         | 18/500 [00:03<01:13,  6.53it/s]  4%|▍         | 19/500 [00:03<01:49,  4.39it/s]  4%|▍         | 21/500 [00:04<01:25,  5.58it/s]  4%|▍         | 22/500 [00:04<02:06,  3.78it/s]  5%|▍         | 24/500 [00:04<01:37,  4.87it/s]  5%|▌         | 25/500 [00:05<02:04,  3.82it/s]  5%|▌         | 27/500 [00:05<01:33,  5.08it/s]  6%|▌         | 28/500 [00:05<01:40,  4.69it/s]  6%|▌         | 29/500 [00:05<01:41,  4.66it/s]  6%|▌         | 30/500 [00:06<01:30,  5.20it/s]  6%|▋         | 32/500 [00:06<01:10,  6.68it/s]  7%|▋         | 34/500 [00:06<01:02,  7.40it/s]  7%|▋         | 36/500 [00:06<01:17,  6.01it/s]  7%|▋         | 37/500 [00:07<01:28,  5.23it/s]  8%|▊         | 39/500 [00:07<01:16,  6.02it/s]  8%|▊         | 41/500 [00:07<01:04,  7.11it/s]  9%|▊         | 43/500 [00:07<01:05,  6.97it/s]  9%|▉         | 45/500 [00:08<00:59,  7.58it/s]  9%|▉         | 46/500 [00:08<01:09,  6.49it/s]  9%|▉         | 47/500 [00:08<01:05,  6.94it/s] 10%|▉         | 48/500 [00:09<01:39,  4.56it/s] 10%|█         | 50/500 [00:09<01:26,  5.18it/s] 10%|█         | 51/500 [00:09<01:18,  5.74it/s] 10%|█         | 52/500 [00:09<01:11,  6.29it/s] 11%|█         | 53/500 [00:09<01:15,  5.89it/s] 11%|█         | 54/500 [00:09<01:12,  6.12it/s] 11%|█         | 55/500 [00:10<01:05,  6.74it/s] 12%|█▏        | 58/500 [00:10<00:50,  8.68it/s] 12%|█▏        | 59/500 [00:10<00:53,  8.19it/s] 12%|█▏        | 60/500 [00:10<01:04,  6.78it/s] 12%|█▏        | 61/500 [00:11<01:55,  3.80it/s] 12%|█▏        | 62/500 [00:11<01:50,  3.95it/s] 13%|█▎        | 65/500 [00:11<01:12,  6.01it/s] 13%|█▎        | 67/500 [00:12<01:39,  4.34it/s] 14%|█▎        | 68/500 [00:13<02:08,  3.37it/s] 14%|█▍        | 69/500 [00:13<02:15,  3.19it/s] 14%|█▍        | 70/500 [00:13<01:55,  3.71it/s] 14%|█▍        | 71/500 [00:13<02:05,  3.41it/s] 15%|█▍        | 73/500 [00:14<01:22,  5.21it/s] 15%|█▍        | 74/500 [00:14<01:15,  5.68it/s] 15%|█▌        | 75/500 [00:14<01:24,  5.03it/s] 15%|█▌        | 76/500 [00:14<01:16,  5.52it/s] 16%|█▌        | 78/500 [00:14<00:53,  7.82it/s] 16%|█▌        | 80/500 [00:14<00:45,  9.31it/s] 16%|█▋        | 82/500 [00:14<00:39, 10.53it/s] 17%|█▋        | 84/500 [00:15<00:55,  7.56it/s] 17%|█▋        | 85/500 [00:15<01:09,  5.96it/s] 17%|█▋        | 86/500 [00:15<01:07,  6.13it/s] 17%|█▋        | 87/500 [00:15<01:03,  6.52it/s] 18%|█▊        | 88/500 [00:16<01:18,  5.26it/s] 18%|█▊        | 89/500 [00:16<01:44,  3.93it/s] 18%|█▊        | 90/500 [00:16<01:40,  4.07it/s] 18%|█▊        | 91/500 [00:17<01:48,  3.75it/s] 18%|█▊        | 92/500 [00:17<02:22,  2.86it/s] 19%|█▉        | 94/500 [00:18<01:56,  3.48it/s] 19%|█▉        | 96/500 [00:18<01:25,  4.72it/s] 19%|█▉        | 97/500 [00:18<01:34,  4.26it/s] 20%|█▉        | 98/500 [00:18<01:35,  4.19it/s] 20%|██        | 100/500 [00:19<01:16,  5.22it/s] 20%|██        | 102/500 [00:19<00:55,  7.14it/s] 21%|██        | 103/500 [00:19<01:11,  5.56it/s] 21%|██        | 104/500 [00:19<01:04,  6.10it/s] 21%|██        | 105/500 [00:19<01:06,  5.91it/s] 21%|██        | 106/500 [00:20<01:15,  5.21it/s] 21%|██▏       | 107/500 [00:20<01:31,  4.31it/s] 22%|██▏       | 108/500 [00:20<01:36,  4.05it/s] 22%|██▏       | 110/500 [00:20<01:02,  6.20it/s] 22%|██▏       | 111/500 [00:21<01:02,  6.20it/s] 23%|██▎       | 113/500 [00:21<00:47,  8.11it/s] 23%|██▎       | 115/500 [00:21<01:07,  5.66it/s] 23%|██▎       | 116/500 [00:22<01:38,  3.89it/s] 24%|██▍       | 119/500 [00:22<01:09,  5.50it/s] 24%|██▍       | 122/500 [00:22<00:53,  7.04it/s] 25%|██▍       | 124/500 [00:23<00:56,  6.70it/s] 25%|██▌       | 125/500 [00:23<01:10,  5.29it/s] 25%|██▌       | 127/500 [00:23<00:57,  6.54it/s] 26%|██▌       | 128/500 [00:24<01:08,  5.44it/s] 26%|██▌       | 129/500 [00:24<01:51,  3.34it/s] 26%|██▋       | 132/500 [00:25<01:27,  4.19it/s] 27%|██▋       | 133/500 [00:25<01:43,  3.55it/s] 27%|██▋       | 135/500 [00:25<01:17,  4.70it/s] 27%|██▋       | 136/500 [00:26<01:20,  4.53it/s] 27%|██▋       | 137/500 [00:26<01:31,  3.97it/s] 28%|██▊       | 139/500 [00:26<01:13,  4.93it/s] 28%|██▊       | 140/500 [00:27<01:22,  4.35it/s] 28%|██▊       | 141/500 [00:27<01:16,  4.70it/s] 29%|██▉       | 144/500 [00:27<00:44,  8.07it/s] 29%|██▉       | 146/500 [00:27<00:49,  7.21it/s] 30%|██▉       | 149/500 [00:27<00:33, 10.46it/s] 30%|███       | 152/500 [00:28<00:28, 12.04it/s] 31%|███       | 154/500 [00:28<00:36,  9.38it/s] 31%|███       | 156/500 [00:28<00:31, 10.81it/s] 32%|███▏      | 158/500 [00:29<00:58,  5.89it/s] 32%|███▏      | 160/500 [00:30<01:30,  3.74it/s] 32%|███▏      | 162/500 [00:30<01:21,  4.14it/s] 33%|███▎      | 163/500 [00:31<01:37,  3.46it/s] 33%|███▎      | 164/500 [00:31<01:26,  3.91it/s] 33%|███▎      | 165/500 [00:31<01:28,  3.79it/s] 33%|███▎      | 166/500 [00:31<01:38,  3.38it/s] 33%|███▎      | 167/500 [00:32<01:29,  3.72it/s] 34%|███▎      | 168/500 [00:32<01:41,  3.27it/s] 34%|███▍      | 171/500 [00:32<00:54,  6.03it/s] 35%|███▍      | 173/500 [00:33<01:04,  5.08it/s] 35%|███▌      | 175/500 [00:33<00:54,  5.95it/s] 35%|███▌      | 177/500 [00:33<00:42,  7.62it/s] 36%|███▌      | 179/500 [00:33<00:36,  8.84it/s] 36%|███▌      | 181/500 [00:33<00:39,  8.05it/s] 37%|███▋      | 183/500 [00:34<00:43,  7.23it/s] 37%|███▋      | 186/500 [00:34<00:32,  9.52it/s] 38%|███▊      | 188/500 [00:34<00:29, 10.47it/s] 38%|███▊      | 190/500 [00:35<00:58,  5.32it/s] 38%|███▊      | 192/500 [00:35<00:46,  6.65it/s] 39%|███▉      | 194/500 [00:35<00:40,  7.60it/s] 39%|███▉      | 196/500 [00:35<00:37,  8.17it/s] 40%|███▉      | 198/500 [00:36<00:52,  5.70it/s] 40%|███▉      | 199/500 [00:36<00:54,  5.51it/s] 40%|████      | 200/500 [00:36<00:54,  5.53it/s] 40%|████      | 201/500 [00:37<01:00,  4.94it/s] 41%|████      | 203/500 [00:37<00:53,  5.58it/s] 41%|████      | 204/500 [00:38<01:18,  3.77it/s] 41%|████      | 205/500 [00:38<01:12,  4.06it/s] 41%|████▏     | 207/500 [00:38<01:00,  4.87it/s] 42%|████▏     | 208/500 [00:38<01:02,  4.67it/s] 42%|████▏     | 209/500 [00:38<01:02,  4.67it/s] 42%|████▏     | 211/500 [00:39<01:20,  3.57it/s] 42%|████▏     | 212/500 [00:40<01:42,  2.81it/s] 43%|████▎     | 213/500 [00:40<01:24,  3.38it/s] 43%|████▎     | 214/500 [00:40<01:15,  3.76it/s] 43%|████▎     | 216/500 [00:41<01:37,  2.91it/s] 43%|████▎     | 217/500 [00:41<01:36,  2.92it/s] 44%|████▎     | 218/500 [00:42<01:26,  3.26it/s] 44%|████▍     | 219/500 [00:42<01:24,  3.33it/s] 44%|████▍     | 221/500 [00:42<00:54,  5.10it/s] 45%|████▍     | 223/500 [00:42<00:46,  6.00it/s] 45%|████▌     | 225/500 [00:43<00:52,  5.26it/s] 45%|████▌     | 226/500 [00:43<00:48,  5.66it/s] 45%|████▌     | 227/500 [00:43<00:44,  6.13it/s] 46%|████▌     | 229/500 [00:43<00:40,  6.74it/s] 46%|████▌     | 230/500 [00:43<00:51,  5.27it/s] 46%|████▌     | 231/500 [00:44<00:51,  5.23it/s] 47%|████▋     | 233/500 [00:44<00:49,  5.35it/s] 47%|████▋     | 235/500 [00:44<00:49,  5.32it/s] 47%|████▋     | 236/500 [00:45<00:48,  5.41it/s] 48%|████▊     | 238/500 [00:45<00:40,  6.45it/s] 48%|████▊     | 239/500 [00:45<00:42,  6.11it/s] 48%|████▊     | 241/500 [00:45<00:47,  5.46it/s] 48%|████▊     | 242/500 [00:46<00:43,  5.97it/s] 49%|████▊     | 243/500 [00:46<00:59,  4.32it/s] 49%|████▉     | 244/500 [00:46<01:07,  3.81it/s] 49%|████▉     | 246/500 [00:47<00:51,  4.98it/s] 50%|████▉     | 248/500 [00:47<00:48,  5.23it/s] 50%|████▉     | 249/500 [00:47<00:46,  5.43it/s] 50%|█████     | 250/500 [00:47<00:42,  5.91it/s] 50%|█████     | 251/500 [00:48<00:59,  4.19it/s] 51%|█████     | 253/500 [00:48<00:43,  5.70it/s] 51%|█████     | 256/500 [00:48<00:36,  6.66it/s] 51%|█████▏    | 257/500 [00:48<00:37,  6.56it/s] 52%|█████▏    | 258/500 [00:49<00:51,  4.70it/s] 52%|█████▏    | 259/500 [00:49<00:49,  4.87it/s] 52%|█████▏    | 261/500 [00:50<01:13,  3.27it/s] 53%|█████▎    | 264/500 [00:50<00:49,  4.74it/s] 53%|█████▎    | 266/500 [00:50<00:40,  5.74it/s] 53%|█████▎    | 267/500 [00:51<00:50,  4.60it/s] 54%|█████▍    | 269/500 [00:51<00:53,  4.33it/s] 54%|█████▍    | 270/500 [00:52<00:51,  4.44it/s] 55%|█████▍    | 273/500 [00:52<00:32,  6.88it/s] 55%|█████▍    | 274/500 [00:52<00:54,  4.14it/s] 55%|█████▌    | 275/500 [00:52<00:47,  4.69it/s] 55%|█████▌    | 277/500 [00:53<00:34,  6.48it/s] 56%|█████▌    | 279/500 [00:53<00:41,  5.39it/s] 56%|█████▌    | 280/500 [00:53<00:45,  4.81it/s] 56%|█████▋    | 282/500 [00:54<00:55,  3.93it/s] 57%|█████▋    | 283/500 [00:54<00:50,  4.29it/s] 57%|█████▋    | 285/500 [00:55<00:54,  3.97it/s] 57%|█████▋    | 287/500 [00:55<00:47,  4.52it/s] 58%|█████▊    | 288/500 [00:55<00:43,  4.84it/s] 58%|█████▊    | 292/500 [00:55<00:23,  8.99it/s] 59%|█████▉    | 295/500 [00:56<00:29,  6.91it/s] 59%|█████▉    | 297/500 [00:56<00:26,  7.80it/s] 60%|██████    | 300/500 [00:56<00:24,  8.01it/s] 60%|██████    | 302/500 [00:57<00:35,  5.61it/s] 61%|██████    | 304/500 [00:59<01:02,  3.14it/s] 61%|██████    | 306/500 [00:59<00:47,  4.07it/s] 62%|██████▏   | 308/500 [00:59<00:49,  3.84it/s] 62%|██████▏   | 309/500 [01:00<00:52,  3.64it/s] 62%|██████▏   | 310/500 [01:00<00:48,  3.88it/s] 62%|██████▏   | 312/500 [01:00<00:46,  4.05it/s] 63%|██████▎   | 313/500 [01:01<00:52,  3.59it/s] 63%|██████▎   | 314/500 [01:01<00:57,  3.25it/s] 63%|██████▎   | 315/500 [01:01<00:54,  3.41it/s] 64%|██████▎   | 318/500 [01:01<00:33,  5.50it/s] 64%|██████▍   | 319/500 [01:02<00:31,  5.75it/s] 64%|██████▍   | 320/500 [01:02<00:38,  4.69it/s] 64%|██████▍   | 322/500 [01:02<00:32,  5.47it/s] 65%|██████▍   | 324/500 [01:03<00:32,  5.34it/s] 65%|██████▌   | 326/500 [01:03<00:26,  6.53it/s] 66%|██████▌   | 329/500 [01:03<00:29,  5.73it/s] 66%|██████▌   | 331/500 [01:04<00:33,  5.03it/s] 66%|██████▋   | 332/500 [01:04<00:31,  5.27it/s] 67%|██████▋   | 334/500 [01:04<00:29,  5.55it/s] 67%|██████▋   | 336/500 [01:05<00:29,  5.56it/s] 68%|██████▊   | 338/500 [01:05<00:25,  6.30it/s] 68%|██████▊   | 340/500 [01:05<00:20,  7.82it/s] 68%|██████▊   | 341/500 [01:06<00:34,  4.67it/s] 68%|██████▊   | 342/500 [01:06<00:31,  5.07it/s] 69%|██████▊   | 343/500 [01:06<00:31,  4.97it/s] 69%|██████▉   | 344/500 [01:06<00:33,  4.61it/s] 69%|██████▉   | 346/500 [01:07<00:31,  4.83it/s] 69%|██████▉   | 347/500 [01:07<00:41,  3.69it/s] 70%|██████▉   | 349/500 [01:07<00:30,  4.97it/s] 70%|███████   | 351/500 [01:08<00:28,  5.29it/s] 71%|███████   | 353/500 [01:08<00:22,  6.67it/s] 71%|███████   | 354/500 [01:08<00:26,  5.50it/s] 71%|███████   | 355/500 [01:08<00:28,  5.01it/s] 71%|███████▏  | 357/500 [01:09<00:27,  5.12it/s] 72%|███████▏  | 359/500 [01:09<00:27,  5.17it/s] 72%|███████▏  | 360/500 [01:09<00:25,  5.50it/s] 72%|███████▏  | 362/500 [01:10<00:23,  5.89it/s] 73%|███████▎  | 363/500 [01:10<00:27,  4.93it/s] 73%|███████▎  | 364/500 [01:10<00:28,  4.75it/s] 73%|███████▎  | 365/500 [01:11<00:43,  3.09it/s] 73%|███████▎  | 367/500 [01:11<00:28,  4.73it/s] 74%|███████▍  | 369/500 [01:11<00:21,  5.97it/s] 74%|███████▍  | 370/500 [01:11<00:20,  6.50it/s] 74%|███████▍  | 372/500 [01:11<00:17,  7.38it/s] 75%|███████▌  | 375/500 [01:12<00:12,  9.66it/s] 75%|███████▌  | 377/500 [01:12<00:12, 10.02it/s] 76%|███████▌  | 379/500 [01:12<00:18,  6.50it/s] 76%|███████▌  | 380/500 [01:13<00:19,  6.16it/s] 76%|███████▌  | 381/500 [01:13<00:20,  5.85it/s] 77%|███████▋  | 383/500 [01:13<00:16,  6.97it/s] 77%|███████▋  | 384/500 [01:14<00:29,  3.88it/s] 77%|███████▋  | 386/500 [01:14<00:25,  4.49it/s] 77%|███████▋  | 387/500 [01:14<00:28,  3.96it/s] 78%|███████▊  | 389/500 [01:15<00:38,  2.90it/s] 78%|███████▊  | 390/500 [01:16<00:34,  3.19it/s] 78%|███████▊  | 391/500 [01:16<00:29,  3.67it/s] 78%|███████▊  | 392/500 [01:16<00:28,  3.75it/s] 79%|███████▊  | 393/500 [01:16<00:24,  4.43it/s] 79%|███████▉  | 394/500 [01:16<00:24,  4.32it/s] 79%|███████▉  | 396/500 [01:17<00:26,  3.88it/s] 79%|███████▉  | 397/500 [01:17<00:24,  4.29it/s] 80%|███████▉  | 399/500 [01:17<00:17,  5.77it/s] 80%|████████  | 400/500 [01:18<00:23,  4.26it/s] 80%|████████  | 401/500 [01:18<00:25,  3.89it/s] 80%|████████  | 402/500 [01:18<00:21,  4.46it/s] 81%|████████  | 404/500 [01:18<00:16,  5.97it/s] 81%|████████  | 405/500 [01:19<00:29,  3.21it/s] 81%|████████▏ | 407/500 [01:20<00:25,  3.59it/s] 82%|████████▏ | 408/500 [01:20<00:28,  3.23it/s] 82%|████████▏ | 410/500 [01:20<00:19,  4.72it/s] 82%|████████▏ | 411/500 [01:20<00:17,  4.96it/s] 82%|████████▏ | 412/500 [01:21<00:20,  4.35it/s] 83%|████████▎ | 413/500 [01:21<00:28,  3.09it/s] 83%|████████▎ | 414/500 [01:22<00:42,  2.04it/s] 83%|████████▎ | 416/500 [01:22<00:25,  3.32it/s] 83%|████████▎ | 417/500 [01:22<00:21,  3.82it/s] 84%|████████▎ | 418/500 [01:23<00:19,  4.23it/s] 84%|████████▍ | 419/500 [01:23<00:18,  4.35it/s] 84%|████████▍ | 421/500 [01:23<00:14,  5.55it/s] 84%|████████▍ | 422/500 [01:24<00:20,  3.89it/s] 85%|████████▍ | 423/500 [01:24<00:24,  3.18it/s] 85%|████████▍ | 424/500 [01:25<00:29,  2.61it/s] 85%|████████▌ | 425/500 [01:25<00:31,  2.40it/s] 85%|████████▌ | 426/500 [01:26<00:35,  2.08it/s] 86%|████████▌ | 428/500 [01:26<00:27,  2.66it/s] 86%|████████▌ | 430/500 [01:26<00:17,  3.90it/s] 86%|████████▌ | 431/500 [01:26<00:15,  4.40it/s] 86%|████████▋ | 432/500 [01:27<00:21,  3.13it/s] 87%|████████▋ | 433/500 [01:27<00:19,  3.50it/s] 87%|████████▋ | 435/500 [01:27<00:13,  4.93it/s] 87%|████████▋ | 436/500 [01:28<00:16,  3.79it/s] 87%|████████▋ | 437/500 [01:28<00:17,  3.53it/s] 88%|████████▊ | 440/500 [01:28<00:10,  5.96it/s] 88%|████████▊ | 442/500 [01:29<00:08,  6.78it/s] 89%|████████▉ | 444/500 [01:29<00:07,  7.37it/s] 89%|████████▉ | 445/500 [01:29<00:11,  4.71it/s] 89%|████████▉ | 446/500 [01:30<00:13,  4.06it/s] 90%|████████▉ | 449/500 [01:30<00:07,  6.39it/s] 90%|█████████ | 450/500 [01:30<00:08,  6.04it/s] 90%|█████████ | 452/500 [01:30<00:06,  7.42it/s] 91%|█████████ | 454/500 [01:30<00:05,  8.93it/s] 91%|█████████ | 456/500 [01:31<00:07,  5.66it/s] 91%|█████████▏| 457/500 [01:31<00:07,  6.12it/s] 92%|█████████▏| 458/500 [01:31<00:07,  5.57it/s] 92%|█████████▏| 459/500 [01:32<00:07,  5.83it/s] 92%|█████████▏| 460/500 [01:32<00:06,  6.03it/s] 92%|█████████▏| 462/500 [01:32<00:05,  6.99it/s] 93%|█████████▎| 463/500 [01:33<00:11,  3.30it/s] 93%|█████████▎| 464/500 [01:33<00:10,  3.30it/s] 93%|█████████▎| 465/500 [01:33<00:11,  3.18it/s] 93%|█████████▎| 467/500 [01:34<00:07,  4.64it/s] 94%|█████████▍| 469/500 [01:34<00:04,  6.47it/s] 94%|█████████▍| 471/500 [01:34<00:03,  8.29it/s] 95%|█████████▍| 473/500 [01:34<00:03,  7.03it/s] 95%|█████████▌| 475/500 [01:35<00:04,  5.82it/s] 96%|█████████▌| 481/500 [01:35<00:02,  6.97it/s] 96%|█████████▋| 482/500 [01:36<00:03,  5.56it/s] 97%|█████████▋| 484/500 [01:36<00:02,  6.81it/s] 97%|█████████▋| 486/500 [01:37<00:03,  4.62it/s] 98%|█████████▊| 488/500 [01:37<00:02,  5.37it/s] 98%|█████████▊| 490/500 [01:37<00:01,  5.99it/s] 98%|█████████▊| 491/500 [01:37<00:01,  5.50it/s] 98%|█████████▊| 492/500 [01:38<00:01,  5.72it/s] 99%|█████████▊| 493/500 [01:38<00:01,  4.75it/s] 99%|█████████▉| 495/500 [01:38<00:00,  5.89it/s] 99%|█████████▉| 496/500 [01:39<00:01,  3.05it/s]100%|█████████▉| 498/500 [01:39<00:00,  4.26it/s]100%|█████████▉| 499/500 [01:39<00:00,  4.41it/s]100%|██████████| 500/500 [01:40<00:00,  5.00it/s]
+/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/serve.py:902: UserWarning: All requests failed. This is likely due to a misconfiguration on the benchmark arguments.
+  metrics, actual_output_lens = calculate_metrics(
+Failed requests during benchmark run detected (capping to 10):
+Error 0: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 1: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 2: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 3: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 4: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 5: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 6: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 7: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 8: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+Error 9: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 691, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 9000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 195, in async_request_openai_completions
+    async with session.post(url=api_url, json=payload, headers=headers) as response:
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1321, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:9000 ssl:default [Connect call failed ('127.0.0.1', 9000)]
+
+============ Serving Benchmark Result ============
+Successful requests:                     0         
+Failed requests:                         500       
+Request rate configured (RPS):           5.00      
+Benchmark duration (s):                  100.01    
+Total input tokens:                      0         
+Total generated tokens:                  0         
+Request throughput (req/s):              0.00      
+Output token throughput (tok/s):         0.00      
+Peak output token throughput (tok/s):    0.00      
+Peak concurrent requests:                0.00      
+Total token throughput (tok/s):          0.00      
+---------------Time to First Token----------------
+Mean TTFT (ms):                          0.00      
+Median TTFT (ms):                        0.00      
+P50 TTFT (ms):                           0.00      
+P90 TTFT (ms):                           0.00      
+P95 TTFT (ms):                           0.00      
+P99 TTFT (ms):                           0.00      
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          0.00      
+Median TPOT (ms):                        0.00      
+P50 TPOT (ms):                           0.00      
+P90 TPOT (ms):                           0.00      
+P95 TPOT (ms):                           0.00      
+P99 TPOT (ms):                           0.00      
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           0.00      
+Median ITL (ms):                         0.00      
+P50 ITL (ms):                            0.00      
+P90 ITL (ms):                            0.00      
+P95 ITL (ms):                            0.00      
+P99 ITL (ms):                            0.00      
+----------------End-to-end Latency----------------
+Mean E2EL (ms):                          0.00      
+Median E2EL (ms):                        0.00      
+P50 E2EL (ms):                           0.00      
+P90 E2EL (ms):                           0.00      
+P95 E2EL (ms):                           0.00      
+P99 E2EL (ms):                           0.00      
+==================================================
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x7d0f431e2980>, trust_remote_code=False, seed=7, num_prompts=500, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=7870, random_output_len=252, random_range_ratio=0.0, random_prefix_len=6000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='/workspace/models/deepseek-v2-lite', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=10.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=False, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p50_sweep_20260324_094935', result_filename='qps10_20260324_094935.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-bec97f50-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=False, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-24 09:54:43 [datasets.py:631] Sampling input_len from [7869, 7869] and output_len from [252, 252]

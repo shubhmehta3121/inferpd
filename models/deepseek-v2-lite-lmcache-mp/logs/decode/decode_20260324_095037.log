@@ -1,0 +1,153 @@
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:297] 
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:297]        █     █     █▄   ▄█
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:297]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.18.0
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:297]   █▄█▀ █     █     █     █  model   /workspace/models/deepseek-v2-lite
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:297]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:297] 
+(APIServer pid=10104) INFO 03-24 09:51:00 [utils.py:233] non-default args: {'model_tag': '/workspace/models/deepseek-v2-lite', 'host': '0.0.0.0', 'port': 8200, 'model': '/workspace/models/deepseek-v2-lite', 'trust_remote_code': True, 'dtype': 'bfloat16', 'max_model_len': 20000, 'enforce_eager': True, 'block_size': 64, 'gpu_memory_utilization': 0.85, 'enable_prefix_caching': False, 'max_num_batched_tokens': 32768, 'max_num_seqs': 128, 'kv_transfer_config': KVTransferConfig(kv_connector='LMCacheMPConnector', engine_id='74027e0c-9b89-4ce1-ba93-dbea4b752718', kv_buffer_device='cuda', kv_buffer_size=1000000000.0, kv_role='kv_both', kv_rank=None, kv_parallel_size=1, kv_ip='127.0.0.1', kv_port=14579, kv_connector_extra_config={'lmcache.mp.host': 'tcp://localhost', 'lmcache.mp.port': '6000'}, kv_connector_module_path=None, enable_permute_local_kv=False, kv_load_failure_policy='fail')}
+(APIServer pid=10104) INFO 03-24 09:51:00 [config.py:437] Replacing legacy 'type' key with 'rope_type'
+(APIServer pid=10104) INFO 03-24 09:51:00 [model.py:533] Resolved architecture: DeepseekV2ForCausalLM
+(APIServer pid=10104) INFO 03-24 09:51:00 [model.py:1582] Using max model len 20000
+(APIServer pid=10104) INFO 03-24 09:51:00 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=32768.
+(APIServer pid=10104) INFO 03-24 09:51:00 [vllm.py:754] Asynchronous scheduling is enabled.
+(APIServer pid=10104) WARNING 03-24 09:51:00 [vllm.py:788] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(APIServer pid=10104) WARNING 03-24 09:51:00 [vllm.py:799] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=10104) INFO 03-24 09:51:00 [vllm.py:964] Cudagraph is disabled under eager mode
+(APIServer pid=10104) WARNING 03-24 09:51:00 [vllm.py:1168] Turning off hybrid kv cache manager because `--kv-transfer-config` is set. This will reduce the performance of vLLM on LLMs with sliding window attention or Mamba attention. If you are a developer of kv connector, please consider supporting hybrid kv cache manager for your connector by making sure your connector is a subclass of `SupportsHMA` defined in kv_connector/v1/base.py and use --no-disable-hybrid-kv-cache-manager to start vLLM.
+(APIServer pid=10104) INFO 03-24 09:51:00 [compilation.py:289] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=10501) INFO 03-24 09:51:22 [core.py:103] Initializing a V1 LLM engine (v0.18.0) with config: model='/workspace/models/deepseek-v2-lite', speculative_config=None, tokenizer='/workspace/models/deepseek-v2-lite', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=20000, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/workspace/models/deepseek-v2-lite, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_endpoints': [32768], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore pid=10501) INFO 03-24 09:51:22 [parallel_state.py:1395] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.25.0.2:60813 backend=nccl
+(EngineCore pid=10501) INFO 03-24 09:51:22 [parallel_state.py:1717] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099] EngineCore failed to start.
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099] Traceback (most recent call last):
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1073, in run_engine_core
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     return func(*args, **kwargs)
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 839, in __init__
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     super().__init__(
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 112, in __init__
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     return func(*args, **kwargs)
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 103, in __init__
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     self._init_executor()
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 49, in _init_executor
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     self.driver_worker.init_device()
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/worker/worker_base.py", line 312, in init_device
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     self.worker.init_device()  # type: ignore
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     return func(*args, **kwargs)
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 283, in init_device
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     self.requested_memory = request_memory(init_snapshot, self.cache_config)
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/worker/utils.py", line 413, in request_memory
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099]     raise ValueError(
+(EngineCore pid=10501) ERROR 03-24 09:51:23 [core.py:1099] ValueError: Free memory on device cuda:0 (43.24/79.25 GiB) on startup is less than desired GPU memory utilization (0.85, 67.36 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+(EngineCore pid=10501) Process EngineCore:
+(EngineCore pid=10501) Traceback (most recent call last):
+(EngineCore pid=10501)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=10501)     self.run()
+(EngineCore pid=10501)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=10501)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1103, in run_engine_core
+(EngineCore pid=10501)     raise e
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1073, in run_engine_core
+(EngineCore pid=10501)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=10501)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=10501)     return func(*args, **kwargs)
+(EngineCore pid=10501)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 839, in __init__
+(EngineCore pid=10501)     super().__init__(
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 112, in __init__
+(EngineCore pid=10501)     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=10501)                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=10501)     return func(*args, **kwargs)
+(EngineCore pid=10501)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 103, in __init__
+(EngineCore pid=10501)     self._init_executor()
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 49, in _init_executor
+(EngineCore pid=10501)     self.driver_worker.init_device()
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/worker/worker_base.py", line 312, in init_device
+(EngineCore pid=10501)     self.worker.init_device()  # type: ignore
+(EngineCore pid=10501)     ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=10501)     return func(*args, **kwargs)
+(EngineCore pid=10501)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 283, in init_device
+(EngineCore pid=10501)     self.requested_memory = request_memory(init_snapshot, self.cache_config)
+(EngineCore pid=10501)                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=10501)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/worker/utils.py", line 413, in request_memory
+(EngineCore pid=10501)     raise ValueError(
+(EngineCore pid=10501) ValueError: Free memory on device cuda:0 (43.24/79.25 GiB) on startup is less than desired GPU memory utilization (0.85, 67.36 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+[rank0]:[W324 09:51:23.571395466 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+(APIServer pid=10104) Traceback (most recent call last):
+(APIServer pid=10104)   File "/workspace/.venv/bin/vllm", line 10, in <module>
+(APIServer pid=10104)     sys.exit(main())
+(APIServer pid=10104)              ^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/entrypoints/cli/main.py", line 75, in main
+(APIServer pid=10104)     args.dispatch_function(args)
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/entrypoints/cli/serve.py", line 118, in cmd
+(APIServer pid=10104)     uvloop.run(run_server(args))
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=10104)     return __asyncio.run(
+(APIServer pid=10104)            ^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+(APIServer pid=10104)     return runner.run(main)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=10104)     return self._loop.run_until_complete(task)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=10104)     return await main
+(APIServer pid=10104)            ^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 656, in run_server
+(APIServer pid=10104)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 670, in run_server_worker
+(APIServer pid=10104)     async with build_async_engine_client(
+(APIServer pid=10104)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=10104)     return await anext(self.gen)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 103, in build_async_engine_client
+(APIServer pid=10104)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=10104)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=10104)     return await anext(self.gen)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 144, in build_async_engine_client_from_engine_args
+(APIServer pid=10104)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=10104)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 225, in from_vllm_config
+(APIServer pid=10104)     return cls(
+(APIServer pid=10104)            ^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 154, in __init__
+(APIServer pid=10104)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=10104)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=10104)     return func(*args, **kwargs)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 128, in make_async_mp_client
+(APIServer pid=10104)     return AsyncMPClient(*client_args)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=10104)     return func(*args, **kwargs)
+(APIServer pid=10104)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 924, in __init__
+(APIServer pid=10104)     super().__init__(
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 583, in __init__
+(APIServer pid=10104)     with launch_core_engines(
+(APIServer pid=10104)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=10104)     next(self.gen)
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 972, in launch_core_engines
+(APIServer pid=10104)     wait_for_engine_startup(
+(APIServer pid=10104)   File "/workspace/.venv/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1031, in wait_for_engine_startup
+(APIServer pid=10104)     raise RuntimeError(
+(APIServer pid=10104) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

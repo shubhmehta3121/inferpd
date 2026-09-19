@@ -1,0 +1,735 @@
+[32;20m[2026-03-24 09:56:14,352] LMCache INFO:[0m Telemetry server started on 0.0.0.0:5768 [3m(disagg_proxy_server.py:462:__main__)[0m
+INFO:     Started server process [11584]
+INFO:     Started server process [11584]
+INFO:     Waiting for application startup.
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5768 (Press CTRL+C to quit)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:40648 - "GET /metrics HTTP/1.1" 404 Not Found
+[32;20m[2026-03-24 09:59:26,323] LMCache INFO:[0m Received /v1/completions request with generated ID: 44d5192a-b50f-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:26,634] LMCache INFO:[0m Received /v1/completions request with generated ID: 59a6c862-92a6-4b [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:26,753] LMCache INFO:[0m Received /v1/completions request with generated ID: 35776f9c-eecc-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:27,019] LMCache INFO:[0m Received /v1/completions request with generated ID: 9598ef66-a32c-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:27,417] LMCache INFO:[0m Request 44d5192a-b50f-4e: prefill request duration = 1.0936s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:27,808] LMCache INFO:[0m Received /v1/completions request with generated ID: cc2e403c-9d99-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:27,967] LMCache INFO:[0m Received /v1/completions request with generated ID: c7b44a91-4479-42 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:28,111] LMCache INFO:[0m Received /v1/completions request with generated ID: 2ef558a9-38f2-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:28,126] LMCache INFO:[0m Received /v1/completions request with generated ID: eaf70b55-045d-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:28,190] LMCache INFO:[0m Received /v1/completions request with generated ID: ab761986-4e1f-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:28,335] LMCache INFO:[0m Received /v1/completions request with generated ID: 9958b5d3-aa96-42 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:28,569] LMCache INFO:[0m Received /v1/completions request with generated ID: f0a0636b-a81f-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:28,679] LMCache INFO:[0m Request 59a6c862-92a6-4b: prefill request duration = 2.0441s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:28,679] LMCache INFO:[0m Request 35776f9c-eecc-47: prefill request duration = 1.9264s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:28,687] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-44d5192a-b50f-4e-0-86b8acad [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:28,687] LMCache INFO:[0m Notified request: cmpl-44d5192a-b50f-4e-0-86b8acad [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:45240 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:28,687] LMCache INFO:[0m Request 44d5192a-b50f-4e: finished saving KV caches after prefill response = 1270.65ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40648 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:28,710] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-35776f9c-eecc-47-0-9bc0e849 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:28,710] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-59a6c862-92a6-4b-0-bbca5a3f [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:28,710] LMCache INFO:[0m Notified request: cmpl-35776f9c-eecc-47-0-9bc0e849 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:28,710] LMCache INFO:[0m Notified request: cmpl-59a6c862-92a6-4b-0-bbca5a3f [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:45250 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:28,710] LMCache INFO:[0m Request 35776f9c-eecc-47: finished saving KV caches after prefill response = 31.36ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:28,711] LMCache INFO:[0m Request 59a6c862-92a6-4b: finished saving KV caches after prefill response = 31.86ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40652 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40650 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:28,906] LMCache INFO:[0m Received /v1/completions request with generated ID: 2c22d5e2-b120-46 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:29,004] LMCache INFO:[0m Received /v1/completions request with generated ID: ce326c8e-4062-43 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:29,019] LMCache INFO:[0m Received /v1/completions request with generated ID: cd8a20da-2a82-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:29,065] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-9598ef66-a32c-45-0-ae3f8abf [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:29,065] LMCache INFO:[0m Notified request: cmpl-9598ef66-a32c-45-0-ae3f8abf [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34776 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:29,072] LMCache INFO:[0m Request 9598ef66-a32c-45: prefill request duration = 2.0526s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:29,072] LMCache INFO:[0m Request 9598ef66-a32c-45: finished saving KV caches after prefill response = 0.09ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40668 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:29,089] LMCache INFO:[0m Received /v1/completions request with generated ID: 794ba0a8-a02b-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:29,586] LMCache INFO:[0m Received /v1/completions request with generated ID: eb8689e4-3186-4a [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:29,597] LMCache INFO:[0m Request cc2e403c-9d99-4d: prefill request duration = 1.7881s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:29,635] LMCache INFO:[0m Received /v1/completions request with generated ID: 38eea17a-1f42-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:29,759] LMCache INFO:[0m Received /v1/completions request with generated ID: dad57864-65b2-41 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:30,303] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-cc2e403c-9d99-4d-0-a8b3deb7 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:30,303] LMCache INFO:[0m Notified request: cmpl-cc2e403c-9d99-4d-0-a8b3deb7 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34780 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:30,303] LMCache INFO:[0m Request cc2e403c-9d99-4d: finished saving KV caches after prefill response = 706.70ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40684 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:30,313] LMCache INFO:[0m Received /v1/completions request with generated ID: 037d1d38-3a07-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:30,318] LMCache INFO:[0m Received /v1/completions request with generated ID: 3e7cd08d-71d3-48 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:30,322] LMCache INFO:[0m Request 2ef558a9-38f2-4f: prefill request duration = 2.2105s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:30,322] LMCache INFO:[0m Request c7b44a91-4479-42: prefill request duration = 2.3553s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:30,507] LMCache INFO:[0m Received /v1/completions request with generated ID: 6214d944-ad67-44 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:30,754] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-2ef558a9-38f2-4f-0-98b4f0b1 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:30,754] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-c7b44a91-4479-42-0-86c01ab7 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:30,754] LMCache INFO:[0m Notified request: cmpl-2ef558a9-38f2-4f-0-98b4f0b1 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:30,754] LMCache INFO:[0m Notified request: cmpl-c7b44a91-4479-42-0-86c01ab7 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34792 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:30,755] LMCache INFO:[0m Request 2ef558a9-38f2-4f: finished saving KV caches after prefill response = 433.02ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:30,755] LMCache INFO:[0m Request c7b44a91-4479-42: finished saving KV caches after prefill response = 432.86ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40700 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40696 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:30,766] LMCache INFO:[0m Request eaf70b55-045d-40: prefill request duration = 2.6400s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:30,818] LMCache INFO:[0m Request 44d5192a-b50f-4e: latency between prefill first response and decode first response = 3401.66ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:31,128] LMCache INFO:[0m Received /v1/completions request with generated ID: 3540a5f8-3adb-4b [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:31,182] LMCache INFO:[0m Received /v1/completions request with generated ID: 3e29e0f2-90bf-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:31,345] LMCache INFO:[0m Received /v1/completions request with generated ID: d1ff5a46-dff2-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:31,759] LMCache INFO:[0m Request cc2e403c-9d99-4d: latency between prefill first response and decode first response = 2162.38ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:31,759] LMCache INFO:[0m Request 9598ef66-a32c-45: latency between prefill first response and decode first response = 2687.47ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:31,759] LMCache INFO:[0m Request 59a6c862-92a6-4b: latency between prefill first response and decode first response = 3080.61ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:31,759] LMCache INFO:[0m Request 35776f9c-eecc-47: latency between prefill first response and decode first response = 3080.37ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:31,843] LMCache INFO:[0m Received /v1/completions request with generated ID: 976a7894-7b19-48 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:31,872] LMCache INFO:[0m Received /v1/completions request with generated ID: 65dbbd63-4b5a-4a [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,024] LMCache INFO:[0m Received /v1/completions request with generated ID: b70a26fe-7344-44 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,184] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-eaf70b55-045d-40-0-90d17b46 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,184] LMCache INFO:[0m Notified request: cmpl-eaf70b55-045d-40-0-90d17b46 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34794 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,184] LMCache INFO:[0m Request eaf70b55-045d-40: finished saving KV caches after prefill response = 1417.84ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40710 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,241] LMCache INFO:[0m Request f0a0636b-a81f-4e: prefill request duration = 3.6720s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:32,242] LMCache INFO:[0m Request 2c22d5e2-b120-46: prefill request duration = 3.3360s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:32,242] LMCache INFO:[0m Request 9958b5d3-aa96-42: prefill request duration = 3.9078s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:32,243] LMCache INFO:[0m Request ab761986-4e1f-4d: prefill request duration = 4.0522s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:32,277] LMCache INFO:[0m Request c7b44a91-4479-42: latency between prefill first response and decode first response = 1955.45ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:32,278] LMCache INFO:[0m Request 2ef558a9-38f2-4f: latency between prefill first response and decode first response = 1956.13ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:32,311] LMCache INFO:[0m Received /v1/completions request with generated ID: 0f78041a-a242-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,540] LMCache INFO:[0m Received /v1/completions request with generated ID: 6c2c3b87-b3c9-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,671] LMCache INFO:[0m Received /v1/completions request with generated ID: 60090b69-e48a-43 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,718] LMCache INFO:[0m Received /v1/completions request with generated ID: ed1116cc-6636-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,856] LMCache INFO:[0m Received /v1/completions request with generated ID: 86381186-d4ae-46 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-9958b5d3-aa96-42-0-b152940d [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-f0a0636b-a81f-4e-0-8f613c07 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-ab761986-4e1f-4d-0-97a55c5e [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-2c22d5e2-b120-46-0-8563ff6b [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Notified request: cmpl-9958b5d3-aa96-42-0-b152940d [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Notified request: cmpl-f0a0636b-a81f-4e-0-8f613c07 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Notified request: cmpl-ab761986-4e1f-4d-0-97a55c5e [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:32,926] LMCache INFO:[0m Notified request: cmpl-2c22d5e2-b120-46-0-8563ff6b [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34800 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,927] LMCache INFO:[0m Request 9958b5d3-aa96-42: finished saving KV caches after prefill response = 684.24ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:32,927] LMCache INFO:[0m Request f0a0636b-a81f-4e: finished saving KV caches after prefill response = 685.49ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:32,927] LMCache INFO:[0m Request ab761986-4e1f-4d: finished saving KV caches after prefill response = 684.47ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:32,927] LMCache INFO:[0m Request 2c22d5e2-b120-46: finished saving KV caches after prefill response = 684.79ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:40738 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40740 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40722 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40742 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,939] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-cd8a20da-2a82-47-0-921591b3 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,939] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-ce326c8e-4062-43-0-94700039 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:32,939] LMCache INFO:[0m Notified request: cmpl-cd8a20da-2a82-47-0-921591b3 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:32,939] LMCache INFO:[0m Notified request: cmpl-ce326c8e-4062-43-0-94700039 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34802 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,949] LMCache INFO:[0m Request ce326c8e-4062-43: prefill request duration = 3.9451s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:32,950] LMCache INFO:[0m Request ce326c8e-4062-43: finished saving KV caches after prefill response = 0.12ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58558 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,951] LMCache INFO:[0m Request cd8a20da-2a82-47: prefill request duration = 3.9315s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:32,951] LMCache INFO:[0m Request cd8a20da-2a82-47: finished saving KV caches after prefill response = 0.04ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58566 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:32,953] LMCache INFO:[0m Received /v1/completions request with generated ID: 27987b98-8730-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:33,082] LMCache INFO:[0m Request eaf70b55-045d-40: latency between prefill first response and decode first response = 2315.94ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:33,087] LMCache INFO:[0m Received /v1/completions request with generated ID: 0c73c1cf-65e0-43 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:33,182] LMCache INFO:[0m Received /v1/completions request with generated ID: 5ad5e465-55c0-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:33,334] LMCache INFO:[0m Request 794ba0a8-a02b-4e: prefill request duration = 4.2448s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:33,444] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-794ba0a8-a02b-4e-0-a835c479 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:33,444] LMCache INFO:[0m Notified request: cmpl-794ba0a8-a02b-4e-0-a835c479 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34810 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:33,444] LMCache INFO:[0m Request 794ba0a8-a02b-4e: finished saving KV caches after prefill response = 110.28ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58574 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:33,558] LMCache INFO:[0m Received /v1/completions request with generated ID: 30b1f7ec-fd52-42 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:33,861] LMCache INFO:[0m Received /v1/completions request with generated ID: 09971fd8-8836-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:33,938] LMCache INFO:[0m Received /v1/completions request with generated ID: f20485f3-cceb-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,115] LMCache INFO:[0m Received /v1/completions request with generated ID: 48312bee-eb1a-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,180] LMCache INFO:[0m Received /v1/completions request with generated ID: 1245d02d-f490-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,305] LMCache INFO:[0m Received /v1/completions request with generated ID: d445af32-c260-44 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,395] LMCache INFO:[0m Received /v1/completions request with generated ID: 7ee70ef0-53e3-48 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,617] LMCache INFO:[0m Received /v1/completions request with generated ID: 5e440845-8f9d-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,712] LMCache INFO:[0m Received /v1/completions request with generated ID: 0888c165-46a4-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,840] LMCache INFO:[0m Received /v1/completions request with generated ID: 424be1ae-9f01-44 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:34,902] LMCache INFO:[0m Request ab761986-4e1f-4d: latency between prefill first response and decode first response = 2659.31ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:34,902] LMCache INFO:[0m Request 9958b5d3-aa96-42: latency between prefill first response and decode first response = 2659.73ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:34,902] LMCache INFO:[0m Request f0a0636b-a81f-4e: latency between prefill first response and decode first response = 2660.91ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:34,903] LMCache INFO:[0m Request 2c22d5e2-b120-46: latency between prefill first response and decode first response = 2660.20ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:34,918] LMCache INFO:[0m Request 38eea17a-1f42-4c: prefill request duration = 5.2835s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:34,919] LMCache INFO:[0m Request 037d1d38-3a07-4c: prefill request duration = 4.6056s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:34,919] LMCache INFO:[0m Request eb8689e4-3186-4a: prefill request duration = 5.3327s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:34,919] LMCache INFO:[0m Request dad57864-65b2-41: prefill request duration = 5.1599s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:35,102] LMCache INFO:[0m Received /v1/completions request with generated ID: 01b42aab-3175-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:35,212] LMCache INFO:[0m Received /v1/completions request with generated ID: 3047b5b0-04ee-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:35,604] LMCache INFO:[0m Request cd8a20da-2a82-47: latency between prefill first response and decode first response = 2652.77ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:35,604] LMCache INFO:[0m Request ce326c8e-4062-43: latency between prefill first response and decode first response = 2654.70ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:35,665] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-dad57864-65b2-41-0-87ce24ba [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:35,665] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-eb8689e4-3186-4a-0-9750cf03 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:35,665] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-037d1d38-3a07-4c-0-b8b24a72 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:35,665] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-38eea17a-1f42-4c-0-92e8290c [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:35,666] LMCache INFO:[0m Notified request: cmpl-dad57864-65b2-41-0-87ce24ba [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:35,666] LMCache INFO:[0m Notified request: cmpl-eb8689e4-3186-4a-0-9750cf03 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:35,666] LMCache INFO:[0m Request dad57864-65b2-41: finished saving KV caches after prefill response = 746.79ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:35,666] LMCache INFO:[0m Notified request: cmpl-037d1d38-3a07-4c-0-b8b24a72 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:35,666] LMCache INFO:[0m Request eb8689e4-3186-4a: finished saving KV caches after prefill response = 747.25ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:35,666] LMCache INFO:[0m Notified request: cmpl-38eea17a-1f42-4c-0-92e8290c [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34826 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58604 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58576 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:35,669] LMCache INFO:[0m Request 037d1d38-3a07-4c: finished saving KV caches after prefill response = 750.54ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:35,669] LMCache INFO:[0m Request 38eea17a-1f42-4c: finished saving KV caches after prefill response = 751.08ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58612 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58592 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:35,684] LMCache INFO:[0m Request 3e7cd08d-71d3-48: prefill request duration = 5.3661s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:35,684] LMCache INFO:[0m Request 6214d944-ad67-44: prefill request duration = 5.1768s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:35,702] LMCache INFO:[0m Received /v1/completions request with generated ID: 537bc5fd-3fb2-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:35,742] LMCache INFO:[0m Received /v1/completions request with generated ID: 4f3a0c2a-3257-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:35,831] LMCache INFO:[0m Request 794ba0a8-a02b-4e: latency between prefill first response and decode first response = 2497.44ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:36,023] LMCache INFO:[0m Received /v1/completions request with generated ID: 79b025d1-959c-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,139] LMCache INFO:[0m Received /v1/completions request with generated ID: accc2c5d-58e2-4e [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,249] LMCache INFO:[0m Received /v1/completions request with generated ID: af87814a-2e64-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,460] LMCache INFO:[0m Received /v1/completions request with generated ID: 36fa4702-3636-46 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,612] LMCache INFO:[0m Received /v1/completions request with generated ID: 3f20a86c-5db8-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,725] LMCache INFO:[0m Received /v1/completions request with generated ID: d3509eb6-7424-4b [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,726] LMCache INFO:[0m Received /v1/completions request with generated ID: 399744ae-4ebd-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,742] LMCache INFO:[0m Received /v1/completions request with generated ID: 1d2532b5-0c2a-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:36,998] LMCache INFO:[0m Received /v1/completions request with generated ID: 006242d4-678c-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:37,149] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-3e7cd08d-71d3-48-0-be3f1fde [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:37,149] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-6214d944-ad67-44-0-afd18cdd [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:37,149] LMCache INFO:[0m Notified request: cmpl-3e7cd08d-71d3-48-0-be3f1fde [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:37,149] LMCache INFO:[0m Notified request: cmpl-6214d944-ad67-44-0-afd18cdd [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34842 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:37,150] LMCache INFO:[0m Request 3e7cd08d-71d3-48: finished saving KV caches after prefill response = 1465.73ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:37,150] LMCache INFO:[0m Request 6214d944-ad67-44: finished saving KV caches after prefill response = 1465.74ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58626 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58638 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:37,153] LMCache INFO:[0m Received /v1/completions request with generated ID: 5fc4b660-7f96-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:37,184] LMCache INFO:[0m Request 3540a5f8-3adb-4b: prefill request duration = 6.0557s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:37,184] LMCache INFO:[0m Request d1ff5a46-dff2-49: prefill request duration = 5.8391s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:37,184] LMCache INFO:[0m Request 976a7894-7b19-48: prefill request duration = 5.3409s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:37,185] LMCache INFO:[0m Request 3e29e0f2-90bf-4e: prefill request duration = 6.0028s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:37,324] LMCache INFO:[0m Request eb8689e4-3186-4a: latency between prefill first response and decode first response = 2405.27ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:37,324] LMCache INFO:[0m Request 38eea17a-1f42-4c: latency between prefill first response and decode first response = 2405.94ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:37,325] LMCache INFO:[0m Request dad57864-65b2-41: latency between prefill first response and decode first response = 2405.75ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:37,325] LMCache INFO:[0m Request 037d1d38-3a07-4c: latency between prefill first response and decode first response = 2406.51ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:37,398] LMCache INFO:[0m Received /v1/completions request with generated ID: f6d03284-6271-4b [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,043] LMCache INFO:[0m Received /v1/completions request with generated ID: f672b595-d18d-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,132] LMCache INFO:[0m Request 6214d944-ad67-44: latency between prefill first response and decode first response = 2447.63ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:38,132] LMCache INFO:[0m Request 3e7cd08d-71d3-48: latency between prefill first response and decode first response = 2448.56ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:38,278] LMCache INFO:[0m Received /v1/completions request with generated ID: 2fa9d442-bc74-46 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,289] LMCache INFO:[0m Received /v1/completions request with generated ID: 46e65606-d02e-46 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,366] LMCache INFO:[0m Received /v1/completions request with generated ID: 016677e1-b232-42 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,551] LMCache INFO:[0m Received /v1/completions request with generated ID: f3795f40-713e-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,606] LMCache INFO:[0m Received /v1/completions request with generated ID: 94d6cda6-b138-4c [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-976a7894-7b19-48-0-901f233e [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-3540a5f8-3adb-4b-0-b503b48a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-3e29e0f2-90bf-4e-0-bb501a94 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-d1ff5a46-dff2-49-0-b42909ed [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Notified request: cmpl-976a7894-7b19-48-0-901f233e [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Notified request: cmpl-3540a5f8-3adb-4b-0-b503b48a [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Notified request: cmpl-3e29e0f2-90bf-4e-0-bb501a94 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:38,631] LMCache INFO:[0m Notified request: cmpl-d1ff5a46-dff2-49-0-b42909ed [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:34854 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:38,632] LMCache INFO:[0m Request 976a7894-7b19-48: finished saving KV caches after prefill response = 1447.21ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:38,632] LMCache INFO:[0m Request 3540a5f8-3adb-4b: finished saving KV caches after prefill response = 1447.80ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:38,632] LMCache INFO:[0m Request 3e29e0f2-90bf-4e: finished saving KV caches after prefill response = 1447.40ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:38,632] LMCache INFO:[0m Request d1ff5a46-dff2-49: finished saving KV caches after prefill response = 1447.59ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58682 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58652 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58660 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58670 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:38,668] LMCache INFO:[0m Request b70a26fe-7344-44: prefill request duration = 6.6432s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:38,668] LMCache INFO:[0m Request 65dbbd63-4b5a-4a: prefill request duration = 6.7964s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:38,668] LMCache INFO:[0m Request 0f78041a-a242-49: prefill request duration = 6.3568s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:38,668] LMCache INFO:[0m Request 6c2c3b87-b3c9-45: prefill request duration = 6.1287s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:39,301] LMCache INFO:[0m Received /v1/completions request with generated ID: be1e56d1-84b6-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:39,900] LMCache INFO:[0m Received /v1/completions request with generated ID: 8c385bee-6734-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:40,069] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-65dbbd63-4b5a-4a-0-87926e2e [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-6c2c3b87-b3c9-45-0-9ac4dd2c [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0f78041a-a242-49-0-a6d73b63 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-b70a26fe-7344-44-0-9d8ee34f [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Notified request: cmpl-65dbbd63-4b5a-4a-0-87926e2e [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Notified request: cmpl-6c2c3b87-b3c9-45-0-9ac4dd2c [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Notified request: cmpl-0f78041a-a242-49-0-a6d73b63 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Notified request: cmpl-b70a26fe-7344-44-0-9d8ee34f [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37118 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Request 65dbbd63-4b5a-4a: finished saving KV caches after prefill response = 1401.78ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Request 6c2c3b87-b3c9-45: finished saving KV caches after prefill response = 1401.86ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Request 0f78041a-a242-49: finished saving KV caches after prefill response = 1401.99ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,070] LMCache INFO:[0m Request b70a26fe-7344-44: finished saving KV caches after prefill response = 1402.71ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58692 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58718 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58708 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58694 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,107] LMCache INFO:[0m Request ed1116cc-6636-47: prefill request duration = 7.3890s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:40,107] LMCache INFO:[0m Request 27987b98-8730-4d: prefill request duration = 7.1537s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:40,107] LMCache INFO:[0m Request 86381186-d4ae-46: prefill request duration = 7.2507s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:40,107] LMCache INFO:[0m Request 60090b69-e48a-43: prefill request duration = 7.4360s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-ed1116cc-6636-47-0-a4d9ff12 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-86381186-d4ae-46-0-90edd545 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-27987b98-8730-4d-0-85ad040f [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-60090b69-e48a-43-0-af0b1ba0 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Notified request: cmpl-ed1116cc-6636-47-0-a4d9ff12 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Notified request: cmpl-86381186-d4ae-46-0-90edd545 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Notified request: cmpl-27987b98-8730-4d-0-85ad040f [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Notified request: cmpl-60090b69-e48a-43-0-af0b1ba0 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37134 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,159] LMCache INFO:[0m Request ed1116cc-6636-47: finished saving KV caches after prefill response = 52.47ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,160] LMCache INFO:[0m Request 86381186-d4ae-46: finished saving KV caches after prefill response = 52.23ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,160] LMCache INFO:[0m Request 27987b98-8730-4d: finished saving KV caches after prefill response = 52.37ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,160] LMCache INFO:[0m Request 60090b69-e48a-43: finished saving KV caches after prefill response = 52.32ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58736 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58744 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58752 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58732 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,269] LMCache INFO:[0m Request d1ff5a46-dff2-49: latency between prefill first response and decode first response = 3084.80ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:40,269] LMCache INFO:[0m Request 3540a5f8-3adb-4b: latency between prefill first response and decode first response = 3085.39ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:40,270] LMCache INFO:[0m Request 976a7894-7b19-48: latency between prefill first response and decode first response = 3085.33ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:40,270] LMCache INFO:[0m Request 3e29e0f2-90bf-4e: latency between prefill first response and decode first response = 3085.83ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:40,289] LMCache INFO:[0m Received /v1/completions request with generated ID: 98008a49-56ed-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:40,422] LMCache INFO:[0m Received /v1/completions request with generated ID: 2577d965-4d33-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:40,775] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5ad5e465-55c0-4e-0-9aaff30d [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,775] LMCache INFO:[0m Notified request: cmpl-5ad5e465-55c0-4e-0-9aaff30d [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37150 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,776] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0c73c1cf-65e0-43-0-b2d5581b [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:40,776] LMCache INFO:[0m Notified request: cmpl-0c73c1cf-65e0-43-0-b2d5581b [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37158 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,785] LMCache INFO:[0m Request 5ad5e465-55c0-4e: prefill request duration = 7.6034s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:40,785] LMCache INFO:[0m Request 5ad5e465-55c0-4e: finished saving KV caches after prefill response = 0.06ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:40,785] LMCache INFO:[0m Request 0c73c1cf-65e0-43: prefill request duration = 7.6981s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:40,785] LMCache INFO:[0m Request 0c73c1cf-65e0-43: finished saving KV caches after prefill response = 0.03ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58776 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58768 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:40,803] LMCache INFO:[0m Received /v1/completions request with generated ID: 7e93360a-e51b-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:40,832] LMCache INFO:[0m Received /v1/completions request with generated ID: 2b42089c-2641-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:40,907] LMCache INFO:[0m Received /v1/completions request with generated ID: 673ae72c-5bf8-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,036] LMCache INFO:[0m Received /v1/completions request with generated ID: cba436f3-8cc6-46 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,083] LMCache INFO:[0m Request 65dbbd63-4b5a-4a: latency between prefill first response and decode first response = 2414.78ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:41,316] LMCache INFO:[0m Received /v1/completions request with generated ID: 9cb07416-40f5-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,453] LMCache INFO:[0m Received /v1/completions request with generated ID: e766086f-dfd1-48 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,482] LMCache INFO:[0m Received /v1/completions request with generated ID: 606a1e88-7f2e-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,570] LMCache INFO:[0m Received /v1/completions request with generated ID: d3613471-fbbd-4a [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,653] LMCache INFO:[0m Received /v1/completions request with generated ID: 3b812d5d-27f2-44 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,726] LMCache INFO:[0m Received /v1/completions request with generated ID: ae7e5ab6-57f8-42 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,761] LMCache INFO:[0m Received /v1/completions request with generated ID: 5736d599-898d-4a [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,859] LMCache INFO:[0m Request 6c2c3b87-b3c9-45: latency between prefill first response and decode first response = 3190.67ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:41,860] LMCache INFO:[0m Request 0f78041a-a242-49: latency between prefill first response and decode first response = 3191.74ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:41,860] LMCache INFO:[0m Request b70a26fe-7344-44: latency between prefill first response and decode first response = 3192.74ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:41,873] LMCache INFO:[0m Received /v1/completions request with generated ID: ee104ab2-812a-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:41,997] LMCache INFO:[0m Received /v1/completions request with generated ID: 488306c9-fb3e-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:42,310] LMCache INFO:[0m Received /v1/completions request with generated ID: ced5edc8-aacf-4b [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:42,575] LMCache INFO:[0m Request 09971fd8-8836-49: prefill request duration = 8.7138s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:42,575] LMCache INFO:[0m Request 30b1f7ec-fd52-42: prefill request duration = 9.0165s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:42,575] LMCache INFO:[0m Request 48312bee-eb1a-45: prefill request duration = 8.4598s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:42,575] LMCache INFO:[0m Request f20485f3-cceb-47: prefill request duration = 8.6364s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:42,634] LMCache INFO:[0m Received /v1/completions request with generated ID: 126a86e6-141d-47 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:42,786] LMCache INFO:[0m Received /v1/completions request with generated ID: 7abea0f4-fec4-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:42,914] LMCache INFO:[0m Received /v1/completions request with generated ID: 416dd26a-d6bb-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:43,224] LMCache INFO:[0m Received /v1/completions request with generated ID: 1ab560a0-3ea8-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:43,576] LMCache INFO:[0m Request 27987b98-8730-4d: latency between prefill first response and decode first response = 3468.76ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:43,576] LMCache INFO:[0m Request ed1116cc-6636-47: latency between prefill first response and decode first response = 3469.62ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:43,577] LMCache INFO:[0m Request 0c73c1cf-65e0-43: latency between prefill first response and decode first response = 2791.65ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:43,577] LMCache INFO:[0m Request 5ad5e465-55c0-4e: latency between prefill first response and decode first response = 2791.95ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:43,577] LMCache INFO:[0m Request 60090b69-e48a-43: latency between prefill first response and decode first response = 3470.09ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:43,580] LMCache INFO:[0m Request 86381186-d4ae-46: latency between prefill first response and decode first response = 3472.35ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:43,682] LMCache INFO:[0m Received /v1/completions request with generated ID: b545f2a3-4220-44 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:43,909] LMCache INFO:[0m Received /v1/completions request with generated ID: a0c4f7d4-c6d7-43 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-48312bee-eb1a-45-0-b7a5e733 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-30b1f7ec-fd52-42-0-adcc312e [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-f20485f3-cceb-47-0-b1e27552 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-09971fd8-8836-49-0-b1bd257b [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Notified request: cmpl-48312bee-eb1a-45-0-b7a5e733 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Notified request: cmpl-30b1f7ec-fd52-42-0-adcc312e [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Notified request: cmpl-f20485f3-cceb-47-0-b1e27552 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:44,027] LMCache INFO:[0m Notified request: cmpl-09971fd8-8836-49-0-b1bd257b [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37172 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:44,028] LMCache INFO:[0m Request 48312bee-eb1a-45: finished saving KV caches after prefill response = 1453.21ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:44,029] LMCache INFO:[0m Request 30b1f7ec-fd52-42: finished saving KV caches after prefill response = 1453.64ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:44,029] LMCache INFO:[0m Request f20485f3-cceb-47: finished saving KV caches after prefill response = 1453.62ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:44,029] LMCache INFO:[0m Request 09971fd8-8836-49: finished saving KV caches after prefill response = 1454.23ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58816 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58784 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58804 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58798 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:44,064] LMCache INFO:[0m Request 5e440845-8f9d-4e: prefill request duration = 9.4461s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:44,064] LMCache INFO:[0m Request 1245d02d-f490-4d: prefill request duration = 9.8840s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:44,064] LMCache INFO:[0m Request d445af32-c260-44: prefill request duration = 9.7594s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:44,064] LMCache INFO:[0m Request 7ee70ef0-53e3-48: prefill request duration = 9.6687s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:44,241] LMCache INFO:[0m Received /v1/completions request with generated ID: 1433232f-d098-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:44,820] LMCache INFO:[0m Received /v1/completions request with generated ID: 4bfe9845-1ee5-41 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:44,828] LMCache INFO:[0m Received /v1/completions request with generated ID: bb4e3545-a7a7-40 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:45,263] LMCache INFO:[0m Received /v1/completions request with generated ID: b18460dc-7a35-48 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:45,325] LMCache INFO:[0m Received /v1/completions request with generated ID: 6613901e-b443-4f [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:45,459] LMCache INFO:[0m Received /v1/completions request with generated ID: c8640f5d-9fd0-48 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-d445af32-c260-44-0-9aae84a0 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5e440845-8f9d-4e-0-8e739730 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-1245d02d-f490-4d-0-95bf9442 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-7ee70ef0-53e3-48-0-adf4a490 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Notified request: cmpl-d445af32-c260-44-0-9aae84a0 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Notified request: cmpl-5e440845-8f9d-4e-0-8e739730 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Notified request: cmpl-1245d02d-f490-4d-0-95bf9442 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Request d445af32-c260-44: finished saving KV caches after prefill response = 1456.16ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Notified request: cmpl-7ee70ef0-53e3-48-0-adf4a490 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37186 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:45,520] LMCache INFO:[0m Request 5e440845-8f9d-4e: finished saving KV caches after prefill response = 1456.85ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:45,521] LMCache INFO:[0m Request 1245d02d-f490-4d: finished saving KV caches after prefill response = 1456.86ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58822 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58838 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58818 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:45,524] LMCache INFO:[0m Request 7ee70ef0-53e3-48: finished saving KV caches after prefill response = 1459.80ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58824 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:45,563] LMCache INFO:[0m Request 0888c165-46a4-40: prefill request duration = 10.8511s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:45,563] LMCache INFO:[0m Request 01b42aab-3175-49: prefill request duration = 10.4611s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:45,563] LMCache INFO:[0m Request 424be1ae-9f01-44: prefill request duration = 10.7237s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:45,563] LMCache INFO:[0m Request 3047b5b0-04ee-47: prefill request duration = 10.3512s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:45,790] LMCache INFO:[0m Received /v1/completions request with generated ID: 1a07425c-2f80-4d [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:45,927] LMCache INFO:[0m Request 30b1f7ec-fd52-42: latency between prefill first response and decode first response = 3351.79ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:45,928] LMCache INFO:[0m Request 09971fd8-8836-49: latency between prefill first response and decode first response = 3353.08ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:45,928] LMCache INFO:[0m Request 48312bee-eb1a-45: latency between prefill first response and decode first response = 3352.73ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:45,929] LMCache INFO:[0m Request f20485f3-cceb-47: latency between prefill first response and decode first response = 3354.44ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:46,050] LMCache INFO:[0m Received /v1/completions request with generated ID: 2f832092-98fd-41 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:46,082] LMCache INFO:[0m Received /v1/completions request with generated ID: a1cee4f7-31a6-45 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:46,306] LMCache INFO:[0m Received /v1/completions request with generated ID: 44de6abe-4d69-49 [3m(disagg_proxy_server.py:260:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-0888c165-46a4-40-0-a7959dff [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-424be1ae-9f01-44-0-a009beea [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-01b42aab-3175-49-0-bbbabe2e [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-3047b5b0-04ee-47-0-aa1edcf0 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Notified request: cmpl-0888c165-46a4-40-0-a7959dff [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Notified request: cmpl-424be1ae-9f01-44-0-a009beea [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Notified request: cmpl-01b42aab-3175-49-0-bbbabe2e [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Notified request: cmpl-3047b5b0-04ee-47-0-aa1edcf0 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37200 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:47,095] LMCache INFO:[0m Request 0888c165-46a4-40: finished saving KV caches after prefill response = 1532.42ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:47,096] LMCache INFO:[0m Request 424be1ae-9f01-44: finished saving KV caches after prefill response = 1532.33ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:47,096] LMCache INFO:[0m Request 01b42aab-3175-49: finished saving KV caches after prefill response = 1532.48ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:47,096] LMCache INFO:[0m Request 3047b5b0-04ee-47: finished saving KV caches after prefill response = 1532.45ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58844 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58850 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58854 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58864 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:47,131] LMCache INFO:[0m Request 79b025d1-959c-4c: prefill request duration = 11.1077s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:47,132] LMCache INFO:[0m Request 4f3a0c2a-3257-45: prefill request duration = 11.3898s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:47,132] LMCache INFO:[0m Request accc2c5d-58e2-4e: prefill request duration = 10.9922s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:47,132] LMCache INFO:[0m Request 537bc5fd-3fb2-4f: prefill request duration = 11.4300s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:47,533] LMCache INFO:[0m Request 5e440845-8f9d-4e: latency between prefill first response and decode first response = 3469.74ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:47,534] LMCache INFO:[0m Request 7ee70ef0-53e3-48: latency between prefill first response and decode first response = 3469.71ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:47,534] LMCache INFO:[0m Request d445af32-c260-44: latency between prefill first response and decode first response = 3470.14ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:47,536] LMCache INFO:[0m Request 1245d02d-f490-4d: latency between prefill first response and decode first response = 3472.41ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-4f3a0c2a-3257-45-0-b24858fd [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-79b025d1-959c-4c-0-a7f44605 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-537bc5fd-3fb2-4f-0-9926ee78 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-accc2c5d-58e2-4e-0-b7fde7b7 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Notified request: cmpl-4f3a0c2a-3257-45-0-b24858fd [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Notified request: cmpl-79b025d1-959c-4c-0-a7f44605 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Notified request: cmpl-537bc5fd-3fb2-4f-0-9926ee78 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:48,601] LMCache INFO:[0m Notified request: cmpl-accc2c5d-58e2-4e-0-b7fde7b7 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:37214 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:48,602] LMCache INFO:[0m Request 4f3a0c2a-3257-45: finished saving KV caches after prefill response = 1470.16ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:48,602] LMCache INFO:[0m Request 79b025d1-959c-4c: finished saving KV caches after prefill response = 1470.90ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:48,602] LMCache INFO:[0m Request 537bc5fd-3fb2-4f: finished saving KV caches after prefill response = 1470.48ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:48,602] LMCache INFO:[0m Request accc2c5d-58e2-4e: finished saving KV caches after prefill response = 1470.64ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58880 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58890 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58866 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:48,638] LMCache INFO:[0m Request d3509eb6-7424-4b: prefill request duration = 11.9131s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:48,638] LMCache INFO:[0m Request af87814a-2e64-49: prefill request duration = 12.3888s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:48,638] LMCache INFO:[0m Request 36fa4702-3636-46: prefill request duration = 12.1780s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:48,638] LMCache INFO:[0m Request 3f20a86c-5db8-4c: prefill request duration = 12.0267s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:49,134] LMCache INFO:[0m Request 424be1ae-9f01-44: latency between prefill first response and decode first response = 3570.34ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:49,135] LMCache INFO:[0m Request 0888c165-46a4-40: latency between prefill first response and decode first response = 3572.10ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:49,136] LMCache INFO:[0m Request 3047b5b0-04ee-47: latency between prefill first response and decode first response = 3572.42ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:49,136] LMCache INFO:[0m Request 01b42aab-3175-49: latency between prefill first response and decode first response = 3572.64ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-af87814a-2e64-49-0-8b6888a3 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-36fa4702-3636-46-0-851df1aa [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-d3509eb6-7424-4b-0-82f637a0 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-3f20a86c-5db8-4c-0-b3c9c566 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Notified request: cmpl-af87814a-2e64-49-0-8b6888a3 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Notified request: cmpl-36fa4702-3636-46-0-851df1aa [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Notified request: cmpl-d3509eb6-7424-4b-0-82f637a0 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Notified request: cmpl-3f20a86c-5db8-4c-0-b3c9c566 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50652 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:50,123] LMCache INFO:[0m Request af87814a-2e64-49: finished saving KV caches after prefill response = 1485.02ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:50,124] LMCache INFO:[0m Request 36fa4702-3636-46: finished saving KV caches after prefill response = 1485.31ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:50,124] LMCache INFO:[0m Request d3509eb6-7424-4b: finished saving KV caches after prefill response = 1485.87ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:50,124] LMCache INFO:[0m Request 3f20a86c-5db8-4c: finished saving KV caches after prefill response = 1485.47ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58910 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58922 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58936 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58934 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:50,160] LMCache INFO:[0m Request 006242d4-678c-4d: prefill request duration = 13.1624s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:50,161] LMCache INFO:[0m Request 5fc4b660-7f96-4f: prefill request duration = 13.0074s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:50,161] LMCache INFO:[0m Request 1d2532b5-0c2a-4c: prefill request duration = 13.4189s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:50,161] LMCache INFO:[0m Request 399744ae-4ebd-45: prefill request duration = 13.4345s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:51,254] LMCache INFO:[0m Request accc2c5d-58e2-4e: latency between prefill first response and decode first response = 4122.43ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:51,255] LMCache INFO:[0m Request 4f3a0c2a-3257-45: latency between prefill first response and decode first response = 4123.45ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:51,257] LMCache INFO:[0m Request 79b025d1-959c-4c: latency between prefill first response and decode first response = 4125.46ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:51,406] LMCache INFO:[0m Request 537bc5fd-3fb2-4f: latency between prefill first response and decode first response = 4274.43ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-006242d4-678c-4d-0-8bd1bf0a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-1d2532b5-0c2a-4c-0-91465481 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-399744ae-4ebd-45-0-8242ff7d [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5fc4b660-7f96-4f-0-9cbf6a69 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Notified request: cmpl-006242d4-678c-4d-0-8bd1bf0a [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Notified request: cmpl-1d2532b5-0c2a-4c-0-91465481 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Notified request: cmpl-399744ae-4ebd-45-0-8242ff7d [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:51,698] LMCache INFO:[0m Notified request: cmpl-5fc4b660-7f96-4f-0-9cbf6a69 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50668 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:51,699] LMCache INFO:[0m Request 006242d4-678c-4d: finished saving KV caches after prefill response = 1538.24ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:51,699] LMCache INFO:[0m Request 1d2532b5-0c2a-4c: finished saving KV caches after prefill response = 1537.89ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:51,699] LMCache INFO:[0m Request 399744ae-4ebd-45: finished saving KV caches after prefill response = 1537.91ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:51,699] LMCache INFO:[0m Request 5fc4b660-7f96-4f: finished saving KV caches after prefill response = 1538.11ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:58970 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58964 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58950 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58974 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:51,730] LMCache INFO:[0m Request 2fa9d442-bc74-46: prefill request duration = 13.4515s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:51,730] LMCache INFO:[0m Request f672b595-d18d-49: prefill request duration = 13.6871s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:51,730] LMCache INFO:[0m Request 46e65606-d02e-46: prefill request duration = 13.4409s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:51,730] LMCache INFO:[0m Request f6d03284-6271-4b: prefill request duration = 14.3318s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:52,687] LMCache INFO:[0m Request 3f20a86c-5db8-4c: latency between prefill first response and decode first response = 4048.57ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:52,687] LMCache INFO:[0m Request 36fa4702-3636-46: latency between prefill first response and decode first response = 4048.90ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:52,688] LMCache INFO:[0m Request af87814a-2e64-49: latency between prefill first response and decode first response = 4049.61ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:52,689] LMCache INFO:[0m Request d3509eb6-7424-4b: latency between prefill first response and decode first response = 4051.62ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-2fa9d442-bc74-46-0-924ec338 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-f672b595-d18d-49-0-87c80b50 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-46e65606-d02e-46-0-8b770676 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-f6d03284-6271-4b-0-95bf75be [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Notified request: cmpl-2fa9d442-bc74-46-0-924ec338 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Notified request: cmpl-f672b595-d18d-49-0-87c80b50 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Notified request: cmpl-46e65606-d02e-46-0-8b770676 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Notified request: cmpl-f6d03284-6271-4b-0-95bf75be [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50674 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Request 2fa9d442-bc74-46: finished saving KV caches after prefill response = 1443.62ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Request f672b595-d18d-49: finished saving KV caches after prefill response = 1443.39ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:53,173] LMCache INFO:[0m Request 46e65606-d02e-46: finished saving KV caches after prefill response = 1443.41ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:53,174] LMCache INFO:[0m Request f6d03284-6271-4b: finished saving KV caches after prefill response = 1443.43ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:59016 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59000 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59022 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58990 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-016677e1-b232-42-0-978a7532 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-be1e56d1-84b6-40-0-92b3676d [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-94d6cda6-b138-4c-0-a4de3ce4 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-f3795f40-713e-4c-0-9104e711 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Notified request: cmpl-016677e1-b232-42-0-978a7532 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Notified request: cmpl-be1e56d1-84b6-40-0-92b3676d [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Notified request: cmpl-94d6cda6-b138-4c-0-a4de3ce4 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:53,178] LMCache INFO:[0m Notified request: cmpl-f3795f40-713e-4c-0-9104e711 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50682 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:53,205] LMCache INFO:[0m Request be1e56d1-84b6-40: prefill request duration = 13.9034s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:53,205] LMCache INFO:[0m Request be1e56d1-84b6-40: finished saving KV caches after prefill response = 0.08ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43274 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Request 94d6cda6-b138-4c: prefill request duration = 14.6004s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Request 94d6cda6-b138-4c: finished saving KV caches after prefill response = 0.04ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Request f3795f40-713e-4c: prefill request duration = 14.6549s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Request f3795f40-713e-4c: finished saving KV caches after prefill response = 0.03ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Request 016677e1-b232-42: prefill request duration = 14.8402s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:53,206] LMCache INFO:[0m Request 016677e1-b232-42: finished saving KV caches after prefill response = 0.03ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:59054 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59042 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59026 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:54,074] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-98008a49-56ed-4f-0-98bed16b [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:54,074] LMCache INFO:[0m Notified request: cmpl-98008a49-56ed-4f-0-98bed16b [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50698 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:54,075] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-2577d965-4d33-4d-0-89fef4b1 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:54,075] LMCache INFO:[0m Notified request: cmpl-2577d965-4d33-4d-0-89fef4b1 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50700 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:54,092] LMCache INFO:[0m Request 8c385bee-6734-4f: prefill request duration = 14.1918s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:54,092] LMCache INFO:[0m Request 98008a49-56ed-4f: prefill request duration = 13.8028s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:54,092] LMCache INFO:[0m Request 98008a49-56ed-4f: finished saving KV caches after prefill response = 0.04ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:54,092] LMCache INFO:[0m Request 2577d965-4d33-4d: prefill request duration = 13.6696s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:54,092] LMCache INFO:[0m Request 2577d965-4d33-4d: finished saving KV caches after prefill response = 0.03ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43290 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43304 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:54,124] LMCache INFO:[0m Request 1d2532b5-0c2a-4c: latency between prefill first response and decode first response = 3963.20ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:54,124] LMCache INFO:[0m Request 006242d4-678c-4d: latency between prefill first response and decode first response = 3964.06ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:54,128] LMCache INFO:[0m Request 5fc4b660-7f96-4f: latency between prefill first response and decode first response = 3967.05ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:54,191] LMCache INFO:[0m Request 399744ae-4ebd-45: latency between prefill first response and decode first response = 4029.64ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:54,209] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-8c385bee-6734-4f-0-91e16b29 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:54,209] LMCache INFO:[0m Notified request: cmpl-8c385bee-6734-4f-0-91e16b29 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50702 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:54,210] LMCache INFO:[0m Request 8c385bee-6734-4f: finished saving KV caches after prefill response = 117.79ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43278 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:55,591] LMCache INFO:[0m Request f672b595-d18d-49: latency between prefill first response and decode first response = 3861.19ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:55,592] LMCache INFO:[0m Request 46e65606-d02e-46: latency between prefill first response and decode first response = 3862.43ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:55,595] LMCache INFO:[0m Request 2fa9d442-bc74-46: latency between prefill first response and decode first response = 3865.04ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:55,843] LMCache INFO:[0m Request cba436f3-8cc6-46: prefill request duration = 14.8069s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:55,843] LMCache INFO:[0m Request 7e93360a-e51b-45: prefill request duration = 15.0405s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:55,843] LMCache INFO:[0m Request 673ae72c-5bf8-40: prefill request duration = 14.9366s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:55,844] LMCache INFO:[0m Request 2b42089c-2641-40: prefill request duration = 15.0117s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:56,851] LMCache INFO:[0m Request f3795f40-713e-4c: latency between prefill first response and decode first response = 3644.76ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:56,852] LMCache INFO:[0m Request be1e56d1-84b6-40: latency between prefill first response and decode first response = 3646.83ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:56,854] LMCache INFO:[0m Request f6d03284-6271-4b: latency between prefill first response and decode first response = 5124.18ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:56,855] LMCache INFO:[0m Request 94d6cda6-b138-4c: latency between prefill first response and decode first response = 3648.79ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:57,297] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-cba436f3-8cc6-46-0-a00f32b7 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:57,297] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-2b42089c-2641-40-0-b07b383a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:57,297] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-673ae72c-5bf8-40-0-84a15299 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:57,297] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-7e93360a-e51b-45-0-bffbaef9 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:57,297] LMCache INFO:[0m Notified request: cmpl-cba436f3-8cc6-46-0-a00f32b7 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:57,298] LMCache INFO:[0m Notified request: cmpl-2b42089c-2641-40-0-b07b383a [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:57,298] LMCache INFO:[0m Notified request: cmpl-673ae72c-5bf8-40-0-84a15299 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:57,298] LMCache INFO:[0m Notified request: cmpl-7e93360a-e51b-45-0-bffbaef9 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50710 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:57,298] LMCache INFO:[0m Request cba436f3-8cc6-46: finished saving KV caches after prefill response = 1454.98ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:57,298] LMCache INFO:[0m Request 2b42089c-2641-40: finished saving KV caches after prefill response = 1454.78ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:57,298] LMCache INFO:[0m Request 673ae72c-5bf8-40: finished saving KV caches after prefill response = 1454.93ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:57,299] LMCache INFO:[0m Request 7e93360a-e51b-45: finished saving KV caches after prefill response = 1455.08ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43330 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43310 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43326 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43308 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:57,339] LMCache INFO:[0m Request e766086f-dfd1-48: prefill request duration = 15.8858s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:57,339] LMCache INFO:[0m Request 606a1e88-7f2e-4d: prefill request duration = 15.8569s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:57,339] LMCache INFO:[0m Request 9cb07416-40f5-4d: prefill request duration = 16.0233s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:57,339] LMCache INFO:[0m Request d3613471-fbbd-4a: prefill request duration = 15.7689s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:57,751] LMCache INFO:[0m Request 2577d965-4d33-4d: latency between prefill first response and decode first response = 3659.28ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:57,754] LMCache INFO:[0m Request 8c385bee-6734-4f: latency between prefill first response and decode first response = 3662.41ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:57,755] LMCache INFO:[0m Request 98008a49-56ed-4f: latency between prefill first response and decode first response = 3663.39ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:57,757] LMCache INFO:[0m Request 016677e1-b232-42: latency between prefill first response and decode first response = 4550.33ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-606a1e88-7f2e-4d-0-99ca3f94 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-e766086f-dfd1-48-0-b761a4e2 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-d3613471-fbbd-4a-0-aa5b1abc [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-9cb07416-40f5-4d-0-825eed9b [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Notified request: cmpl-606a1e88-7f2e-4d-0-99ca3f94 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Notified request: cmpl-e766086f-dfd1-48-0-b761a4e2 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Notified request: cmpl-d3613471-fbbd-4a-0-aa5b1abc [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 09:59:58,796] LMCache INFO:[0m Notified request: cmpl-9cb07416-40f5-4d-0-825eed9b [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:50722 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:58,797] LMCache INFO:[0m Request 606a1e88-7f2e-4d: finished saving KV caches after prefill response = 1457.53ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:58,797] LMCache INFO:[0m Request e766086f-dfd1-48: finished saving KV caches after prefill response = 1458.04ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:58,797] LMCache INFO:[0m Request d3613471-fbbd-4a: finished saving KV caches after prefill response = 1457.65ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 09:59:58,797] LMCache INFO:[0m Request 9cb07416-40f5-4d: finished saving KV caches after prefill response = 1457.77ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43356 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43344 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43370 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43342 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 09:59:58,843] LMCache INFO:[0m Request 5736d599-898d-4a: prefill request duration = 17.0814s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:58,843] LMCache INFO:[0m Request ee104ab2-812a-47: prefill request duration = 16.9694s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:58,843] LMCache INFO:[0m Request ae7e5ab6-57f8-42: prefill request duration = 17.1171s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:58,843] LMCache INFO:[0m Request 3b812d5d-27f2-44: prefill request duration = 17.1895s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 09:59:59,373] LMCache INFO:[0m Request cba436f3-8cc6-46: latency between prefill first response and decode first response = 3529.45ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:59,375] LMCache INFO:[0m Request 673ae72c-5bf8-40: latency between prefill first response and decode first response = 3531.48ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:59,377] LMCache INFO:[0m Request 2b42089c-2641-40: latency between prefill first response and decode first response = 3533.67ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 09:59:59,377] LMCache INFO:[0m Request 7e93360a-e51b-45: latency between prefill first response and decode first response = 3533.96ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-5736d599-898d-4a-0-b285df0f [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-ee104ab2-812a-47-0-83741dee [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-3b812d5d-27f2-44-0-a13a3471 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-ae7e5ab6-57f8-42-0-a1cdd522 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Notified request: cmpl-5736d599-898d-4a-0-b285df0f [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Notified request: cmpl-ee104ab2-812a-47-0-83741dee [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Notified request: cmpl-3b812d5d-27f2-44-0-a13a3471 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:00,302] LMCache INFO:[0m Notified request: cmpl-ae7e5ab6-57f8-42-0-a1cdd522 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:59346 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:00,303] LMCache INFO:[0m Request 5736d599-898d-4a: finished saving KV caches after prefill response = 1460.13ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:00,303] LMCache INFO:[0m Request ee104ab2-812a-47: finished saving KV caches after prefill response = 1460.14ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:00,303] LMCache INFO:[0m Request 3b812d5d-27f2-44: finished saving KV caches after prefill response = 1460.07ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:00,303] LMCache INFO:[0m Request ae7e5ab6-57f8-42: finished saving KV caches after prefill response = 1460.22ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43398 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43408 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43380 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43394 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:00,339] LMCache INFO:[0m Request 126a86e6-141d-47: prefill request duration = 17.7048s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:00,339] LMCache INFO:[0m Request 488306c9-fb3e-49: prefill request duration = 18.3420s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:00,340] LMCache INFO:[0m Request ced5edc8-aacf-4b: prefill request duration = 18.0291s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:00,340] LMCache INFO:[0m Request 7abea0f4-fec4-49: prefill request duration = 17.5539s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:01,022] LMCache INFO:[0m Request 606a1e88-7f2e-4d: latency between prefill first response and decode first response = 3683.05ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:01,023] LMCache INFO:[0m Request d3613471-fbbd-4a: latency between prefill first response and decode first response = 3684.17ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:01,024] LMCache INFO:[0m Request 9cb07416-40f5-4d: latency between prefill first response and decode first response = 3684.99ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:01,024] LMCache INFO:[0m Request e766086f-dfd1-48: latency between prefill first response and decode first response = 3685.56ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-ced5edc8-aacf-4b-0-940be10a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-7abea0f4-fec4-49-0-a8cb9d9a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-126a86e6-141d-47-0-9e9940dd [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-488306c9-fb3e-49-0-9fd2d8d6 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Notified request: cmpl-ced5edc8-aacf-4b-0-940be10a [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Notified request: cmpl-7abea0f4-fec4-49-0-a8cb9d9a [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Notified request: cmpl-126a86e6-141d-47-0-9e9940dd [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Notified request: cmpl-488306c9-fb3e-49-0-9fd2d8d6 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:59352 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:01,818] LMCache INFO:[0m Request ced5edc8-aacf-4b: finished saving KV caches after prefill response = 1478.56ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:01,819] LMCache INFO:[0m Request 7abea0f4-fec4-49: finished saving KV caches after prefill response = 1478.79ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:01,819] LMCache INFO:[0m Request 126a86e6-141d-47: finished saving KV caches after prefill response = 1480.04ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:01,819] LMCache INFO:[0m Request 488306c9-fb3e-49: finished saving KV caches after prefill response = 1479.21ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43422 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43432 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43428 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43412 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:01,854] LMCache INFO:[0m Request a0c4f7d4-c6d7-43: prefill request duration = 17.9449s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:01,855] LMCache INFO:[0m Request 1ab560a0-3ea8-40: prefill request duration = 18.6304s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:01,855] LMCache INFO:[0m Request 416dd26a-d6bb-4d: prefill request duration = 18.9409s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:01,855] LMCache INFO:[0m Request b545f2a3-4220-44: prefill request duration = 18.1732s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:02,428] LMCache INFO:[0m Request 5736d599-898d-4a: latency between prefill first response and decode first response = 3585.23ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:02,431] LMCache INFO:[0m Request ee104ab2-812a-47: latency between prefill first response and decode first response = 3588.07ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:02,432] LMCache INFO:[0m Request ae7e5ab6-57f8-42: latency between prefill first response and decode first response = 3588.80ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:02,691] LMCache INFO:[0m Request 3b812d5d-27f2-44: latency between prefill first response and decode first response = 3847.67ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:03,397] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-b545f2a3-4220-44-0-854172cb [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:03,397] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-a0c4f7d4-c6d7-43-0-8d7592df [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:03,397] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-1ab560a0-3ea8-40-0-acb6675a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:03,397] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-416dd26a-d6bb-4d-0-9587a6ee [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:03,397] LMCache INFO:[0m Notified request: cmpl-b545f2a3-4220-44-0-854172cb [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Notified request: cmpl-a0c4f7d4-c6d7-43-0-8d7592df [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Notified request: cmpl-1ab560a0-3ea8-40-0-acb6675a [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Notified request: cmpl-416dd26a-d6bb-4d-0-9587a6ee [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:59354 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Request b545f2a3-4220-44: finished saving KV caches after prefill response = 1542.62ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Request a0c4f7d4-c6d7-43: finished saving KV caches after prefill response = 1544.22ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Request 1ab560a0-3ea8-40: finished saving KV caches after prefill response = 1543.46ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:03,398] LMCache INFO:[0m Request 416dd26a-d6bb-4d: finished saving KV caches after prefill response = 1543.38ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43466 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43472 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43454 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43446 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:03,434] LMCache INFO:[0m Request b18460dc-7a35-48: prefill request duration = 18.1711s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:03,435] LMCache INFO:[0m Request bb4e3545-a7a7-40: prefill request duration = 18.6072s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:03,435] LMCache INFO:[0m Request 1433232f-d098-4f: prefill request duration = 19.1938s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:03,435] LMCache INFO:[0m Request 4bfe9845-1ee5-41: prefill request duration = 18.6152s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:03,915] LMCache INFO:[0m Request 126a86e6-141d-47: latency between prefill first response and decode first response = 3576.54ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:03,918] LMCache INFO:[0m Request 7abea0f4-fec4-49: latency between prefill first response and decode first response = 3577.84ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:03,919] LMCache INFO:[0m Request ced5edc8-aacf-4b: latency between prefill first response and decode first response = 3579.09ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:04,078] LMCache INFO:[0m Request 488306c9-fb3e-49: latency between prefill first response and decode first response = 3738.41ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-1433232f-d098-4f-0-939b9aa8 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-b18460dc-7a35-48-0-b31835c2 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-4bfe9845-1ee5-41-0-875ed3da [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-bb4e3545-a7a7-40-0-a0a2f3c6 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Notified request: cmpl-1433232f-d098-4f-0-939b9aa8 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Notified request: cmpl-b18460dc-7a35-48-0-b31835c2 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Notified request: cmpl-4bfe9845-1ee5-41-0-875ed3da [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:04,838] LMCache INFO:[0m Notified request: cmpl-bb4e3545-a7a7-40-0-a0a2f3c6 [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:59360 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:04,840] LMCache INFO:[0m Request 1433232f-d098-4f: finished saving KV caches after prefill response = 1405.13ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:04,840] LMCache INFO:[0m Request b18460dc-7a35-48: finished saving KV caches after prefill response = 1406.58ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:04,841] LMCache INFO:[0m Request 4bfe9845-1ee5-41: finished saving KV caches after prefill response = 1405.24ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:04,841] LMCache INFO:[0m Request bb4e3545-a7a7-40: finished saving KV caches after prefill response = 1405.76ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43482 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43514 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43486 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43502 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:04,850] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-2f832092-98fd-41-0-b4ecf4d1 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,850] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-1a07425c-2f80-4d-0-bb3709f6 [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,850] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-c8640f5d-9fd0-48-0-bfcafc1e [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:04,850] LMCache INFO:[0m Notified request: cmpl-2f832092-98fd-41-0-b4ecf4d1 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:04,850] LMCache INFO:[0m Notified request: cmpl-1a07425c-2f80-4d-0-bb3709f6 [3m(disagg_proxy_server.py:422:__main__)[0m
+[32;20m[2026-03-24 10:00:04,850] LMCache INFO:[0m Notified request: cmpl-c8640f5d-9fd0-48-0-bfcafc1e [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:59366 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:04,875] LMCache INFO:[0m Request 1a07425c-2f80-4d: prefill request duration = 19.0851s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:04,875] LMCache INFO:[0m Request 1a07425c-2f80-4d: finished saving KV caches after prefill response = 0.12ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:04,875] LMCache INFO:[0m Request 2f832092-98fd-41: prefill request duration = 18.8247s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:04,875] LMCache INFO:[0m Request 2f832092-98fd-41: finished saving KV caches after prefill response = 0.04ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:04,875] LMCache INFO:[0m Request c8640f5d-9fd0-48: prefill request duration = 19.4159s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:04,876] LMCache INFO:[0m Request c8640f5d-9fd0-48: finished saving KV caches after prefill response = 0.03ms [3m(disagg_proxy_server.py:296:__main__)[0m
+[32;20m[2026-03-24 10:00:04,876] LMCache INFO:[0m Request 6613901e-b443-4f: prefill request duration = 19.5506s [3m(disagg_proxy_server.py:287:__main__)[0m
+INFO:     127.0.0.1:43556 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43568 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43542 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:05,308] LMCache INFO:[0m Received telemetry event: request_store_finished for request: cmpl-6613901e-b443-4f-0-8c289a1a [3m(disagg_proxy_server.py:414:__main__)[0m
+[32;20m[2026-03-24 10:00:05,309] LMCache INFO:[0m Notified request: cmpl-6613901e-b443-4f-0-8c289a1a [3m(disagg_proxy_server.py:422:__main__)[0m
+INFO:     127.0.0.1:59378 - "POST /api/v1/telemetry HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:05,312] LMCache INFO:[0m Request 6613901e-b443-4f: finished saving KV caches after prefill response = 436.38ms [3m(disagg_proxy_server.py:296:__main__)[0m
+INFO:     127.0.0.1:43526 - "POST /v1/completions HTTP/1.1" 200 OK
+[32;20m[2026-03-24 10:00:05,325] LMCache INFO:[0m Request 44de6abe-4d69-49: prefill request duration = 19.0185s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:05,325] LMCache INFO:[0m Request a1cee4f7-31a6-45: prefill request duration = 19.2433s [3m(disagg_proxy_server.py:287:__main__)[0m
+[32;20m[2026-03-24 10:00:09,736] LMCache INFO:[0m Request b545f2a3-4220-44: latency between prefill first response and decode first response = 7880.33ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:10,136] LMCache INFO:[0m Request 1ab560a0-3ea8-40: latency between prefill first response and decode first response = 8280.88ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:11,019] LMCache INFO:[0m Request b18460dc-7a35-48: latency between prefill first response and decode first response = 7585.04ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:11,021] LMCache INFO:[0m Request 1433232f-d098-4f: latency between prefill first response and decode first response = 7585.51ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:11,021] LMCache INFO:[0m Request 416dd26a-d6bb-4d: latency between prefill first response and decode first response = 9165.73ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:11,022] LMCache INFO:[0m Request a0c4f7d4-c6d7-43: latency between prefill first response and decode first response = 9167.89ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:12,478] LMCache INFO:[0m Request 1a07425c-2f80-4d: latency between prefill first response and decode first response = 7602.99ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:12,478] LMCache INFO:[0m Request 4bfe9845-1ee5-41: latency between prefill first response and decode first response = 9042.93ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:12,478] LMCache INFO:[0m Request bb4e3545-a7a7-40: latency between prefill first response and decode first response = 9043.48ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:13,265] LMCache INFO:[0m Request 2f832092-98fd-41: latency between prefill first response and decode first response = 8389.31ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:13,266] LMCache INFO:[0m Request c8640f5d-9fd0-48: latency between prefill first response and decode first response = 8390.62ms [3m(disagg_proxy_server.py:321:__main__)[0m
+[32;20m[2026-03-24 10:00:13,267] LMCache INFO:[0m Request 6613901e-b443-4f: latency between prefill first response and decode first response = 8391.16ms [3m(disagg_proxy_server.py:321:__main__)[0m

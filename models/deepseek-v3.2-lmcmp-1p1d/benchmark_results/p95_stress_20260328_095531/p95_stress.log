@@ -1,0 +1,66 @@
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x78457911b600>, trust_remote_code=False, seed=1132, num_prompts=600, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=3840, random_output_len=561, random_range_ratio=0.0, random_prefix_len=12000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='nvidia/DeepSeek-V3.2-NVFP4', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=60.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=True, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p95_stress_20260328_095531', result_filename='p95_rate60_20260328_095531.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-a06869ee-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=True, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-28 09:58:54 [datasets.py:631] Sampling input_len from [3840, 3840] and output_len from [561, 561]
+Starting initial single prompt test run...
+Skipping endpoint ready check.
+Starting main benchmark run...
+Traffic request rate: 60.0
+Burstiness factor: 1.0 (Poisson process)
+Maximum request concurrency: None
+  0%|          | 0/600 [00:00<?, ?it/s]  0%|          | 1/600 [02:53<28:50:55, 173.38s/it]  0%|          | 2/600 [02:53<11:52:29, 71.49s/it]  12%|█▏        | 69/600 [02:55<11:18,  1.28s/it]   12%|█▏        | 69/600 [03:10<11:18,  1.28s/it] 12%|█▏        | 70/600 [03:43<19:45,  2.24s/it] 12%|█▏        | 71/600 [05:46<50:00,  5.67s/it] 12%|█▏        | 72/600 [05:46<48:00,  5.46s/it] 23%|██▎       | 138/600 [06:00<42:00,  5.46s/it] 23%|██▎       | 139/600 [06:08<10:46,  1.40s/it] 23%|██▎       | 140/600 [08:38<29:43,  3.88s/it] 35%|███▍      | 209/600 [11:25<19:20,  2.97s/it] 37%|███▋      | 220/600 [11:30<16:49,  2.66s/it] 46%|████▋     | 278/600 [12:03<08:50,  1.65s/it] 46%|████▋     | 279/600 [14:22<17:26,  3.26s/it] 58%|█████▊    | 347/600 [14:23<06:28,  1.54s/it] 58%|█████▊    | 347/600 [14:40<06:28,  1.54s/it] 58%|█████▊    | 348/600 [17:09<14:06,  3.36s/it] 69%|██████▉   | 416/600 [17:13<05:03,  1.65s/it] 70%|██████▉   | 418/600 [17:17<05:01,  1.66s/it] 81%|████████▏ | 488/600 [17:17<01:29,  1.25it/s] 93%|█████████▎| 557/600 [17:18<00:20,  2.15it/s]100%|██████████| 600/600 [17:18<00:00,  1.73s/it]
+/usr/lib/python3.12/asyncio/events.py:88: UserWarning: Failed to generate timeline plot: Please install vllm[bench] for bench support
+  self._context.run(self._callback, *self._args)
+Failed requests during benchmark run detected (capping to 10):
+Error 0: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 1: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 2: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 3: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 4: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 5: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 6: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 7: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 8: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 9: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+tip: install termplotlib and gnuplot to plot the metrics
+============ Serving Benchmark Result ============
+Successful requests:                     417       
+Failed requests:                         183       
+Request rate configured (RPS):           60.00     
+Benchmark duration (s):                  1038.12   
+Total input tokens:                      6605280   
+Total generated tokens:                  233784    
+Request throughput (req/s):              0.40      
+Output token throughput (tok/s):         225.20    
+Peak output token throughput (tok/s):    250.00    
+Peak concurrent requests:                417.00    
+Total token throughput (tok/s):          6587.91   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          436379.82 
+Median TTFT (ms):                        515596.94 
+P50 TTFT (ms):                           515596.94 
+P90 TTFT (ms):                           862030.97 
+P95 TTFT (ms):                           864334.02 
+P99 TTFT (ms):                           869627.83 
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          292.57    
+Median TPOT (ms):                        292.83    
+P50 TPOT (ms):                           292.83    
+P90 TPOT (ms):                           299.84    
+P95 TPOT (ms):                           303.42    
+P99 TPOT (ms):                           306.72    
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           8780.28   
+Median ITL (ms):                         795.43    
+P50 ITL (ms):                            795.43    
+P90 ITL (ms):                            33054.80  
+P95 ITL (ms):                            48246.80  
+P99 ITL (ms):                            65608.99  
+----------------End-to-end Latency----------------
+Mean E2EL (ms):                          600067.73 
+Median E2EL (ms):                        681460.71 
+P50 E2EL (ms):                           681460.71 
+P90 E2EL (ms):                           1023366.92
+P95 E2EL (ms):                           1023627.36
+P99 E2EL (ms):                           1024010.91
+==================================================
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x7fd4b67872e0>, trust_remote_code=False, seed=1132, num_prompts=600, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=3840, random_output_len=561, random_range_ratio=0.0, random_prefix_len=12000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='nvidia/DeepSeek-V3.2-NVFP4', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=50.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=True, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p95_stress_20260328_095531', result_filename='p95_rate50_20260328_095531.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-531b6303-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=True, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-28 10:17:10 [datasets.py:631] Sampling input_len from [3840, 3840] and output_len from [561, 561]

@@ -1,0 +1,85 @@
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x77699ff972e0>, trust_remote_code=False, seed=1132, num_prompts=50, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=3840, random_output_len=561, random_range_ratio=0.0, random_prefix_len=12000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='nvidia/DeepSeek-V3.2-NVFP4', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=1.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=True, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p95_stress_20260328_070250', result_filename='warmup_discard.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-2f315fc3-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=True, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-28 07:02:57 [datasets.py:631] Sampling input_len from [3840, 3840] and output_len from [561, 561]
+Starting initial single prompt test run...
+Skipping endpoint ready check.
+Starting main benchmark run...
+Traffic request rate: 1.0
+Burstiness factor: 1.0 (Poisson process)
+Maximum request concurrency: None
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:21<17:15, 21.13s/it]  4%|▍         | 2/50 [00:21<07:16,  9.08s/it] 16%|█▌        | 8/50 [00:22<01:07,  1.62s/it] 38%|███▊      | 19/50 [00:22<00:16,  1.88it/s] 42%|████▏     | 21/50 [00:24<00:15,  1.88it/s] 44%|████▍     | 22/50 [00:26<00:18,  1.48it/s] 46%|████▌     | 23/50 [00:26<00:17,  1.58it/s] 48%|████▊     | 24/50 [00:26<00:15,  1.70it/s] 50%|█████     | 25/50 [00:28<00:20,  1.24it/s] 52%|█████▏    | 26/50 [00:29<00:19,  1.22it/s] 54%|█████▍    | 27/50 [00:30<00:18,  1.27it/s] 56%|█████▌    | 28/50 [00:30<00:15,  1.44it/s] 58%|█████▊    | 29/50 [00:32<00:19,  1.10it/s] 60%|██████    | 30/50 [00:35<00:32,  1.61s/it] 62%|██████▏   | 31/50 [00:35<00:23,  1.25s/it] 64%|██████▍   | 32/50 [00:37<00:22,  1.27s/it] 66%|██████▌   | 33/50 [00:39<00:25,  1.50s/it] 68%|██████▊   | 34/50 [00:39<00:18,  1.16s/it] 70%|███████   | 35/50 [00:40<00:14,  1.01it/s] 72%|███████▏  | 36/50 [00:40<00:12,  1.10it/s] 74%|███████▍  | 37/50 [00:42<00:13,  1.04s/it] 76%|███████▌  | 38/50 [00:42<00:10,  1.09it/s] 80%|████████  | 40/50 [00:43<00:05,  1.76it/s] 82%|████████▏ | 41/50 [00:43<00:05,  1.59it/s] 84%|████████▍ | 42/50 [00:44<00:04,  1.82it/s] 86%|████████▌ | 43/50 [00:45<00:05,  1.37it/s] 88%|████████▊ | 44/50 [00:45<00:03,  1.62it/s] 90%|█████████ | 45/50 [00:46<00:03,  1.37it/s] 92%|█████████▏| 46/50 [00:47<00:02,  1.63it/s] 94%|█████████▍| 47/50 [00:48<00:02,  1.27it/s] 96%|█████████▌| 48/50 [00:49<00:01,  1.31it/s] 98%|█████████▊| 49/50 [00:49<00:00,  1.45it/s]100%|██████████| 50/50 [00:50<00:00,  1.40it/s]100%|██████████| 50/50 [00:50<00:00,  1.01s/it]
+/usr/lib/python3.12/asyncio/events.py:88: UserWarning: Failed to generate timeline plot: Please install vllm[bench] for bench support
+  self._context.run(self._callback, *self._args)
+Failed requests during benchmark run detected (capping to 10):
+Error 0: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 1: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 2: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 3: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 4: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 5: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 6: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 7: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 8: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 9: Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/client_proto.py", line 144, in connection_lost
+    uncompleted = self._parser.feed_eof()
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "aiohttp/_http_parser.pyx", line 506, in aiohttp._http_parser.HttpParser.feed_eof
+aiohttp.http_exceptions.TransferEncodingError: 400, message:
+  Not enough data to satisfy transfer length header.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.venv/lib/python3.12/site-packages/vllm/benchmarks/lib/endpoint_request_func.py", line 200, in async_request_openai_completions
+    async for chunk_bytes in response.content.iter_any():
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/streams.py", line 52, in __anext__
+    rv = await self.read_func()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/streams.py", line 464, in readany
+    await self._wait("readany")
+  File "/workspace/.venv/lib/python3.12/site-packages/aiohttp/streams.py", line 371, in _wait
+    await waiter
+aiohttp.client_exceptions.ClientPayloadError: Response payload is not completed: <TransferEncodingError: 400, message='Not enough data to satisfy transfer length header.'>
+
+tip: install termplotlib and gnuplot to plot the metrics
+============ Serving Benchmark Result ============
+Successful requests:                     9         
+Failed requests:                         41        
+Request rate configured (RPS):           1.00      
+Benchmark duration (s):                  50.39     
+Total input tokens:                      142560    
+Total generated tokens:                  3927      
+Request throughput (req/s):              0.18      
+Output token throughput (tok/s):         77.93     
+Peak output token throughput (tok/s):    67.00     
+Peak concurrent requests:                9.00      
+Total token throughput (tok/s):          2906.86   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          5526.14   
+Median TTFT (ms):                        3779.20   
+P50 TTFT (ms):                           3779.20   
+P90 TTFT (ms):                           13745.06  
+P95 TTFT (ms):                           13834.32  
+P99 TTFT (ms):                           13905.73  
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          26.80     
+Median TPOT (ms):                        26.77     
+P50 TPOT (ms):                           26.77     
+P90 TPOT (ms):                           28.12     
+P95 TPOT (ms):                           28.47     
+P99 TPOT (ms):                           28.74     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           464.41    
+Median ITL (ms):                         12.86     
+P50 ITL (ms):                            12.86     
+P90 ITL (ms):                            838.63    
+P95 ITL (ms):                            3445.72   
+P99 ITL (ms):                            6679.36   
+----------------End-to-end Latency----------------
+Mean E2EL (ms):                          17239.54  
+Median E2EL (ms):                        17605.61  
+P50 E2EL (ms):                           17605.61  
+P90 E2EL (ms):                           19296.11  
+P95 E2EL (ms):                           19349.11  
+P99 E2EL (ms):                           19391.52  
+==================================================

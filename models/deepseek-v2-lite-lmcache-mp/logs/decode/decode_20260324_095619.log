@@ -1,0 +1,96 @@
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:297] 
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:297]        █     █     █▄   ▄█
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:297]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.18.0
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:297]   █▄█▀ █     █     █     █  model   /workspace/models/deepseek-v2-lite
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:297]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:297] 
+(APIServer pid=11601) INFO 03-24 09:56:40 [utils.py:233] non-default args: {'model_tag': '/workspace/models/deepseek-v2-lite', 'host': '0.0.0.0', 'port': 8200, 'model': '/workspace/models/deepseek-v2-lite', 'trust_remote_code': True, 'dtype': 'bfloat16', 'max_model_len': 20000, 'enforce_eager': True, 'block_size': 64, 'gpu_memory_utilization': 0.85, 'enable_prefix_caching': False, 'max_num_batched_tokens': 32768, 'max_num_seqs': 128, 'kv_transfer_config': KVTransferConfig(kv_connector='LMCacheMPConnector', engine_id='fde83dd1-7fd7-469c-ba84-f6df80c2c3a8', kv_buffer_device='cuda', kv_buffer_size=1000000000.0, kv_role='kv_both', kv_rank=None, kv_parallel_size=1, kv_ip='127.0.0.1', kv_port=14579, kv_connector_extra_config={'lmcache.mp.host': 'tcp://localhost', 'lmcache.mp.port': '6000'}, kv_connector_module_path=None, enable_permute_local_kv=False, kv_load_failure_policy='fail')}
+(APIServer pid=11601) INFO 03-24 09:56:40 [config.py:437] Replacing legacy 'type' key with 'rope_type'
+(APIServer pid=11601) INFO 03-24 09:56:40 [model.py:533] Resolved architecture: DeepseekV2ForCausalLM
+(APIServer pid=11601) INFO 03-24 09:56:40 [model.py:1582] Using max model len 20000
+(APIServer pid=11601) INFO 03-24 09:56:40 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=32768.
+(APIServer pid=11601) INFO 03-24 09:56:40 [vllm.py:754] Asynchronous scheduling is enabled.
+(APIServer pid=11601) WARNING 03-24 09:56:40 [vllm.py:788] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(APIServer pid=11601) WARNING 03-24 09:56:40 [vllm.py:799] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=11601) INFO 03-24 09:56:40 [vllm.py:964] Cudagraph is disabled under eager mode
+(APIServer pid=11601) WARNING 03-24 09:56:40 [vllm.py:1168] Turning off hybrid kv cache manager because `--kv-transfer-config` is set. This will reduce the performance of vLLM on LLMs with sliding window attention or Mamba attention. If you are a developer of kv connector, please consider supporting hybrid kv cache manager for your connector by making sure your connector is a subclass of `SupportsHMA` defined in kv_connector/v1/base.py and use --no-disable-hybrid-kv-cache-manager to start vLLM.
+(APIServer pid=11601) INFO 03-24 09:56:40 [compilation.py:289] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=11803) INFO 03-24 09:57:01 [core.py:103] Initializing a V1 LLM engine (v0.18.0) with config: model='/workspace/models/deepseek-v2-lite', speculative_config=None, tokenizer='/workspace/models/deepseek-v2-lite', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=20000, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/workspace/models/deepseek-v2-lite, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_endpoints': [32768], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore pid=11803) INFO 03-24 09:57:01 [parallel_state.py:1395] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.25.0.2:57305 backend=nccl
+(EngineCore pid=11803) INFO 03-24 09:57:01 [parallel_state.py:1717] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=11803) INFO 03-24 09:57:02 [gpu_model_runner.py:4481] Starting to load model /workspace/models/deepseek-v2-lite...
+(EngineCore pid=11803) INFO 03-24 09:57:06 [cuda.py:317] Using TRITON_MLA attention backend out of potential backends: ['TRITON_MLA'].
+(EngineCore pid=11803) INFO 03-24 09:57:06 [mla_attention.py:2139] Using FlashAttention prefill for MLA
+(EngineCore pid=11803) INFO 03-24 09:57:06 [unquantized.py:186] Using TRITON backend for Unquantized MoE
+(EngineCore pid=11803) Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+(EngineCore pid=11803) Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:01<00:03,  1.05s/it]
+(EngineCore pid=11803) Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:02<00:02,  1.19s/it]
+(EngineCore pid=11803) Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:03<00:01,  1.22s/it]
+(EngineCore pid=11803) Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:04<00:00,  1.08s/it]
+(EngineCore pid=11803) Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:04<00:00,  1.12s/it]
+(EngineCore pid=11803) 
+(EngineCore pid=11803) INFO 03-24 09:57:10 [default_loader.py:384] Loading weights took 4.58 seconds
+(EngineCore pid=11803) INFO 03-24 09:57:11 [gpu_model_runner.py:4566] Model loading took 29.45 GiB memory and 7.371250 seconds
+(EngineCore pid=11803) WARNING 03-24 09:57:15 [fused_moe.py:1093] Using default MoE config. Performance might be sub-optimal! Config file not found at /workspace/.venv/lib/python3.12/site-packages/vllm/model_executor/layers/fused_moe/configs/E=64,N=1408,device_name=NVIDIA_A100-SXM4-80GB.json
+(EngineCore pid=11803) INFO 03-24 09:57:17 [gpu_worker.py:456] Available KV cache memory: 34.89 GiB
+(EngineCore pid=11803) INFO 03-24 09:57:17 [kv_cache_utils.py:1316] GPU KV cache size: 1,204,352 tokens
+(EngineCore pid=11803) INFO 03-24 09:57:17 [kv_cache_utils.py:1321] Maximum concurrency for 20,000 tokens per request: 60.12x
+(EngineCore pid=11803) INFO 03-24 09:57:17 [factory.py:64] Creating v1 connector with name: LMCacheMPConnector and engine_id: fde83dd1-7fd7-469c-ba84-f6df80c2c3a8
+(EngineCore pid=11803) WARNING 03-24 09:57:17 [base.py:189] Initializing KVConnectorBase_V1. This API is experimental and subject to change in the future as we iterate the design.
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:17,171] LMCache INFO:[0m PeriodicThread lmcache-heartbeat entering main loop (interval=10.0s) [3m(periodic_thread.py:279:lmcache.v1.periodic_thread)[0m
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:17,171] LMCache INFO:[0m Started PeriodicThread: lmcache-heartbeat (level=critical, interval=10.0s, init_wait=0.0s) [3m(periodic_thread.py:239:lmcache.v1.periodic_thread)[0m
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:17,190] LMCache INFO:[0m Registering kv caches! [3m(lmcache_mp_connector.py:512:vllm.distributed.kv_transfer.kv_connector.v1.lmcache_mp_connector)[0m
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:17,190] LMCache INFO:[0m Registering kv caches [3m(vllm_multi_process_adapter.py:548:lmcache.integration.vllm.vllm_multi_process_adapter)[0m
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:17,190] LMCache INFO:[0m KV caches keys are ['model.layers.0.self_attn.attn', 'model.layers.1.self_attn.attn', 'model.layers.2.self_attn.attn', 'model.layers.3.self_attn.attn', 'model.layers.4.self_attn.attn', 'model.layers.5.self_attn.attn', 'model.layers.6.self_attn.attn', 'model.layers.7.self_attn.attn', 'model.layers.8.self_attn.attn', 'model.layers.9.self_attn.attn', 'model.layers.10.self_attn.attn', 'model.layers.11.self_attn.attn', 'model.layers.12.self_attn.attn', 'model.layers.13.self_attn.attn', 'model.layers.14.self_attn.attn', 'model.layers.15.self_attn.attn', 'model.layers.16.self_attn.attn', 'model.layers.17.self_attn.attn', 'model.layers.18.self_attn.attn', 'model.layers.19.self_attn.attn', 'model.layers.20.self_attn.attn', 'model.layers.21.self_attn.attn', 'model.layers.22.self_attn.attn', 'model.layers.23.self_attn.attn', 'model.layers.24.self_attn.attn', 'model.layers.25.self_attn.attn', 'model.layers.26.self_attn.attn'] [3m(vllm_multi_process_adapter.py:35:lmcache.integration.vllm.vllm_multi_process_adapter)[0m
+(EngineCore pid=11803) INFO 03-24 09:57:19 [core.py:281] init engine (profile, create kv cache, warmup model) took 8.45 seconds
+(EngineCore pid=11803) INFO 03-24 09:57:20 [factory.py:64] Creating v1 connector with name: LMCacheMPConnector and engine_id: fde83dd1-7fd7-469c-ba84-f6df80c2c3a8
+(EngineCore pid=11803) WARNING 03-24 09:57:20 [base.py:189] Initializing KVConnectorBase_V1. This API is experimental and subject to change in the future as we iterate the design.
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:20,283] LMCache INFO:[0m PeriodicThread lmcache-heartbeat entering main loop (interval=10.0s) [3m(periodic_thread.py:279:lmcache.v1.periodic_thread)[0m
+(EngineCore pid=11803) [32;20m[2026-03-24 09:57:20,283] LMCache INFO:[0m Started PeriodicThread: lmcache-heartbeat (level=critical, interval=10.0s, init_wait=0.0s) [3m(periodic_thread.py:239:lmcache.v1.periodic_thread)[0m
+(EngineCore pid=11803) INFO 03-24 09:57:20 [vllm.py:754] Asynchronous scheduling is enabled.
+(EngineCore pid=11803) WARNING 03-24 09:57:20 [vllm.py:788] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore pid=11803) WARNING 03-24 09:57:20 [vllm.py:799] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=11803) INFO 03-24 09:57:20 [vllm.py:964] Cudagraph is disabled under eager mode
+(EngineCore pid=11803) INFO 03-24 09:57:20 [compilation.py:289] Enabled custom fusions: norm_quant, act_quant
+(APIServer pid=11601) INFO 03-24 09:57:20 [api_server.py:576] Supported tasks: ['generate']
+(APIServer pid=11601) WARNING 03-24 09:57:20 [model.py:1376] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'temperature': 0.3, 'top_p': 0.95}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+(APIServer pid=11601) INFO 03-24 09:57:21 [hf.py:320] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(APIServer pid=11601) INFO 03-24 09:57:21 [api_server.py:580] Starting vLLM server on http://0.0.0.0:8200
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:37] Available routes are:
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /openapi.json, Methods: GET, HEAD
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /docs, Methods: GET, HEAD
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /redoc, Methods: GET, HEAD
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /tokenize, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /detokenize, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /load, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /version, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /health, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /metrics, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/models, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /ping, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /ping, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /invocations, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/chat/completions, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/responses, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/responses/{response_id}, Methods: GET
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/responses/{response_id}/cancel, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/completions, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/messages, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/messages/count_tokens, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /inference/v1/generate, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /scale_elastic_ep, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /is_scaling_elastic_ep, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/chat/completions/render, Methods: POST
+(APIServer pid=11601) INFO 03-24 09:57:21 [launcher.py:46] Route: /v1/completions/render, Methods: POST
+(APIServer pid=11601) INFO:     Started server process [11601]
+(APIServer pid=11601) INFO:     Waiting for application startup.
+(APIServer pid=11601) INFO:     Application startup complete.
+(APIServer pid=11601) INFO 03-24 09:59:31 [loggers.py:259] Engine 000: Avg prompt throughput: 4.6 tokens/s, Avg generation throughput: 0.6 tokens/s, Running: 5 reqs, Waiting: 2 reqs, GPU KV cache usage: 7.1%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 77.5%
+(APIServer pid=11601) INFO 03-24 09:59:41 [loggers.py:259] Engine 000: Avg prompt throughput: 13605.8 tokens/s, Avg generation throughput: 119.4 tokens/s, Running: 29 reqs, Waiting: 0 reqs, GPU KV cache usage: 33.6%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 61.7%
+(APIServer pid=11601) INFO 03-24 09:59:51 [loggers.py:259] Engine 000: Avg prompt throughput: 14065.4 tokens/s, Avg generation throughput: 250.9 tokens/s, Running: 51 reqs, Waiting: 4 reqs, GPU KV cache usage: 62.2%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 61.2%
+(APIServer pid=11601) INFO 03-24 10:00:01 [loggers.py:259] Engine 000: Avg prompt throughput: 13257.7 tokens/s, Avg generation throughput: 318.7 tokens/s, Running: 78 reqs, Waiting: 4 reqs, GPU KV cache usage: 93.4%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 62.0%
+(APIServer pid=11601) INFO 03-24 10:00:11 [loggers.py:259] Engine 000: Avg prompt throughput: 6846.7 tokens/s, Avg generation throughput: 732.3 tokens/s, Running: 78 reqs, Waiting: 6 reqs, GPU KV cache usage: 95.2%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 62.4%
+(APIServer pid=11601) INFO 03-24 10:00:21 [loggers.py:259] Engine 000: Avg prompt throughput: 2971.6 tokens/s, Avg generation throughput: 916.5 tokens/s, Running: 24 reqs, Waiting: 0 reqs, GPU KV cache usage: 28.1%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 62.7%
+(APIServer pid=11601) INFO 03-24 10:00:31 [loggers.py:259] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 131.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 62.7%
+(APIServer pid=11601) INFO 03-24 10:00:41 [loggers.py:259] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%, External prefix cache hit rate: 62.7%

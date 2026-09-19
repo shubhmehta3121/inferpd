@@ -1,0 +1,15 @@
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:297] 
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:297]        █     █     █▄   ▄█
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:297]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.18.0
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:297]   █▄█▀ █     █     █     █  model   /workspace/models/deepseek-v3.2-lmcmp-1p1d
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:297]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:297] 
+(APIServer pid=22128) INFO 03-28 06:07:17 [utils.py:233] non-default args: {'model_tag': '/workspace/models/deepseek-v3.2-lmcmp-1p1d', 'host': '0.0.0.0', 'port': 8200, 'model': '/workspace/models/deepseek-v3.2-lmcmp-1p1d', 'tokenizer_mode': 'deepseek_v32', 'trust_remote_code': True, 'max_model_len': 20000, 'served_model_name': ['nvidia/DeepSeek-V3.2-NVFP4'], 'tensor_parallel_size': 4, 'enable_expert_parallel': True, 'block_size': 64, 'gpu_memory_utilization': 0.85, 'kv_cache_dtype': 'fp8', 'max_num_batched_tokens': 32768, 'max_num_seqs': 128, 'kv_transfer_config': KVTransferConfig(kv_connector='LMCacheMPConnector', engine_id='1c51cced-a5d7-489c-a79e-1660644abe08', kv_buffer_device='cuda', kv_buffer_size=1000000000.0, kv_role='kv_both', kv_rank=None, kv_parallel_size=1, kv_ip='127.0.0.1', kv_port=14579, kv_connector_extra_config={'lmcache.mp.host': 'tcp://localhost', 'lmcache.mp.port': '6000'}, kv_connector_module_path=None, enable_permute_local_kv=False, kv_load_failure_policy='fail')}
+(APIServer pid=22128) The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+(APIServer pid=22128) You are using a model of type deepseek_v32 to instantiate a model of type deepseek_v3. This is not supported for all configurations of models and can yield errors.
+(APIServer pid=22128) INFO 03-28 06:07:17 [model.py:533] Resolved architecture: DeepseekV32ForCausalLM
+(APIServer pid=22128) INFO 03-28 06:07:17 [model.py:1582] Using max model len 20000
+(APIServer pid=22128) INFO 03-28 06:07:18 [cache.py:212] Using fp8 data type to store kv cache. It reduces the GPU memory footprint and boosts the performance. Meanwhile, it may cause accuracy drop without a proper scaling factor.
+(APIServer pid=22128) INFO 03-28 06:07:18 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=32768.
+(APIServer pid=22128) WARNING 03-28 06:07:18 [modelopt.py:995] Detected ModelOpt NVFP4 checkpoint. Please note that the format is experimental and could change in future.
+(APIServer pid=22128) INFO 03-28 06:07:18 [vllm.py:754] Asynchronous scheduling is enabled.

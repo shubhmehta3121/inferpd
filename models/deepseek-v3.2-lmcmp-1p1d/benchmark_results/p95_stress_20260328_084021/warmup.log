@@ -1,0 +1,64 @@
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x7c5db37972e0>, trust_remote_code=False, seed=1132, num_prompts=50, dataset_name='random', no_stream=False, dataset_path=None, no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=3840, random_output_len=561, random_range_ratio=0.0, random_prefix_len=12000, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, label=None, backend='vllm', base_url=None, host='localhost', port=9000, endpoint='/v1/completions', header=None, max_concurrency=None, model='nvidia/DeepSeek-V3.2-NVFP4', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=1.0, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=True, save_detailed=True, append_result=False, metadata=None, result_dir='/workspace/benchmark_results/p95_stress_20260328_084021', result_filename='warmup_discard.json', ignore_eos=False, percentile_metrics='ttft,tpot,itl,e2el', metric_percentiles='50,90,95,99', goodput=None, request_id_prefix='bench-7dc8ea9f-', top_p=None, top_k=None, min_p=None, temperature=0.0, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=True, timeline_itl_thresholds=[25.0, 50.0], plot_dataset_stats=False)
+INFO 03-28 08:40:27 [datasets.py:631] Sampling input_len from [3840, 3840] and output_len from [561, 561]
+Starting initial single prompt test run...
+Skipping endpoint ready check.
+Starting main benchmark run...
+Traffic request rate: 1.0
+Burstiness factor: 1.0 (Poisson process)
+Maximum request concurrency: None
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:20<17:02, 20.86s/it] 16%|█▌        | 8/50 [00:53<04:19,  6.18s/it] 44%|████▍     | 22/50 [00:57<00:52,  1.88s/it]100%|██████████| 50/50 [00:57<00:00,  1.14s/it]
+/usr/lib/python3.12/asyncio/events.py:88: UserWarning: Failed to generate timeline plot: Please install vllm[bench] for bench support
+  self._context.run(self._callback, *self._args)
+Failed requests during benchmark run detected (capping to 10):
+Error 0: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 1: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 2: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 3: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 4: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 5: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 6: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 7: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 8: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+Error 9: Never received a valid chunk to calculate TTFT.This response will be marked as failed!
+tip: install termplotlib and gnuplot to plot the metrics
+============ Serving Benchmark Result ============
+Successful requests:                     25        
+Failed requests:                         25        
+Request rate configured (RPS):           1.00      
+Benchmark duration (s):                  57.05     
+Total input tokens:                      396000    
+Total generated tokens:                  11781     
+Request throughput (req/s):              0.44      
+Output token throughput (tok/s):         206.50    
+Peak output token throughput (tok/s):    90.00     
+Peak concurrent requests:                18.00     
+Total token throughput (tok/s):          7147.54   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          9457.62   
+Median TTFT (ms):                        4848.62   
+P50 TTFT (ms):                           4848.62   
+P90 TTFT (ms):                           28221.26  
+P95 TTFT (ms):                           29478.02  
+P99 TTFT (ms):                           30017.40  
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          44.02     
+Median TPOT (ms):                        52.70     
+P50 TPOT (ms):                           52.70     
+P90 TPOT (ms):                           54.72     
+P95 TPOT (ms):                           54.73     
+P99 TPOT (ms):                           57.58     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           1248.56   
+Median ITL (ms):                         16.33     
+P50 ITL (ms):                            16.33     
+P90 ITL (ms):                            2479.68   
+P95 ITL (ms):                            7445.80   
+P99 ITL (ms):                            18726.80  
+----------------End-to-end Latency----------------
+Mean E2EL (ms):                          30233.74  
+Median E2EL (ms):                        30562.17  
+P50 E2EL (ms):                           30562.17  
+P90 E2EL (ms):                           43091.53  
+P95 E2EL (ms):                           44926.88  
+P99 E2EL (ms):                           45428.08  
+==================================================
