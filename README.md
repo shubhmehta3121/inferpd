@@ -40,7 +40,7 @@ python -m http.server 8000
 # then open http://localhost:8000
 ```
 
-Pushing to `main` deploys `site/` via [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+Pushing to `master` or `main` deploys `site/` via [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 
 ## License
 
